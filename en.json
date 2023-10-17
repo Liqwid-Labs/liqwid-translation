@@ -1,0 +1,485 @@
+{
+  "supply": "Supply",
+  "withdraw": "Withdraw",
+  "borrow": "Borrow",
+  "create_borrow": "Create Borrow",
+  "repay": "Repay",
+  "modify": "Modify",
+  "borrowed": "Borrowed",
+  "repaid": "Repaid",
+  "available": "Available",
+  "liquidate": "Liquidate",
+  "oracle_price": "Oracle Price",
+  "max_borrow": "Max Borrow",
+  "max_liquidate": "Max Liquidate",
+  "interest_paid": "Interest Paid",
+  "collateral": "Collateral",
+  "collateral_before": "Collateral Before",
+  "collateral_after": "Collateral After",
+  "max_collateral": "Max collateral",
+  "max": "MAX",
+  "collateralization": "Collateralization",
+  "asset": "Asset",
+  "assets": "Assets",
+  "balance": "Balance",
+  "price_of": "Price of {{asset}}",
+  "apy": "APY",
+  "apy_ada_tooltip": "The Net supplier APY (interest + ADA staking rewards) is {{apy}}.<br />The interest earned on supplied ADA in Liqwid is {{supplyApy}}%.<br />ADA market utilization is {{utilization}}%.<br />The ADA staking reward is {{adaStakingApy}}% (calculated based on the average of the last 10 epochs).<br />The formula used to calculate this is: Net ADA Supplier APY = (Total deposited ADA x Supplier APY) + (Total deposited ADA (1-Utilization Rate) x Staking APY)",
+  "liquidity": "Liquidity",
+  "debt": "Debt",
+  "amount": "Amount",
+  "total_locked_collateral": "Total locked as collateral",
+  "health_factor": "Health Factor",
+  "liquidation": "Liquidation",
+  "liquidations": "Liquidations",
+  "loans": "Loans",
+  "error": "Error",
+  "hide": "Hide",
+  "more": "More",
+  "show": "Show",
+  "view": "View",
+  "type": "Type",
+  "back": "Back",
+  "submit": "Submit",
+  "actions": "Actions",
+  "created": "Created",
+  "date": "Date",
+  "details": "Details",
+  "vote": "Vote",
+  "voting": "Voting",
+  "cosign": "Cosign",
+  "cosigned": "Cosigned",
+  "locked": "Locked",
+  "finished": "Finished",
+  "disconnect": "Disconnect",
+  "connect_wallet": "Connect Wallet",
+  "review": "Review",
+  "install": "Install",
+  "learn_more": "Learn More",
+  "unlock_stakes": "Unlock stakes",
+  "market": "Market",
+  "stake": "Stake",
+  "staked": "Staked",
+  "unstake": "Unstake",
+  "forum": "Forum",
+  "delegate": "Delegate",
+  "delegated": "Delegated",
+  "undelegate": "Undelegate",
+  "can_be_collateral": "Can be collateral",
+  "loading": "Loading",
+  "loading...": "Loading...",
+  "next": "Next",
+  "previous": "Previous",
+  "result": "Result",
+  "invalid_data": "Invalid Data",
+  "invalid_market": "Invalid Market",
+  "none": "None",
+  "processing": "Processing",
+  "building_transaction": "Building Transaction",
+  "awaiting_confirmation": "Awaiting Confirmation",
+  "user_cancel_transaction": "You cancelled the transaction.",
+  "exchange_rate": "Exchange Rate",
+  "utilization": "Utilization",
+  "current_utilization": "Current Utilization",
+  "utilization_is": "Utilization is {{utilization}}%",
+  "total_apy": "Total APY",
+  "total_supply": "Total Supply",
+  "total_borrow": "Total Borrow",
+  "total_liquidity": "Total Liquidity",
+  "address_copy": "Address copied to clipboard",
+  "public_keys_copy": "Public keys copied to clipboard",
+  "co_signers_copy": "Co-signers copied to clipboard",
+  "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Link to APR calculations</a><br />This APR indicates the return from LQ market participation rewards. It is a calculation based on the updated dynamic emissions formulae (3-day epoch). The displayed APRs are purely for informing users. The displayed APRs are not financial, investment, tax, legal, or technical advice. Any use of decentralized finance protocols involves various financial risks. Nothing displayed in this app is financial advice and it is your responsibility to complete due diligence (do your own research).",
+  "nav": {
+    "dashboard": "Dashboard",
+    "governance": "Governance",
+    "staking": "Staking",
+    "liquidations": "Liquidations",
+    "loans": "Loans",
+    "market_state": "Market State",
+    "transaction_history": "Transaction History",
+    "analytics": "Analytics",
+    "user_guide": "User Guide",
+    "lq_rewards": "LQ Rewards",
+    "changelog": "Changelog",
+    "switch_to": "Switch to {{mode}} Mode",
+    "notification": "Please make sure you're visiting <a href='https://app.liqwid.finance'> app.liqwid.finance</a> - bookmark it to be safe."
+  },
+  "graph": {
+    "tvl": "Total Value Locked",
+    "total_staked_lq": "Total Staked LQ",
+    "defillama_tooltip": "TVL data fetched from DeFi Llama. Any inaccuracies in the source data will also be present on this graph."
+  },
+  "home_header": {
+    "total_supplies": "Total Supplies",
+    "total_borrows": "Total Borrows",
+    "net_apy": "Net APY"
+  },
+  "supply_list": {
+    "title": "Your Supplies",
+    "empty": "Nothing supplied yet",
+    "connect_wallet": "Connect your wallet to see your supplies",
+    "tooltip": {
+      "balance": "Balance is the total amount of tokens you have deposited in the protocol.",
+      "apy": "APY (Annual Percentage Yield) for each asset.",
+      "total_locked_collateral": "Total locked as collateral refers to the amount of assets used as security when borrowing."
+    },
+    "current_collateral": "You currently have {{borrowCollateralAmount}} {{asset}} worth of collateral locked in loans."
+  },
+  "supply_market": {
+    "title": "Assets to supply",
+    "tooltip": {
+      "balance": "Balance refers to the total amount of tokens you have in your wallet.",
+      "apy": "APY (Annual Percentage Yield) for each asset.",
+      "can_be_collateral": "Assets accepted as collateral for borrowing."
+    }
+  },
+  "borrow_list": {
+    "title": "Your Borrows",
+    "empty": "Nothing borrowed yet",
+    "connect_wallet": "Connect your wallet to see your borrows",
+    "tooltip": {
+      "debt": "Total amount borrowed by the user and the amount required to repay the loan.",
+      "apy": "Annual interest rate paid by the borrower for the loan.",
+      "health_factor": "When the health factor reaches 1.00, your position can be liquidated.",
+      "health_factor_low": "Your health factor is currently low, if it reaches 1.0, you could be liquidated"
+    },
+    "total_collateral": "Total Collateral"
+  },
+  "borrow_market": {
+    "title": "Assets to borrow",
+    "tooltip": {
+      "balance": "Balance refers to the total amount of tokens you have in your wallet.",
+      "apy": "Annual interest rate paid by the borrower for the loan.",
+      "liquidity": "Amount of funds available for borrowing."
+    },
+    "warning_message_supply": "To borrow you need to supply an asset first."
+  },
+  "transaction_history": {
+    "title": "Transaction History",
+    "empty": "No transactions Found"
+  },
+  "modal": {
+    "collateral_distribution": "Collateral Distribution",
+    "select_collateral": "Select or Type Collateral",
+    "transaction_overview": "Transaction Overview",
+    "liquidation": "Liquidation at < 1.0",
+    "close_button": "OK, close",
+    "error": {
+      "transaction": "Transaction has failed",
+      "running_batch": "Market is batching, please wait.",
+      "waiting_for_batch": "Waiting for next market batch, please wait.",
+      "zero_amount_borrow": "Enter a non zero amount to borrow",
+      "zero_amount_repay": "Enter a non zero amount to repay",
+      "zero_amount_supply": "Enter a non zero amount to supply",
+      "zero_amount_withdraw": "Enter a non zero amount to withdraw",
+      "zero_amount_liquidate": "Enter a non zero amount to liquidate",
+      "min_wallet_balance": "You need at least 3 ADA to pay for the transaction fee.",
+      "shen_collateral": "You cannot add more than {{maxCollateralAmount}} of qSHEN collateral to this loan. You can only decrease the amount being used as collateral."
+    }
+  },
+  "borrow_modal": {
+    "success": "You borrowed {{currentValue}} {{asset}}",
+    "processing": "Processing the borrow transaction...",
+    "error": {
+      "min_value": "Minimum value to borrow is {{minValue}}",
+      "market_demands_amount": "You cannot borrow more than the current maximum of {{maxDemandActionAmount}} in a single borrow due to market demands",
+      "market_demand": "You cannot borrow right now due to market demands. Please retry in a few minutes.",
+      "max_collateral": "You cannot use more than {{maxCollateralAmount}} for {{asset}} as collateral",
+      "max_amount": "You cannot borrow more than your remaining limit of {{maxAmount}}.",
+      "min_health_factor": "The minimum health factor is {{minHealthFactor}}, Increase your collateral or decrease your borrow."
+    }
+  },
+  "modify_modal": {
+    "modify": "Modify {{asset}} loan",
+    "success": "You modified the collateral of your {{asset}} loan.",
+    "processing": "Processing the modify transaction...",
+    "error": {
+      "max_collateral": "You cannot use more than {{maxCollateralAmount}} for {{asset}} as collateral.",
+      "min_health_factor": "The minimum health factor is {{minHealthFactor}}, Increase your collateral."
+    }
+  },
+  "repay_modal": {
+    "success": "You repaid {{currentValue}} {{asset}}",
+    "processing": "Processing the repay transaction...",
+    "amount_repay": "Amount to repay",
+    "remaining": "Remaining debt",
+    "error": {
+      "min_value": "Minimum value to repay is {{minValue}}",
+      "max_amount": "You cannot repay more than your remaining limit of {{maxAmount}}.",
+      "max_collateral": "You cannot use more than {{maxCollateralAmount}} for {{asset}} as collateral.",
+      "min_health_factor": "The minimum health factor is {{minHealthFactor}}, Increase your collateral or repay more.",
+      "bad_rest": "You cannot be left with a borrow under {{minValue}}, please repay all instead. You may need to add additional {{asset}} to repay fully the debt.",
+      "wash_borrow": "Wash borrows have been disabled. You are only allowed to decrease the amount of this qtoken being used as collateral."
+    }
+  },
+  "supply_modal": {
+    "success": "You supplied {{currentValue}} {{asset}}",
+    "processing": "Processing the supply transaction...",
+    "amount_supply": "Amount to supply",
+    "remaining": "Remaining balance",
+    "error": {
+      "min_value": "Minimum value to supply is {{minValue}}",
+      "max_amount": "You cannot supply more than your remaining balance of {{maxAmount}}.",
+      "max_supply": "You cannot supply more than your wallet's balance"
+    }
+  },
+  "withdraw_modal": {
+    "success": "You withdrew {{currentValue}} {{asset}}",
+    "processing": "Processing the withdraw transaction...",
+    "amount_withdraw": "Amount to withdraw",
+    "error": {
+      "min_value": "Minimum value to withdraw is {{minValue}}",
+      "max_amount": "You cannot withdraw more than your supplied balance of {{suppliedAmount}}.",
+      "market_demands_amount": "You cannot withdraw more than the current maximum of {{maxDemandActionAmount}} in a single transaction due to market demands",
+      "market_demand": "You cannot withdraw right now due to market demands. Please retry in a few minutes."
+    }
+  },
+  "delegate_modal": {
+    "success": "You {{delegate}} {{amount}} LQ to {{currentValue}} successfully!",
+    "enter_address": "Enter an address to delegate",
+    "error": {
+      "min_char_pkh": "Please enter a valid public key address, lower than 56characters.",
+      "max_char_pkh": "Please enter a valid public key address, higher than 56characters.",
+      "enter_valid_pkh": "Please enter a valid public key address, not a hex value.",
+      "delegate_yourself": "You cannot delegate to yourself."
+    }
+  },
+  "lq_infos_modal": {
+    "title": "Information about LQ",
+    "value_lq_staked": "Value of LQ staked",
+    "lq_price": "LQ Price",
+    "amount_lq_staked": "Amount of LQ staked",
+    "percentage_circulated_lq_staked": "% of circulated LQ being staked",
+    "circulating_supply": "Circulating Supply",
+    "market_cap": "Market Cap",
+    "fully_diluted_valuation": "Fully Diluted Valuation"
+  },
+  "stake_modal": {
+    "success": "You {{stake}} {{currentValue}} LQ",
+    "participate_governance_stake": "If you want to participate in governance please stake your LQ.",
+    "non_zero_amount": "Enter a non zero amount to stake",
+    "error": {
+      "max_amount": "You cannot stake more than your remaining limit of {{maxAmount}}."
+    }
+  },
+  "unlock_modal": {
+    "title": "Unlock staking for \"{{proposalTitle}}\"",
+    "success": "You unlocked your Stake for your vote of {{proposalTitle}}",
+    "your_stakes": "Your stakes:",
+    "locked_until": "Locked until {{date}}",
+    "submit_unlock": "Submit unlock",
+    "error": {
+      "need_one_stake": "You should select at least one Stake",
+      "after_vote": "You can only unlock a stake 45 minutes or more after voting",
+      "cosign_stake": "Cosigned stakes can only be unlocked after the proposal is finished."
+    }
+  },
+  "vote_modal": {
+    "success": "You {{cosignOrVoteResult}} {{proposalTitle}}",
+    "cosign_vote_for": "{{cosignOrVote}} for \"{{proposalTitle}}\"",
+    "choose_proposal_result": "Choose a proposal result",
+    "select_all_stakes": "Select all stakes",
+    "select_one_stake": "Select one stake",
+    "stake_amount": "Stake amount",
+    "delegated_by": "Delegated by {{address}}",
+    "error": {
+      "should_select_proposal": "You should select a Proposal Result",
+      "only_one_stake": "You can only cosign with 1 stake",
+      "select_atleast_one": "You should select at least one Stake",
+      "max_five_stake": "You can only select 5 stakes or less in one voting transaction"  ,
+      "minimum_vote": "You should select at least 30 LQ total",
+      "select_proposal_result": "Selected Proposal result is not valid.",
+      "no_available_stakes": "No available stakes found.",
+      "no_stakes_selected": "No stakes selected.",
+      "no_valid_stakes_select": "No valid/unused stakes selected"
+    }
+  },
+  "success_modal": {
+    "review_transaction": "Review transaction details",
+    "all_done": "All done!"
+  },
+  "wrong_network_modal": {
+    "title": "Wallet Network Error!",
+    "change_network": "Please change your wallet network to <span className='active'>{{network}}</span>."
+  },
+  "wallet_modal": {
+    "connect_to": "Connect to {{walletName}}",
+    "start_using_liqwid": "To start using Liqwid",
+    "failed_to_connect": "Failed to connect to {{walletName}}",
+    "terms_accept": "By connecting, I accept Liqwid's",
+    "terms_of_service": "Terms of Service",
+    "flint_warning": "Flint wallet is for experimental use only. If you find a bug while using one of these experimental wallets, please submit it via our reporting tool in <a target='_blank' href='https://discord.com/channels/1118159556762140762/1120428774987661382'>Discord</a>",
+    "automatic_support": "Automatic support",
+    "automatic_support_message": "Automatic support, wallet might cause issues",
+    "wait_access": "Waiting for wallet access...",
+    "wait_wallet_switch": "Please wait during the wallet switch, your new wallet may prompt you with an authorization request.",
+    "your_wallet": "Your Wallet",
+    "switch_wallet": "Switch your wallet",
+    "copy_wallet_address": "Copy wallet address",
+    "copy_x_pkh": "Copy {{pkhLength}} keys",
+    "non_endorsed_wallet": "Non endorsed installed wallets",
+    "using_non_endorsed_wallet": "Using wallets that fit in this category can provoke serious issues while using the app. We do not endorse using these wallets with the app as we have not tested them."
+  },
+  "settings_modal": {
+    "title": "Settings",
+    "hide_balance": "Hide Balance",
+    "language": "Language",
+    "currency_format": "Currency Format"
+  },
+  "liquidate_modal" : {
+    "success": "You liquidated {{currentValue}} {{asset}}",
+    "processing": "Processing the liquidate transaction...",
+    "liquidate_amount": "Liquidate Amount",
+    "liquidation_profit": "Liquidation Profit",
+    "tooltip": {
+      "liquidate_info": "When health factor is 1.00 or lower, liquidation is possible"
+    },
+    "error": {
+      "min_amount": "Minimum amount to liquidate is {{minAmount}}",
+      "max_amount":"You cannot liquidate more than your remaining limit of {{maxAmount}}.",
+      "zero_amount_liquidate": "Enter a non zero amount to liquidate"
+    }
+  },
+  "error_modal": {
+    "close_button": "OK, close",
+    "something_wrong": "Something went wrong!",
+    "close_dialog_try_again": "Please close this dialog and try again.",
+    "problem_persists": "If the problem persists, please <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contact support</a>.",
+    "click_copy_debug_info": "click <span className='active-error' onClick={copyToClipboard}>here</span> to copy debug information"
+  },
+  "transaction_notification": {
+    "success": "Transaction is successful",
+    "pending": "Transaction is pending"
+  },
+  "asset_page": {
+    "title": "Chart",
+    "market_info": "Market Info",
+    "current_price": "Current Price",
+    "exchange_rate_price": "q{{asset}} Exchange Rate",
+    "max_ltv": "Max LTV",
+    "liquidation_threshold": "Liquidation Threshold",
+    "liquidation_penalty": "Liquidation Penalty",
+    "liquidation_profit": "Liquidation Profit",
+    "total_supplies": "Total Supplies",
+    "total_available": "Total Available",
+    "total_borrows": "Total Borrows",
+    "supplier_factor": "Supplier Factor",
+    "income_factor": "Income Factor",
+    "reserve_factor": "Reserve Factor",
+    "dao_factor": "DAO Factor",
+    "dividend_factor": "Dividend Factor",
+    "supply_cap": "Supply Cap",
+    "borrow_cap": "Borrow Cap"
+  },
+  "analytic_page": {
+    "title": "Analytics",
+    "liqwid_analytics": "Liqwid Analytics",
+    "current_liqwid_analytics_loans": "Current Liqwid Analytics Loans",
+    "loan_volume_repaid": "Loan Volume Repaid",
+    "loan_interest_repaid": "Loan Interest Repaid",
+    "loans_volume_repaid": "Loans Volume Repaid",
+    "loans_interest_paid": "Loans Interest Paid",
+    "total_revenue_generated": "Total Revenue Generated",
+    "market_utilization": "Market Utilization",
+    "average_percentage_utilization": "(Average Percentage Utilization)",
+    "total_liquidations": "Total Liquidations",
+    "loans_volume": "Created Loans Volume",
+    "total_number_borrowers": "Total Number of Borrowers",
+    "average_debt_loans_usd": "Average Debt per Borrower (USD)",
+    "average_debt": "Average Debt",
+    "average_collateral": "Average Collateral {{asset}}",
+    "average_collateral_asset": "Average Collateral per Asset"
+  },
+  "governance": {
+    "title": "Governance",
+    "recent_proposals": "Recent proposals",
+    "participate_in_governance": "If you want to participate in governance please stake your LQ.",
+    "staked_lq_locked": "Your staked LQ Locked",
+    "staked_lq_balance": "Your staked LQ Balance",
+    "lq_balance": "Your LQ Balance",
+    "stake_lq": "Stake LQ",
+    "delegate_vote": "Delegate Vote",
+    "share_delegation_pkh": "Want to share your delegation public key?",
+    "here_is_yours": "Here's one of yours:",
+    "you_can_vote": "You can vote on each proposal yourself or delegate voting to a third party."
+  },
+  "proposal": {
+    "title": "Proposal",
+    "draft_end": "Draft ends in",
+    "voting_starts": "Voting starts in",
+    "voting_ends": "Voting ends in",
+    "locking_ends": "Locking ends in",
+    "executing_ends": "Executing ends in",
+    "finished": "Finished",
+    "co_signing": "Co-signing",
+    "co_sign": "Co-sign",
+    "co_signers": "Co-signers",
+    "co_sign_message": "You can co-sign this proposal to move it to review & voting.",
+    "your_votes": "Your Votes",
+    "no_votes_yet": "No votes yet",
+    "vote_breakdown": "Vote breakdown",
+    "proposal_history": "Proposal History",
+    "draft_created": "Draft created",
+    "proposal_results": "Proposal Results",
+    "cosigned_success": "You cosigned for Proposal {{proposalId}} of ${{proposalTitle}}",
+    "minimum_staked_to_vote": "A minimum of 30LQ is required for voting."
+  },
+  "staking": {
+    "total_staking": "Total Staking",
+    "total_balance": "Total Balance",
+    "total_staked": "Total Staked",
+    "staking_rewards": "Staking Rewards",
+    "average_apr": "Average APR",
+    "rewards_apr": "Rewards APR",
+    "locked_by_proposals": "Locked by Proposals:",
+    "create_new_stake": "Create new Stake",
+    "unstake_anytime": "During staking, you have the freedom to unstake your assets at any given point.",
+    "stake_lq_receive_rewards": "Please stake your LQ to vote and receive rewards",
+    "connect_to_stake": "Please connect and stake your LQ to vote and receive rewards",
+    "stakes_aquafarmers_not_same_addr": "Your stakes and aquafarmers are not on the same address",
+    "not_same_addr_tooltip": "Your stakes and aquafarmers are not on the same address, please switch to a",
+    "single_wallet_addr": "single-wallet address",
+    "otherwise_no_boost": "otherwise you will not be able to get your APR boost.",
+    "stakes_aquafarmers_same_addr": "Your stakes and aquafarmers are on the same address",
+    "max_apr": "Max APR",
+    "buy_jpeg_store": "Buy from JPG store",
+    "number": "number",
+    "rarity": "rarity",
+    "apr_boost": "APR Boost",
+    "see_aquafarmers": "If you want to view your aquafarmers and boost your APR in LQ staking, you need to have at least one",
+    "connect_see_aquafarmers": "Please connect to see your aquafarmers and the APY boost in your LQ staking"
+  },
+  "liquidation_page": {
+    "liquidated_loans": "Your liquidated loans",
+    "all_liquidated_loans": "All liquidated loans",
+    "amount": "Liquidation Amount",
+    "ltv_before": "LTV Before",
+    "ltv_after": "LTV After",
+    "collateral_liquidated": "Collateral Liquidated",
+    "liquidator": "Liquidator",
+    "no_liquidation": "You have not been liquidated"
+  },
+  "maintenance_page": {
+    "coming_back_soon": "We're coming back soon!",
+    "website_under_maintenance": "The website is currently under maintenance."
+  },
+  "main_bar": {
+    "liquidation_value": "Liquidation value: 1.00",
+    "borrow_limit": "Borrow limit: {{minHealthFactor}}",
+    "current_health_factor": "Current health factor"
+  },
+  "chart": {
+    "utilization_rate": "Utilization Rate",
+    "oracle_price": "Oracle Price",
+    "one_day": "1 day",
+    "one_week": "1 week",
+    "one_month": "1 month",
+    "utilization": "Utilization",
+    "oracle": "Oracle",
+    "1d": "1D",
+    "1w": "1W",
+    "1m": "1M",
+    "max": "Max"
+  }
+}
