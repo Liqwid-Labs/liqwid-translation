@@ -13,6 +13,7 @@
   "max_borrow": "Max Borrow",
   "max_liquidate": "Max Liquidate",
   "interest_paid": "Interest Paid",
+  "min_interest": "Min Interest",
   "collateral": "Collateral",
   "collateral_before": "Collateral Before",
   "collateral_after": "Collateral After",
@@ -461,8 +462,8 @@
     "no_liquidation": "You have not been liquidated"
   },
   "maintenance_page": {
-    "coming_back_soon": "We're coming back soon!",
-    "website_under_maintenance": "The website is currently under maintenance."
+    "coming_back_soon": "We will be back soon!",
+    "website_under_maintenance": "Liqwid App is under maintenance."
   },
   "main_bar": {
     "liquidation_value": "Liquidation value: 1.00",
