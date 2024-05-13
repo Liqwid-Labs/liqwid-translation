@@ -2,7 +2,6 @@
   "supply": "Déposer",
   "withdraw": "Retirer",
   "borrow": "Emprunter",
-  "create_borrow": "Créer un emprunt",
   "repay": "Repayer",
   "modify": "Modifier",
   "borrowed": "Emprunté",
@@ -24,11 +23,11 @@
   "balance": "Balance",
   "price_of": "Prix d’un {{asset}}",
   "apy": "APY",
-  "apy_ada_tooltip": "The Net supplier APY (interest + ADA staking rewards) is {{apy}}.<br />The interest earned on supplied ADA in Liqwid is {{supplyApy}}%.<br />ADA market utilization is {{utilization}}%.<br />The ADA staking reward is {{adaStakingApy}}% (calculated based on the average of the last 10 epochs).<br />The formula used to calculate this is: Net ADA Supplier APY = (Total deposited ADA x Supplier APY) + (Total deposited ADA (1-Utilization Rate) x Staking APY)",
+  "apy_ada_tooltip": "The Net supplier APY (interest + ADA staking rewards) is {{apy}}.<br />The interest earned on supplied ADA in Liqwid is {{supplyApy}}%.<br />ADA market utilization is {{utilization}}%.<br />The ADA staking reward is {{adaStakingApy}}% (calculated based on the average of the last 1 epochs).<br />The formula used to calculate this is: Net ADA Supplier APY = (Total deposited ADA x Supplier APY) + (Total deposited ADA (1-Utilization Rate) x Staking APY)",
   "liquidity": "Liquidité",
   "debt": "Emprunt",
   "amount": "Montant",
-  "total_locked_collateral": "Total bloqué en collatéral",
+  "locked_collateral": "Bloqué en collatéral",
   "health_factor": "Ratio de santé",
   "liquidation": "Liquidation",
   "liquidations": "Liquidations",
@@ -65,7 +64,6 @@
   "delegate": "Déléguer",
   "delegated": " Délégué ",
   "undelegate": "Stopper la délégation",
-  "can_be_collateral": "Peut être un collatéral",
   "loading": "Chargement",
   "loading...": "Chargement...",
   "next": "Prochain",
@@ -82,10 +80,14 @@
   "utilization": "Utilisation",
   "current_utilization": "Utilisation actuelle",
   "utilization_is": "Utilisation est {{utilization}}%",
-  "total_apy": "Total APY",
   "total_supply": "Total Dépôt",
   "total_borrow": "Total Emprunt",
   "total_liquidity": "Total Liquidité",
+  "supply_cap": "Limite de dépôt",
+  "borrow_cap": "Limite d'emprunt",
+  "liquidation_threshold": "Seuil de liquidation",
+  "max_ltv": "LTV maximale",
+  "liquidation_penalty": "Pénalité de liquidation",
   "address_copy": "Adresse copiée dans le presse-papiers",
   "public_keys_copy": "Clés publiques copiée dans le presse-papiers ",
   "co_signers_copy": "Co-signataires copiés dans le presse-papiers",
@@ -96,19 +98,18 @@
     "staking": "Staking",
     "liquidations": "Liquidations",
     "loans": "Emprunts",
-    "market_state": "Etat du marché",
-    "transaction_history": "Historique des transactions",
+    "market": "Marché",
+    "transaction": "Transactions",
     "analytics": "Analytique",
     "user_guide": "Guide des utilisateurs",
     "lq_rewards": "Récompenses LQ",
     "changelog": "Journal des modifications",
     "switch_to": "Passer en {{mode}} Mode",
-    "notification": "Veuillez-vous assurer que vous visitez <a href='https://app.liqwid.finance'>app.liqwid.finance</a> - mettez la page en favoris pour être sûr."
+    "notification": "Veuillez-vous assurer que vous visitez <a href='https://v2.liqwid.finance'>v2.liqwid.finance</a> - mettez la page en favoris pour être sûr."
   },
   "graph": {
     "tvl": "Valeur totale bloquée",
-    "total_staked_lq": "Total LQ stakés",
-    "defillama_tooltip": "Les données TVL ont été récupérées de DeFi Llama. Toute inexactitude dans les données sources sera également présente sur ce graphique."
+    "total_staked_lq": "Total LQ stakés"
   },
   "home_header": {
     "total_supplies": "Total des dépôts",
@@ -117,21 +118,12 @@
   },
   "supply_list": {
     "title": "Vos dépôts",
-    "empty": "Rien n’a été encore déposé",
+    "empty": "Rien n'a été encore déposé",
     "connect_wallet": "Connectez votre portefeuille pour voir vos dépôts",
     "tooltip": {
       "balance": "Le solde fait référence au montant total de jetons que vous avez dans votre portefeuille.",
       "apy": "APY (Rendement en Pourcentage Annuel) pour chaque actif.",
-      "total_locked_collateral": "Actifs acceptés comme garantie pour un emprunt."
-    },
-    "current_collateral": "Vous possédez actuellement {{borrowCollateralAmount}} {{asset}} en valeur de collatéral bloqués dans vos emprunts."
-  },
-  "supply_market": {
-    "title": "Actifs à déposer",
-    "tooltip": {
-      "balance": "Le solde fait référence au montant total de jetons que vous avez dans votre portefeuille.",
-      "apy": "APY (Rendement en Pourcentage Annuel) pour chaque actif.",
-      "can_be_collateral": "Actifs acceptés comme garantie pour un emprunt."
+      "locked_collateral": "Actifs acceptés comme garantie pour un emprunt."
     }
   },
   "borrow_list": {
@@ -140,112 +132,52 @@
     "connect_wallet": "Connectez votre portefeuille pour voir vos emprunts",
     "tooltip": {
       "debt": "Montant total emprunté par l'utilisateur et montant nécessaire au remboursement du prêt.",
-      "apy": "Taux d'intérêt annuel payé par l'emprunteur pour le prêt.",
+      "apr": "Taux d'intérêt annuel payé par l'emprunteur pour le prêt.",
       "health_factor": "Lorsque le facteur santé atteint 1,00, votre position peut être liquidée.",
       "health_factor_low": "Votre facteur de santé est actuellement faible, s'il atteint 1,0, vous pourriez être liquidé"
     },
     "total_collateral": "Total des collatéraux"
-  },
-  "borrow_market": {
-    "title": "Actifs à emprunter",
-    "tooltip": {
-      "balance": "Le solde fait référence au montant total de jetons que vous avez dans votre portefeuille.",
-      "apy": "Taux d'intérêt annuel payé par l'emprunteur pour le prêt.",
-      "liquidity": "Montant des fonds disponibles pour emprunter."
-    },
-    "warning_message_supply": "Pour emprunter, vous devez d’abord fournir un actif."
   },
   "transaction_history": {
     "title": "Historique des transactions",
     "empty": "Aucune transaction trouvée"
   },
   "modal": {
-    "collateral_distribution": "Distribution des garanties",
-    "select_collateral": "Sélectionnez ou tapez une garantie",
-    "transaction_overview": "Aperçu des transactions",
-    "liquidation": "Liquidation à < 1,0",
-    "close_button": "OK, fermé",
+    "close_button": "OK, fermé"
+  },
+  "action": {
+    "collateral_distribution": "Distribution des garanties"
+  },
+  "borrow_action": {
     "error": {
-      "transaction": "La transaction a échoué",
-      "running_batch": "Le marché est en cours de traitement, veuillez patienter.",
-      "waiting_for_batch": "En attente du traitement du marché, veuillez patienter.",
-      "zero_amount_borrow": "Saisissez un montant non nul à emprunter",
-      "zero_amount_repay": "Saisissez un montant non nul à rembourser",
-      "zero_amount_supply": "Saisissez un montant non nul à fournir",
-      "zero_amount_withdraw": "Saisissez un montant non nul à retirer",
-      "zero_amount_liquidate": "Saisissez un montant non nul à liquider",
-      "min_wallet_balance": "Vous avez besoin d'au moins 3 ADA pour payer les frais de transaction.",
-      "shen_collateral": "Vous ne pouvez pas ajouter plus de {{maxCollateralAmount}} de collatéral qSHEN à ce prêt. Vous ne pouvez réduire que la quantité utilisée comme collatéral."
+      "min_value": "La valeur minimale à emprunter est de {{minValue}}"
     }
   },
-  "borrow_modal": {
-    "success": "Vous avez emprunté {{currentValue}} {{asset}}",
-    "processing": "Traitement de la transaction d'emprunt...",
+  "modify_action": {
     "error": {
-      "min_value": "La valeur minimale à emprunter est de {{minValue}}",
-      "market_demands_amount": "Vous ne pouvez pas emprunter plus que le maximum actuel de {{maxDemandActionAmount}} en un seul emprunt en raison de la demande du marché.",
-      "market_demand": "Vous ne pouvez pas emprunter pour le moment en raison de la demande du marché. S'il vous plaît réessayer dans quelques minutes.",
-      "max_collateral": "Vous ne pouvez pas utiliser plus de {{maxCollateralAmount}} comme garantie",
-      "max_amount": "Vous ne pouvez pas emprunter plus que votre limite restante de {{maxAmount}}.",
-      "min_health_factor": "Le facteur de santé minimum pour les nouveaux prêts est {{minHealthFactor}}, augmentez votre garantie ou diminuez votre emprunt."
     }
   },
-  "modify_modal": {
-    "modify": "Modifier le prêt {{asset}}",
-    "success": "Vous avez modifié la garantie de votre prêt {{asset}}.",
-    "processing": "Traitement de la transaction de modification...",
+  "supply_action": {
     "error": {
-      "max_collateral": "Vous ne pouvez pas utiliser plus de {{maxCollateralAmount}} pour {{asset}} comme garantie.",
-      "min_health_factor": "Le facteur de santé minimum pour les nouveaux prêts est de {{minHealthFactor}}, augmentez votre garantie."
+      "min_value": "La valeur minimale à fournir est {{minValue}} {{id}}"
     }
   },
-  "repay_modal": {
-    "success": "Vous avez remboursé {{currentValue}} {{asset}}",
-    "processing": "Traitement de la transaction de remboursement...",
-    "amount_repay": "Montant à rembourser",
-    "remaining": "Dette restante",
+  "withdraw_action": {
     "error": {
-      "min_value": "La valeur minimale à rembourser est de {{minValue}}",
-      "max_amount": "Vous ne pouvez pas rembourser plus que votre limite restante de {{maxAmount}}.",
-      "max_collateral": "Vous ne pouvez pas utiliser plus de {{maxCollateralAmount}} comme garantie.",
-      "min_health_factor": "Le facteur de santé minimum pour les nouveaux prêts est {{minHealthFactor}}, augmentez votre garantie ou diminuez votre emprunt.",
-      "bad_rest": "Vous ne pouvez pas vous retrouver avec un emprunt inférieur à {{minValue}}, veuillez plutôt tout rembourser. Vous devrez peut-être ajouter des {{asset}} supplémentaires pour rembourser intégralement la dette.",
-      "wash_borrow": "Les emprunts de type 'Wash Borrows' ont été désactivés. Vous êtes uniquement autorisé à diminuer le montant de ce qtoken utilisé comme garantie."
-    }
-  },
-  "supply_modal": {
-    "success": "Vous avez fourni {{currentValue}} {{asset}}",
-    "processing": "Traitement de la transaction d'approvisionnement...",
-    "amount_supply": "Montant à fournir",
-    "remaining": "Solde restant",
-    "error": {
-      "min_value": "La valeur minimale à fournir est {{minValue}}",
-      "max_amount": "Vous ne pouvez pas fournir plus que votre solde restant de {{maxAmount}}.",
-      "max_supply": "Vous ne pouvez pas fournir plus que le solde de votre portefeuille"
-    }
-  },
-  "withdraw_modal": {
-    "success": "Vous avez retiré {{currentValue}} {{asset}}",
-    "processing": "Traitement de la transaction de retrait...",
-    "amount_withdraw": "Montant à retirer",
-    "error": {
-      "min_value": "La valeur minimale à retirer est de {{minValue}}",
-      "max_amount": "Vous ne pouvez pas retirer plus que votre solde fourni de {{suppliedAmount}}.",
-      "market_demands_amount": "Vous ne pouvez pas retirer plus que le maximum actuel de {{maxDemandActionAmount}} en une seule transaction en raison de la demande du marché.",
-      "market_demand": "Vous ne pouvez pas vous retirer pour le moment en raison des demandes du marché. S'il vous plaît réessayer dans quelques minutes."
+      "min_value": "La valeur minimale à retirer est de {{minValue}} {{id}}"
     }
   },
   "delegate_modal": {
-    "success": "Vous avez {{delegate}} {{amount}} LQ à {{currentValue}} avec succès !",
+    "success": "Vous avez {{delegate}} {{amount}} LQ à {{currentValue}} avec succès !",
     "enter_address": "Entrez une adresse pour déléguer",
     "error": {
-      "min_char_pkh": "Veuillez saisir une adresse de clé publique valide, inférieure à 56 caractères.",
-      "max_char_pkh": "Veuillez saisir une adresse de clé publique valide, supérieure à 56 caractères.",
+      "min_char_pkh": "Veuillez saisir une adresse de clé publique valide, inférieure à 56 caractères.",
+      "max_char_pkh": "Veuillez saisir une adresse de clé publique valide, supérieure à 56 caractères.",
       "enter_valid_pkh": "Veuillez saisir une adresse de clé publique valide, et non une valeur hexadécimale.",
       "delegate_yourself": "Vous ne pouvez pas vous déléguer."
     }
   },
-  "lq_infos_modal": {
+  "lq_info": {
     "title": "Informations sur LQ",
     "value_lq_staked": "Valeur du LQ jalonné",
     "lq_price": "Prix du LQ",
@@ -261,18 +193,6 @@
     "non_zero_amount": "Saisissez un montant non nul à miser",
     "error": {
       "max_amount": "Vous ne pouvez pas miser plus que votre limite restante de {{maxAmount}}."
-    }
-  },
-  "unlock_modal": {
-    "title": "Débloquez le staking pour \"{{proposalTitle}}\"",
-    "success": "Vous avez débloqué votre mise pour votre vote de {{proposalTitle}}",
-    "your_stakes": "Vos stakes :",
-    "locked_until": "Verrouillé jusqu'au {{date}}",
-    "submit_unlock": "Soumettre le déverrouillage",
-    "error": {
-      "need_one_stake": "Vous devez sélectionner au moins une mise",
-      "after_vote": "Vous ne pouvez débloquer une mise que 45 minutes ou plus après le vote",
-      "cosign_stake": "Les mises cosignées ne peuvent être débloquées qu’une fois la proposition terminée."
     }
   },
   "vote_modal": {
@@ -295,10 +215,6 @@
       "no_valid_stakes_select": "Aucune mise valide/inutilisée sélectionnée"
     }
   },
-  "success_modal": {
-    "review_transaction": "Vérifier les détails de la transaction",
-    "all_done": "Terminé!"
-  },
   "wrong_network_modal": {
     "title": "Erreur de réseau de portefeuille !",
     "change_network": "Veuillez modifier votre réseau de portefeuille en <span className='active'>{{network}}</span>."
@@ -309,7 +225,6 @@
     "failed_to_connect": "Échec de la connexion à {{walletName}}",
     "terms_accept": "En me connectant, j'accepte l'avis de Liqwid",
     "terms_of_service": "Conditions d'utilisation",
-    "flint_warning": "Le portefeuille Flint est destiné à un usage expérimental uniquement. Si vous trouvez un bug lors de l'utilisation de l'un de ces portefeuilles expérimentaux, veuillez le soumettre via notre outil de rapport dans <a target='_blank' href='https://discord.com/channels/1118159556762140762/1120428774987661382'>Discord</a>",
     "automatic_support": "Prise en charge automatique",
     "automatic_support_message": "Prise en charge automatique, le portefeuille peut causer des problèmes",
     "wait_access": "En attente de l'accès au portefeuille...",
@@ -327,20 +242,6 @@
     "language": "Langue",
     "currency_format": "Format de devise"
   },
-  "liquidate_modal" : {
-    "success": "Tu as liquidé {{currentValue}} {{asset}}",
-    "processing": "Traitement de la transaction de liquidation...",
-    "liquidate_amount": "Montant de la liquidation",
-    "liquidation_profit": "Profit de la liquidation",
-    "tooltip": {
-      "liquidate_info": "Lorsque le facteur de santé est de 1,00 ou moins, la liquidation est possible"
-    },
-    "error": {
-      "min_amount": "Le montant minimum à liquider est de {{minAmount}}",
-      "max_amount":"Vous ne pouvez pas liquider plus que votre limite restante de {{maxAmount}}",
-      "zero_amount_liquidate": "Entrez un montant non nul à liquider"
-    }
-  },
   "error_modal": {
     "close_button": "OK, fermé",
     "something_wrong": "Quelque chose s'est mal passé !",
@@ -348,48 +249,14 @@
     "problem_persists": "Si le problème persiste, veuillez <a target=\"_blank\"  href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">Contacter le support</a>.",
     "click_copy_debug_info": "cliquez <span className='active-error' onClick={copyToClipboard}>ici</span> pour copier les informations de débogage"
   },
-  "transaction_notification": {
-    "success": "La transaction est réussie",
-    "pending": "La transaction est en attente"
-  },
-  "asset_page": {
-    "title": "Graphique",
-    "market_info": "Informations sur le marché",
-    "current_price": "Prix ​​actuel",
-    "exchange_rate_price": "q{{asset}} Taux de change",
-    "max_ltv": "LTV maximale",
-    "liquidation_threshold": "Seuil de liquidation",
-    "liquidation_penalty": "Pénalité de liquidation",
-    "liquidation_profit": "Profit de liquidation",
+  "market_page": {
     "total_supplies": "Total déposer",
     "total_available": "Total disponible",
-    "total_borrows": "Emprunts totaux",
-    "supplier_factor": "Facteur fournisseur",
-    "income_factor": "Facteur de revenu",
-    "reserve_factor": "Facteur de réserve",
-    "dao_factor": "Facteur DAO",
-    "dividend_factor": "Facteur de dividende",
-    "supply_cap": "Limite de dépôt",
-    "borrow_cap": "Limite d'emprunt"
+    "total_borrows": "Emprunts totaux"
   },
-  "analytic_page": {
-    "title": "Analytique",
-    "liqwid_analytics": "Liqwid Analytique",
-    "current_liqwid_analytics_loans": "Analyse des prêts actuels Liqwid",
-    "loan_volume_repaid": "Volume des prêts remboursés",
-    "loan_interest_repaid": "Intérêts des prêts remboursés",
-    "loans_volume_repaid": "Volume des prêts remboursés",
-    "loans_interest_paid": "Intérêts des prêts payés",
-    "total_revenue_generated": "Revenu total généré",
-    "market_utilization": "Utilisation du marché",
-    "average_percentage_utilization": "(Utilisation moyenne en pourcentage)",
-    "total_liquidations": "Liquidations totales",
-    "loans_volume": "Volume des prêts créés",
-    "total_number_borrowers": "Nombre total d'emprunteurs",
-    "average_debt_loans_usd": "Dette moyenne par emprunteur (USD)",
-    "average_debt": "Dette moyenne",
-    "average_collateral": "Collatéral moyen {{asset}}",
-    "average_collateral_asset": "Collatéral moyen par actif"
+  "market_details": {
+    "current_price": "Prix actuel",
+    "reserve": "Réserve"
   },
   "governance": {
     "title": "Gouvernance",
@@ -425,7 +292,8 @@
     "cosigned_success": "Vous avez cosigné la proposition {{proposalId}} de ${{proposalTitle}}",
     "minimum_staked_to_vote": "Un minimum de 30LQ est requis pour voter."
   },
-  "staking": {
+  "staking_page": {
+    "create_stake": "Créer un stake",
     "total_staking": "Total de staking",
     "total_balance": "Total du solde",
     "total_staked": "Total des tokens stackés",
@@ -433,7 +301,6 @@
     "average_apr": "Moyenne APR",
     "rewards_apr": "Récompenses APR",
     "locked_by_proposals": "Bloqué par les propositions de vote",
-    "create_new_stake": "Créer un nouveau stake",
     "unstake_anytime": "Pendant le staking, vous avez la liberté de retirer vos actifs à tout moment.",
     "stake_lq_receive_rewards": "Veuillez staker vos LQ pour voter et recevoir des récompenses",
     "connect_to_stake": "Veuillez vous connecter et staker vos LQ pour voter et recevoir des récompenses",
@@ -464,14 +331,9 @@
     "coming_back_soon": "Nous revenons bientôt !",
     "website_under_maintenance": "Le site web est actuellement en maintenance."
   },
-  "main_bar": {
-    "liquidation_value": "Valeur de liquidation: 1.00",
-    "borrow_limit": "Limite d’emprunt: {{minHealthFactor}}",
-    "current_health_factor": "Ratio de santé actuel"
-  },
   "chart": {
-    "utilization_rate": "Taux d’utilisation",
-    "oracle_price": "Prix de l’oracle",
+    "utilization_rate": "Taux d'utilisation",
+    "oracle_price": "Prix de l'oracle",
     "one_day": "1 jour",
     "one_week": "1 semaine",
     "one_month": "1 mois",
