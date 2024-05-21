@@ -34,6 +34,7 @@
   "search_asset": "Search Asset",
   "search_asset_collateral": "Search Asset or Collateral",
   "search_by_date": "Search by Date",
+  "search_proposal": "Search Proposal",
   "balance": "Balance",
   "wallet_balance": "Wallet Balance",
   "price": "Price",
@@ -87,6 +88,8 @@
   "delegate": "Delegate",
   "delegated": "Delegated",
   "undelegate": "Undelegate",
+  "notifications": "Notifications",
+  "notification": "Notification",
   "accepted_as_collateral": "Accepted as collateral",
   "loading": "Loading",
   "loading...": "Loading...",
@@ -118,12 +121,15 @@
   "liquidation_penalty": "Liquidation Penalty",
   "liquidation_profitability": "Liquidation Profitability",
   "address_copy": "Address copied to clipboard",
+  "public_key_copy": "Public Key copied to clipboard",
   "public_keys_copy": "Public keys copied to clipboard",
   "co_signers_copy": "Co-signers copied to clipboard",
+  "adamail_copy": "ADAmail copied to clipboard",
   "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Link to APR calculations</a><br />This APR indicates the estimated return from LQ market participation rewards. It is a calculation based on the updated dynamic emissions formulae (3-day epoch). The displayed APRs are purely informational and based on estimates that change over time. The displayed APRs are not financial, investment, tax, legal, or technical advice. Any use of decentralized finance protocols involves various financial risks. Nothing displayed in this app is financial advice and it is your responsibility to complete due diligence (do your own research).",
   "safe_mode": "Safe Mode",
   "enabled": "Enabled",
   "disabled": "Disabled",
+  "settings": "Settings",
   "seo": {
     "dashboard": {
       "title": "Liqwid App - Dashboard",
@@ -192,6 +198,10 @@
     "faucet": {
       "title": "Liqwid App - Faucet",
       "description": "Liqwid App - Faucet"
+    },
+    "notifications": {
+      "title": "Liqwid App - Notifications",
+      "description": "Liqwid App - Notifications"
     }
   },
   "nav": {
@@ -224,13 +234,16 @@
     "lq_rewards": "LQ Rewards",
     "discord": "Discord",
     "twitter": "Twitter",
-    "github": "GitHub"
+    "github": "GitHub",
+    "substack": "Substack"
   },
   "graph": {
     "tvl": "Total Value Locked",
     "total_staked_lq": "Total Staked LQ"
   },
   "home_header": {
+    "your_supplies": "Your Supplies",
+    "your_borrows": "Your Borrows",
     "total_supplies": "Total Supplies",
     "total_borrows": "Total Borrows",
     "net_apy": "Net APY"
@@ -499,16 +512,21 @@
   },
   "governance": {
     "title": "Governance",
+    "your_wallet": "Your Wallet",
     "recent_proposals": "Recent proposals",
     "participate_in_governance": "If you want to participate in governance please stake your LQ.",
     "staked_lq_locked": "Your staked LQ Locked",
     "staked_lq_balance": "Your staked LQ Balance",
     "lq_balance": "Your LQ Balance",
     "stake_lq": "Stake LQ",
+    "lq_staked": "LQ Staked",
+    "voting_power": "Voting Power",
     "delegate_vote": "Delegate Vote",
     "share_delegation_pkh": "Want to share your delegation public key?",
     "here_is_yours": "Here's one of yours:",
-    "you_can_vote": "You can vote on each proposal yourself or delegate voting to a third party."
+    "you_can_vote": "You can vote on each proposal yourself or delegate voting to a third party.",
+    "want_receive_notification_proposal": "Want to receive notifications when a proposal goes live?",
+    "go_to_notification": "<Link>Go to the Notifications page</Link> and enable governance notifications."
   },
   "proposal": {
     "title": "Proposal",
@@ -555,8 +573,7 @@
     "stakes_aquafarmers_same_addr": "Your stakes and aquafarmers are on the same address",
     "max_apr": "Max APR",
     "buy_jpeg_store": "Buy from JPG store",
-    "number": "number",
-    "rarity": "rarity",
+    "rarity": "Rarity",
     "apr_boost": "APR Boost",
     "see_aquafarmers": "If you want to view your aquafarmers and boost your APR in LQ staking, you need to have at least one",
     "connect_see_aquafarmers": "Please connect to see your aquafarmers and the APY boost in your LQ staking"
@@ -587,5 +604,41 @@
     "1w": "1W",
     "1m": "1M",
     "max": "Max"
+  },
+  "settings_page": {
+    "title": "Notifications Settings",
+    "clear_signatures": "Clear saved signatures",
+    "no_adamail_nft": "No AdaMail NFT found in your wallet",
+    "adamail_link": "Get your free AdaMail here",
+    "which_notifications": "Which notifications would you like to receive?",
+    "unlock_email_by_signing": "Unlock email notifications by signing a message with your wallet",
+    "no_transaction_fee_required": "No transaction fee is required for this action",
+    "enable_email_notifications": "Enable Email Notifications",
+    "enable_adamail_notifications": "Enable ADAmail Notifications",
+    "loading": "Loading...",
+    "email": "Email",
+    "verify_email": "Verify Email",
+    "your_adamail": "Your ADAmail",
+    "email_verified": "Email Verified",
+    "announcements": "Announcements",
+    "loading_settings_data": "Loading settings data...",
+    "liqwid_email_signature_verification": "Liqwid Finance: Email Signature Verification Transaction",
+    "signature_setup": "Your signature verification has been completed successfully",
+    "waiting_for_signature": "Waiting for signature...",
+    "settings_updated": "Settings updated successfully",
+    "verification_email_sent": "Verification email sent successfully",
+    "sign": "Sign",
+    "save": "Save settings",
+    "error": {
+      "enable_email_notifications_first": "Please enable email notifications before verifying your email"
+    }
+  },
+  "verify_email_page": {
+    "title": "Verify Email",
+    "loading": "Loading...",
+    "email_verified_success": "Email verified successfully",
+    "incorrect_code": "Incorrect code",
+    "error": "An error occurred",
+    "redirection_soon": "You will be redirected automatically in 5 seconds."
   }
 }
