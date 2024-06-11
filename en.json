@@ -113,6 +113,7 @@
   "total_borrow": "Total Borrow",
   "total_liquidity": "Total Liquidity",
   "current_price": "Current Price",
+  "circulating_supply": "Circulating Supply",
   "supply_cap": "Supply Cap",
   "borrow_cap": "Borrow Cap",
   "minimum_amount": "Minimum amount",
@@ -145,15 +146,15 @@
     },
     "loans": {
       "title": "Liqwid App - Loans",
-      "description": "Liqwid App - Loans"
+      "description": "Explore the complete list of all loans available on the Liqwid App."
     },
     "liquidations": {
       "title": "Liqwid App - Liquidations",
-      "description": "Liqwid App - Liquidations"
+      "description": "View the full history of liquidated loans on the Liqwid App."
     },
     "transactions": {
       "title": "Liqwid App - Transactions",
-      "description": "Liqwid App - Transactions"
+      "description": "Review all your Liqwid transactions"
     },
     "analytics": {
       "title": "Liqwid App - Analytics",
@@ -161,7 +162,7 @@
     },
     "governance": {
       "title": "Liqwid App - Governance",
-      "description": "Liqwid App - Governance"
+      "description": "Participate in the governance of Liqwid Finance by voting on key proposals."
     },
     "proposal": {
       "title": "Liqwid App - Proposal",
@@ -169,7 +170,7 @@
     },
     "staking": {
       "title": "Liqwid App - Staking",
-      "description": "Liqwid App - Staking"
+      "description": "Earn rewards and participate in governance by staking your assets on the Liqwid App."
     },
     "maintenance": {
       "title": "Liqwid App - Maintenance",
@@ -197,11 +198,11 @@
     },
     "faucet": {
       "title": "Liqwid App - Faucet",
-      "description": "Liqwid App - Faucet"
+      "description": "Acquire test tokens to use in your applications and experiment with DeFi features without any risk."
     },
     "notifications": {
       "title": "Liqwid App - Notifications",
-      "description": "Liqwid App - Notifications"
+      "description": "Never miss an important update with Liqwid App's Notifications."
     }
   },
   "nav": {
@@ -221,7 +222,8 @@
     "notification": "Please make sure you're visiting <a href='https://v2.liqwid.finance'> v2.liqwid.finance</a> - bookmark it to be safe.",
     "preview_banner": "You're visiting the Preview testnet V2 app",
     "supply": "Supply",
-    "borrow": "Borrow"
+    "borrow": "Borrow",
+    "notification_page": "Notifications"
   },
   "footer": {
     "protocol": "Protocol",
@@ -622,13 +624,14 @@
     "email_verified": "Email Verified",
     "announcements": "Announcements",
     "loading_settings_data": "Loading settings data...",
-    "liqwid_email_signature_verification": "Liqwid Finance: Email Signature Verification Transaction",
     "signature_setup": "Your signature verification has been completed successfully",
     "waiting_for_signature": "Waiting for signature...",
     "settings_updated": "Settings updated successfully",
     "verification_email_sent": "Verification email sent successfully",
     "sign": "Sign",
     "save": "Save settings",
+    "delete_data_message": "Are you sure you want to delete all notifications your data?",
+    "delete_data": "Successfully deleted all your informations",
     "error": {
       "enable_email_notifications_first": "Please enable email notifications before verifying your email"
     }
@@ -640,5 +643,14 @@
     "incorrect_code": "Incorrect code",
     "error": "An error occurred",
     "redirection_soon": "You will be redirected automatically in 5 seconds."
+  },
+  "filters": {
+    "title": "Filters",
+    "asset_types": "Asset Types",
+    "stablecoin": "Stablecoin",
+    "cardano_native_token": "Cardano Native Token",
+    "bridge_token": "Bridge Token",
+    "others": "Others",
+    "show_assets_with_no_balance": "Show assets with no balance"
   }
 }
