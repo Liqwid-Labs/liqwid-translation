@@ -131,6 +131,11 @@
   "enabled": "Enabled",
   "disabled": "Disabled",
   "settings": "Settings",
+  "filled": "Filled",
+  "currently": "Currently",
+  "lending_apy": "Lending APY",
+  "accepted_as_collateral_on": "Accepted as collateral on",
+  "lq_market_participation_apy": "LQ Market Participation APY",
   "seo": {
     "dashboard": {
       "title": "Liqwid App - Dashboard",
@@ -259,7 +264,9 @@
       "balance": "Balance is the total amount of tokens you have deposited in the protocol",
       "wallet_balance": "Wallet balance is the total amount of tokens you have in your wallet",
       "apy": "APY (Annual Percentage Yield) for each asset",
-      "locked_collateral": "Locked as collateral refers to the amount of assets used as security when borrowing"
+      "locked_collateral": "Locked as collateral refers to the amount of assets used as security when borrowing",
+      "no_enough_balance_supply": "You will need to have a minimum of {{minValue}} {{asset}} in your wallet to be able to deposit",
+      "no_enough_balance_withdraw": "You will need to have a minimum of {{minValue}} {{asset}} deposited to be able to withdraw"
     }
   },
   "borrow_list": {
@@ -622,7 +629,7 @@
     "verify_email": "Verify Email",
     "your_adamail": "Your ADAmail",
     "email_verified": "Email Verified",
-    "announcements": "Announcements",
+    "general_communication": "General Communication",
     "loading_settings_data": "Loading settings data...",
     "signature_setup": "Your signature verification has been completed successfully",
     "waiting_for_signature": "Waiting for signature...",
@@ -630,8 +637,10 @@
     "verification_email_sent": "Verification email sent successfully",
     "sign": "Sign",
     "save": "Save settings",
-    "delete_data_message": "Are you sure you want to delete all notifications your data?",
+    "delete_data_message": "Are you sure you want to delete all your notifications settings? It will delete all data related to your email.",
     "delete_data": "Successfully deleted all your informations",
+    "loan_alert": "Loan Alert",
+    "delete_saved_signatures_message": "Are you sure you want to delete all saved signatures? You will need to sign again to have access to your notifications settings.",
     "error": {
       "enable_email_notifications_first": "Please enable email notifications before verifying your email"
     }
