@@ -71,7 +71,7 @@
   "locked": "Bloqué",
   "finished": "Terminé",
   "disconnect": "Déconnecté",
-  "connect_wallet": "portefeuille connecté",
+  "connect_wallet": "Connecter le portefeuille",
   "review": "Revoir",
   "install": "Installer",
   "learn_more": "En apprendre plus",
@@ -131,6 +131,7 @@
   "enabled": "Activé",
   "disabled": "Désactivé",
   "settings": "Paramètres",
+  "select_all_stakes": "Sélectionner tous les stakes ou les {{count}} premiers",
   "nav": {
     "dashboard": "Accueil",
     "governance": "Gouvernance",
@@ -278,7 +279,6 @@
   },
   "supply_action": {
     "select_asset": "Sélectionnez un actif à déposer",
-    "asset_received": "{{id}} reçu",
     "guide": {
       "step_1": "Commencez par sélectionner un actif à déposer parmi ceux disponibles dans votre portefeuille.<br />Parcourez vos actifs et cliquez sur celui désiré pour cette transaction.",
       "step_2": "Entrez le montant que vous souhaitez déposer.<br />Ajustez ce montant à l'aide du curseur en cliquant sur l'icône à côté du logo de l'actif, ou appuyez sur <span className='bold'>'Max'</span> pour utiliser l'intégralité du solde.",
@@ -292,7 +292,6 @@
   },
   "withdraw_action": {
     "select_asset": "Sélectionnez un actif à retirer",
-    "asset_withdrawn": "{{id}} retiré",
     "error": {
       "min_value": "Le montant minimum à retirer est de {{minValue}} {{id}}",
       "max_amount": "Vous ne pouvez pas retirer plus que votre limite de {{maxAmount}} {{id}}",
@@ -301,7 +300,7 @@
   },
   "liquidate_action": {
     "title": "Liquider le prêt {{id}}",
-    "select_asset": "Sélectionnez un prêt à liquider",
+    "select_loan": "Sélectionnez un prêt à liquider",
     "liquidate_amount": "Montant à liquider",
     "liquidation_profit": "Profit de liquidation",
     "error": {
@@ -311,7 +310,7 @@
   "faucet_action": {
     "mint_info": "Cliquez sur le bouton de gauche pour Émettre 1 000 de chaque token. Cliquez sur le bouton de droite pour émettre 10 tokens OptimBond1, à des fins de test!"
   },
-  "delegate_modal": {
+  "delegate_page": {
     "success": "Vous avez {{delegate}} {{amount}} LQ à {{currentValue}} avec succès !",
     "enter_address": "Entrez une adresse pour déléguer",
     "error": {
@@ -326,7 +325,6 @@
     "market_cap": "Capitalisation boursière",
     "fully_diluted_valuation": "Valorisation entièrement diluée",
     "circulating_supply": "Offre en circulation",
-    "percentage_circulated_lq_staked": "% de LQ en circulation mis en staking",
     "amount_lq_staked": "Montant de LQ mis en staking"
   },
   "stake_modal": {
@@ -337,24 +335,20 @@
       "max_amount": "Vous ne pouvez pas miser plus que votre limite restante de {{maxAmount}}."
     }
   },
-  "vote_modal": {
+  "vote_page": {
     "success": "Vous {{cosignOrVoteResult}} {{proposalTitle}}",
     "cosign_vote_for": "{{cosignOrVote}} pour \"{{proposalTitle}}\"",
-    "choose_proposal_result": "Choisissez un résultat de proposition",
-    "select_all_stakes": "Sélectionnez tous les stakes",
+    "choose_proposal_result": "Choisissez un résultat",
     "select_one_stake": "Sélectionnez une mise",
     "stake_amount": "Montant de la mise",
     "delegated_by": "Délégué par {{address}}",
     "error": {
-      "should_select_proposal": "Vous devez sélectionner un résultat de proposition",
+      "should_select_proposal": "Vous devez sélectionner un résultat",
       "only_one_stake": "Vous ne pouvez cosigner qu'avec 1 mise",
       "select_atleast_one": "Vous devez sélectionner au moins une mise",
-      "max_five_stake": "Vous ne pouvez sélectionner que 5 participations ou moins en une seule transaction de vote",
+      "max_x_stake": "Vous ne pouvez sélectionner que {{count}} stake ou moins en une seule transaction de vote",
       "minimum_vote": "Vous devez sélectionner au moins 30 LQ au total",
-      "select_proposal_result": "Le résultat de la proposition sélectionnée n'est pas valide.",
-      "no_available_stakes": "Aucune mise disponible trouvée.",
-      "no_stakes_selected": "Aucune mise sélectionnée.",
-      "no_valid_stakes_select": "Aucune mise valide/inutilisée sélectionnée"
+      "no_available_stakes": "Aucune mise disponible trouvée."
     }
   },
   "wrong_network_modal": {
@@ -448,7 +442,7 @@
     "lq_staked": "LQ en staking",
     "voting_power": "Pouvoir de vote",
     "delegate_vote": "Déléguer le vote",
-    "share_delegation_pkh": "Vous voulez partager votre clé publique de délégation ?",
+    "share_delegation_address": "Vous voulez partager votre adresse publique de délégation ?",
     "here_is_yours": "Voici l'une des vôtres :",
     "you_can_vote": "Vous pouvez voter sur chaque proposition vous-même ou déléguer le vote à un tiers.",
     "want_receive_notification_proposal": "Vous voulez recevoir des notifications lorsqu'une proposition est mise en ligne ?",
@@ -469,7 +463,6 @@
     "your_votes": "Vos votes",
     "no_votes_yet": "Aucun vote pour l'instant",
     "vote_breakdown": "Répartition des votes",
-    "proposal_history": "Historique des propositions",
     "draft_created": "Brouillon créé",
     "proposal_results": "Résultats de la proposition",
     "cosigned_success": "Vous avez co-signé la proposition {{proposalId}} de ${{proposalTitle}}",
@@ -488,9 +481,9 @@
     "staking_rewards": "Récompenses du staking",
     "average_apr": "APR moyen",
     "rewards_apr": "APR des récompenses",
-    "locked_by_proposals": "Verrouillé par des propositions de vote :",
+    "locked_by_proposals": "Verrouillé par des votes",
     "unstake_anytime": "Pendant le staking, vous avez la liberté de retirer vos actifs à tout moment.",
-    "stake_lq_receive_rewards": "Veuillez staker vos LQ pour voter et recevoir des récompenses",
+    "stake_lq_receive_rewards": "Veuillez <0>staker</0> vos LQ pour voter et recevoir des récompenses",
     "connect_to_stake": "Veuillez vous connecter et staker vos LQ pour voter et recevoir des récompenses",
     "stakes_aquafarmers_not_same_addr": "Vos stakings et aquafarmers ne sont pas à la même adresse",
     "not_same_addr_tooltip": "Vos stakings et aquafarmers ne sont pas à la même adresse, veuillez passer à une",

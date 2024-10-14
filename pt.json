@@ -92,6 +92,7 @@
   "public_keys_copy": "Chaves públicas copiadas para a área de transferência",
   "co_signers_copy": "Co-assinantes copiados para a área de transferência",
   "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Link para os cálculos da APR</a><br />Esta APR indica o retorno das recompensas LQ de participação em mercados. É um cálculo baseado na fórmula atualizada de emissões dinâmicas (épocas de 3 dias). A APR mostrada é somente para fins de informação. As APRs mostradas não são qualquer tipo de concelho financeiro, de investimentos, de impostos, legal ou técnico. Nada mostrado nesta aplicação serve de concelho financeiro e é da sua responsabilidade fazer pesquisa.",
+  "select_all_stakes": "Selecionar todos os stakes ou os primeiros {{count}}",
   "nav": {
     "dashboard": "Painel",
     "governance": "Governança",
@@ -167,7 +168,7 @@
       "min_value": "O valor mínimo a retirar é {{minValue}} {{id}}"
     }
   },
-  "delegate_modal": {
+  "delegate_page": {
     "success": "{{delegate}} {{amount}} LQ para {{currentValue}} com sucesso!",
     "enter_address": "Insira um endereço para o qual delegar o seu poder de voto",
     "error": {
@@ -182,7 +183,6 @@
     "value_lq_staked": "Valor de LQ staked",
     "lq_price": "Preço da LQ",
     "amount_lq_staked": "Quantidade de LQ staked",
-    "percentage_circulated_lq_staked": "% da LQ em circulação que está staked",
     "circulating_supply": "LQ circulante",
     "market_cap": "Capitalização de mercado",
     "fully_diluted_valuation": "Valor totalmente díluido"
@@ -195,11 +195,10 @@
       "max_amount": "Não pode fazer stake com mais do que o seu limite remanescente de {{maxAmount}}."
     }
   },
-  "vote_modal": {
+  "vote_page": {
     "success": "{{cosignOrVoteResult}} {{proposalTitle}}",
     "cosign_vote_for": "{{cosignOrVote}} para \"{{proposalTitle}}\"",
     "choose_proposal_result": "Selecione um resultado",
-    "select_all_stakes": "Selecionar todos os stakes",
     "select_one_stake": "Selecionar um stake",
     "stake_amount": "Quantidade de LQ no stake",
     "delegated_by": "Delegado para si por {{address}}",
@@ -207,12 +206,9 @@
       "should_select_proposal": "Deve selecionar um resultado da proposta.",
       "only_one_stake": "Só pode co-assinar com um stake.",
       "select_atleast_one": "Deve selecionar pelo menos um stake.",
-      "max_five_stake": "Só pode selecionar cinco stakes ou menos para votar, de cada vez."  ,
+      "max_x_stake": "Só pode selecionar {{count}} stakes ou menos para votar, de cada vez."  ,
       "minimum_vote": "Não pode votar com menos de 30LQ de cada vez.",
-      "select_proposal_result": "O resultado selecionado para a proposta não é válido.",
-      "no_available_stakes": "Não foram encontrados stakes dísponiveis.",
-      "no_stakes_selected": "Não selecionou nenhum stake.",
-      "no_valid_stakes_select": "Não selecionou stakes válidos/inutilizados."
+      "no_available_stakes": "Não foram encontrados stakes dísponiveis."
     }
   },
   "wrong_network_modal": {
@@ -267,7 +263,7 @@
     "lq_balance": "O seu saldo de LQ",
     "stake_lq": "Fazer stake de LQ",
     "delegate_vote": "Delegar poder de voto",
-    "share_delegation_pkh": "Quer partilhar a sua chave de delegação pública?",
+    "share_delegation_address": "Quer partilhar a sua chave de delegação pública?",
     "here_is_yours": "Aqui está um dos seus:",
     "you_can_vote": "Pode escolher entre votar ou delegar o seu poder de voto a um terceiro em cada proposta."
   },
@@ -286,7 +282,6 @@
     "your_votes": "Os seus votos",
     "no_votes_yet": "Não tem votos ainda",
     "vote_breakdown": "Análise dos seus votos",
-    "proposal_history": "Histórico de propostas",
     "draft_created": "Rascunhos criados",
     "proposal_results": "Resultados de propostas",
     "cosigned_success": "Co-assinou a proposta {{proposalId}} \"${{proposalTitle}}\"",
@@ -300,9 +295,9 @@
     "staking_rewards": "Recompensas de Staking",
     "average_apr": "APR Médio",
     "rewards_apr": "APR",
-    "locked_by_proposals": "Trancado por propostas:",
+    "locked_by_proposals": "Trancado por propostas",
     "unstake_anytime": "Durante staking, tem a liberdade de fazer unstake do seu LQ a qualquer momento.",
-    "stake_lq_receive_rewards": "Por favor faça stake do seu LQ para votar e receber recompensas",
+    "stake_lq_receive_rewards": "Por favor faça <0>stake</0> do seu LQ para votar e receber recompensas",
     "connect_to_stake": "Por favor conecte e faça stake do seu LQ para votar e receber recompensas",
     "stakes_aquafarmers_not_same_addr": "Os seus stakes e aquafarmers não estão no mesmo endereço",
     "not_same_addr_tooltip": "Os seus stakes e aquafarmers não estão no mesmo endereço, por favor mude para uma",

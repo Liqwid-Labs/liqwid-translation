@@ -361,7 +361,6 @@
   },
   "supply_action": {
     "select_asset": "供給する資産を選択",
-    "asset_received": "{{id}} 受け取った",
     "guide": {
       "step_1": "ウォレット内の利用可能な資産から供給する資産を選択することから始めます。<br />資産をスクロールして、このトランザクション用に希望する資産をクリックしてください。",
       "step_2": "供給する額を入力します。<br />資産のロゴの横にあるアイコンをクリックしてスライダーでこの額を調整するか、<span className='bold'>'Max'</span> を押して残高全体を使用します。",
@@ -375,7 +374,6 @@
   },
   "withdraw_action": {
     "select_asset": "引き出する資産を選択",
-    "asset_withdrawn": "{{id}} 引き出し",
     "error": {
       "min_value": "引き出しの最小金額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて引き出すことはできません",
@@ -384,7 +382,7 @@
   },
   "liquidate_action": {
     "title": "{{id}} ローンを清算する",
-    "select_asset": "清算するローンを選択",
+    "select_loan": "清算するローンを選択",
     "liquidate_amount": "清算額",
     "liquidation_profit": "清算利益",
     "error": {
@@ -409,7 +407,6 @@
     "market_cap": "時価総額",
     "fully_diluted_valuation": "完全希釈後評価",
     "circulating_supply": "循環供給量",
-    "percentage_circulated_lq_staked": "ステーキングされている循環しているLQの割合",
     "amount_lq_staked": "ステーキングされているLQの量"
   },
   "stake_modal": {
@@ -432,7 +429,6 @@
       "should_select_proposal": "提案結果を選択する必要があります",
       "only_one_stake": "1つのステークでのみ共同署名できます",
       "select_atleast_one": "少なくとも1つのステークを選択する必要があります",
-      "max_five_stake": "1つの投票トランザクションで選択できるステークは5つ以下です",
       "minimum_vote": "少なくとも30LQを選択する必要があります",
       "select_proposal_result": "選択された提案結果は有効ではありません。",
       "no_available_stakes": "利用可能なステークが見つかりません。",
@@ -531,7 +527,7 @@
     "lq_staked": "ステークされた LQ",
     "voting_power": "投票権",
     "delegate_vote": "投票を委任",
-    "share_delegation_pkh": "あなたの委任公開鍵を共有したいですか？",
+    "share_delegation_address": "あなたの委任公開鍵を共有したいですか？",
     "here_is_yours": "こちらはあなたのものの一つです：",
     "you_can_vote": "各提案に自分で投票するか、第三者に投票を委任することができます。",
     "want_receive_notification_proposal": "提案がライブになったときに通知を受け取りたいですか？",
@@ -552,7 +548,6 @@
     "your_votes": "あなたの投票",
     "no_votes_yet": "まだ投票がありません",
     "vote_breakdown": "投票の内訳",
-    "proposal_history": "提案履歴",
     "draft_created": "下書きを作成しました",
     "proposal_results": "提案の結果",
     "cosigned_success": "あなたは提案{{proposalId}}の{{proposalTitle}}に共同署名しました",
@@ -571,9 +566,9 @@
     "staking_rewards": "ステーキング報酬",
     "average_apr": "平均APR",
     "rewards_apr": "報酬 APR",
-    "locked_by_proposals": "提案によってロックされました：",
+    "locked_by_proposals": "提案によってロックされました",
     "unstake_anytime": "ステーキング中に、いつでも資産をアンステークする自由があります。",
-    "stake_lq_receive_rewards": "投票と報酬を受け取るために、LQをステークしてください",
+    "stake_lq_receive_rewards": "投票と報酬を受け取るために、<0>LQをステーク</0>してください",
     "connect_to_stake": "投票と報酬を受け取るために、LQを接続してステークしてください",
     "stakes_aquafarmers_not_same_addr": "あなたのステークとアクアファーマーズは同じアドレスにありません",
     "not_same_addr_tooltip": "あなたのステークとアクアファーマーズは同じアドレスにありません、に切り替えてください",
@@ -612,6 +607,7 @@
     "1d": "1日",
     "1w": "1週間",
     "1m": "1ヶ月",
+    "1y": "1年",
     "max": "最大"
   },
   "settings_page": {

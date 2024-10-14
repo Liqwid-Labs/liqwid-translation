@@ -87,7 +87,9 @@
   "forum": "Forum",
   "delegate": "Delegate",
   "delegated": "Delegated",
+  "delegatee": "Delegatee",
   "undelegate": "Undelegate",
+  "replace_delegate": "Replace with a new delegate",
   "notifications": "Notifications",
   "notification": "Notification",
   "accepted_as_collateral": "Accepted as collateral",
@@ -132,82 +134,114 @@
   "disabled": "Disabled",
   "settings": "Settings",
   "filled": "Filled",
+  "supply_filled": "Supply Filled",
   "currently": "Currently",
   "lending_apy": "Lending APY",
   "accepted_as_collateral_on": "Accepted as collateral on",
   "lq_market_participation_apy": "LQ Market Participation APY",
+  "select_all_stakes": "Select all or the first {{count}} stakes",
+  "deselect_all_stakes": "Deselect all stakes selected",
+  "the_healthfactor_is": "The Health Factor is",
+  "healthfactor_calculation": "HF = collateral value in $ x liquidation threshold / borrow value in $",
+  "click_here": "Click here",
+  "error_copied_to_clipboard": "Error copied to clipboard",
+  "executed": "Executed",
+  "pending": "Pending",
+  "active": "Active",
+  "status": "Status",
+  "blocked": "Blocked",
   "seo": {
     "dashboard": {
-      "title": "Liqwid App - Dashboard",
+      "title": "Liqwid Finance",
       "description": "Explore the future of DeFi on Cardano with Liqwid Finance innovative lending and borrowing platform."
     },
     "market": {
-      "title": "Liqwid App - Market",
+      "title": "Liqwid Finance - Market",
       "description": "Access real-time market data across all markets within the Liqwid Finance protocol."
     },
     "market_details": {
-      "title": "Liqwid App - {{id}} Market Details",
-      "description": "Liqwid App - Market Details"
+      "title": "Liqwid Finance - {{id}} Market Details",
+      "description": "Liqwid Finance - Market Details"
     },
     "loans": {
-      "title": "Liqwid App - Loans",
+      "title": "Liqwid Finance - Loans",
       "description": "Explore the complete list of all loans available on the Liqwid App."
     },
     "liquidations": {
-      "title": "Liqwid App - Liquidations",
+      "title": "Liqwid Finance - Liquidations",
       "description": "View the full history of liquidated loans on the Liqwid App."
     },
     "transactions": {
-      "title": "Liqwid App - Transactions",
+      "title": "Liqwid Finance - Transactions",
       "description": "Review all your Liqwid transactions"
     },
     "analytics": {
-      "title": "Liqwid App - Analytics",
-      "description": "Liqwid App - Analytics"
+      "title": "Liqwid Finance - Analytics",
+      "description": "Liqwid Finance - Analytics"
     },
     "governance": {
-      "title": "Liqwid App - Governance",
+      "title": "Liqwid Finance - Governance",
       "description": "Participate in the governance of Liqwid Finance by voting on key proposals."
     },
     "proposal": {
-      "title": "Liqwid App - Proposal",
-      "description": "Liqwid App - Proposal"
+      "title": "Liqwid Finance - Proposal",
+      "description": "Liqwid Finance - Proposal"
     },
     "staking": {
-      "title": "Liqwid App - Staking",
+      "title": "Liqwid Finance - Staking",
       "description": "Earn rewards and participate in governance by staking your assets on the Liqwid App."
     },
     "maintenance": {
-      "title": "Liqwid App - Maintenance",
-      "description": "Liqwid App - Maintenance"
+      "title": "Liqwid Finance - Maintenance",
+      "description": "Liqwid Finance - Maintenance"
     },
     "supply_action": {
-      "title": "Liqwid App - Supply",
-      "description": "Liqwid App - Supply"
+      "title": "Liqwid Finance - Supply",
+      "description": "Liqwid Finance - Supply"
     },
     "withdraw_action": {
-      "title": "Liqwid App - Withdraw",
-      "description": "Liqwid App - Withdraw"
+      "title": "Liqwid Finance - Withdraw",
+      "description": "Liqwid Finance - Withdraw"
     },
     "borrow_action": {
-      "title": "Liqwid App - Borrow",
-      "description": "Liqwid App - Borrow"
+      "title": "Liqwid Finance - Borrow",
+      "description": "Liqwid Finance - Borrow"
     },
     "modify_action": {
-      "title": "Liqwid App - Modify",
-      "description": "Liqwid App - Modify"
+      "title": "Liqwid Finance - Modify",
+      "description": "Liqwid Finance - Modify"
     },
     "liquidate_action": {
-      "title": "Liqwid App - Liquidate",
-      "description": "Liqwid App - Liquidate"
+      "title": "Liqwid Finance - Liquidate",
+      "description": "Liqwid Finance - Liquidate"
     },
     "faucet": {
-      "title": "Liqwid App - Faucet",
+      "title": "Liqwid Finance - Faucet",
       "description": "Acquire test tokens to use in your applications and experiment with DeFi features without any risk."
     },
     "notifications": {
-      "title": "Liqwid App - Notifications",
+      "title": "Liqwid Finance - Notifications",
       "description": "Never miss an important update with Liqwid App's Notifications."
+    },
+    "transfer_from_cex": {
+      "title": "Liqwid Finance - Transfer from CEX",
+      "description": "Transfer your assets from a centralized exchange to your cardano wallet."
+    },
+    "delegate_action": {
+      "title": "Liqwid Finance - Delegate",
+      "description": "Delegate your LQ to another address."
+    },
+    "unlock_action": {
+      "title": "Liqwid Finance - Unlock",
+      "description": "Unlock your stakes."
+    },
+    "modify_stake_action": {
+      "title": "Liqwid Finance - Staking",
+      "description": "Create or Modify your stake."
+    },
+    "vote_action": {
+      "title": "Liqwid Finance - Vote",
+      "description": "Vote on a proposal."
     }
   },
   "nav": {
@@ -237,6 +271,7 @@
     "faq": "FAQ",
     "user_guide": "User Guide",
     "changelog": "Changelog",
+    "status": "Status",
     "forum": "Forum",
     "lq_rewards": "LQ Rewards",
     "discord": "Discord",
@@ -253,7 +288,8 @@
     "your_borrows": "Your Borrows",
     "total_supplies": "Total Supplies",
     "total_borrows": "Total Borrows",
-    "net_apy": "Net APY"
+    "net_apy": "Net APY",
+    "net_apy_with_lq_rewards": "Net APY with LQ Rewards"
   },
   "supply_list": {
     "title": "Your Supplies",
@@ -266,7 +302,7 @@
       "apy": "APY (Annual Percentage Yield) for each asset",
       "locked_collateral": "Locked as collateral refers to the amount of assets used as security when borrowing",
       "no_enough_balance_supply": "You will need to have a minimum of {{minValue}} {{asset}} in your wallet to be able to deposit",
-      "no_enough_balance_withdraw": "You will need to have a minimum of {{minValue}} {{asset}} deposited to be able to withdraw"
+      "no_enough_balance_withdraw": "You will need to have a minimum of {{minValue}} {{asset}} deposited and not locked in order to withdraw"
     }
   },
   "borrow_list": {
@@ -274,7 +310,8 @@
     "empty": "Nothing borrowed yet",
     "empty_search": "No borrows match the search criteria",
     "connect_wallet": "Connect your wallet to see your borrows",
-    "loan_interest": "The interest on your loan is {{interest}} {{id}}",
+    "loan_debt": "The debt is {{amount}} {{id}}",
+    "loan_interest": "The interest accrued is {{interest}} {{id}}",
     "tooltip": {
       "debt": "Total amount borrowed by the user and the amount required to repay the loan.",
       "total_collateral": "Total amount of collateral locked in the current loan",
@@ -334,6 +371,7 @@
     },
     "error": {
       "min_value": "Minimum amount to borrow is {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "You need to have a non-negative collateral value to borrow",
       "max_amount": "You cannot borrow more than your limit of {{maxAmount}} {{id}}",
       "min_value_as_collateral": "Minimum amount as collateral is {{minValue}} {{id}}"
     }
@@ -353,15 +391,15 @@
     },
     "error": {
       "min_value": "Minimum debt to modify your loan is {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "You need to have a non-negative collateral value to modify your loan",
       "min_value_repay": "Minimum amount to repay is {{minValue}} {{id}}",
       "min_value_borrow": "Minimum amount to borrow more is {{minValue}} {{id}}",
       "max_amount": "You cannot borrow more than your limit of {{maxAmount}} {{id}}",
-      "insufficient_balance": "You have an insufficient balance in your wallet to repay the debt of {{amount}} {{id}} on your loan. The available amount in your wallet is {{walletAmount}} {{id}}."
+      "insufficient_balance": "You have an insufficient wallet balance to repay the debt of {{amount}} {{id}} on your loan. The available amount in your wallet is {{walletAmount}} {{id}}."
     }
   },
   "supply_action": {
     "select_asset": "Select an asset to supply",
-    "asset_received": "{{id}} received",
     "guide": {
       "step_1": "Start by selecting an asset to supply from those available in your wallet.<br />Scroll through your assets and click on the desired one for this transaction.",
       "step_2": "Enter the amount you wish to supply.<br />Adjust this amount using the slider by clicking the icon next to the asset logo, or press <span className='bold'>'Max'</span> to use the entire balance.",
@@ -375,7 +413,6 @@
   },
   "withdraw_action": {
     "select_asset": "Select an asset to withdraw",
-    "asset_withdrawn": "{{id}} withdrawn",
     "error": {
       "min_value": "Minimum amount to withdraw is {{minValue}} {{id}}",
       "max_amount": "You cannot withdraw more than your limit of {{maxAmount}} {{id}}",
@@ -384,32 +421,64 @@
   },
   "liquidate_action": {
     "title": "Liquidate {{id}} Loan",
-    "select_asset": "Select a loan to liquidate",
+    "select_loan": "Select a loan to liquidate",
     "liquidate_amount": "Liquidate Amount",
     "liquidation_profit": "Liquidation Profit",
+    "collateral_seized": "Collateral Seized",
     "error": {
-      "min_value": "Minimum value to liquidate is {{minValue}} {{id}}"
+      "min_value": "Minimum value to liquidate is {{minValue}} {{id}}",
+      "max_amount_under_min_value": "You can only liquidate the full amount of the loan because the remaining debt is under the minimum value of {{minValue}} {{id}}",
+      "liquidation_profit_negative": "Your liquidation profit is negative, you will liquidate at a loss"
     }
   },
   "faucet_action": {
     "mint_info": "Click on the left button to mint 1,000 of each token. Click on the right button to mint 10 OptimBond1 tokens, for testing purposes!"
   },
-  "delegate_modal": {
+  "delegate_page": {
+    "title": "Delegate your voting power",
     "success": "You {{delegate}} {{amount}} LQ to {{currentValue}} successfully!",
     "enter_address": "Enter an address to delegate",
+    "give_voting_power": "Give your voting power to another address",
+    "selected_name_suggestion": "You have successfully selected {{name}}",
     "error": {
-      "min_char_pkh": "Please enter a valid public key address, lower than 56characters.",
-      "max_char_pkh": "Please enter a valid public key address, higher than 56characters.",
-      "enter_valid_pkh": "Please enter a valid public key address, not a hex value.",
-      "delegate_yourself": "You cannot delegate to yourself."
+      "number_char_pkh": "Please enter a valid public key address, equal to 56 characters",
+      "enter_valid_pkh": "Please enter a valid public key address, not a hex value",
+      "delegate_yourself": "You cannot delegate to yourself",
+      "delegate_same": "You cannot delegate to the same address",
+      "wrong_address": "Please enter a valid address"
     }
+  },
+  "unlock_page": {
+    "title": "Unlock Stakes - Proposal {{proposalId}}",
+    "select_proposal": "Select a proposal",
+    "choose_stakes_to_unlock": "Choose the stakes you want to unlock",
+    "no_stakes_locked": "You have no stakes currently locked",
+    "unlock_stakes_fees_info": "You can unlock up to 20 stakes, but the more you unlock at once, the higher the fees. We recommend unlocking gradually.",
+    "error": {
+      "need_one_stake": "You need to select at least one stake to unlock",
+      "max_x_stake": "You can only select {{count}} stakes or less in one unlocking transaction",
+      "cant_unlock_draft": "You can't unlock stakes from a draft proposal"
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "Modify Stake",
+    "modify_delegate": "Modify Delegate",
+    "select_stake": "Select a stake",
+    "unstake_all": "Unstake All",
+    "add_more": "Add {{amount}} LQ more to your stake",
+    "reduce_stake": "Reduce your stake by {{amount}} LQ",
+    "creating_stake": "Creating a new stake of {{amount}} LQ",
+    "lq_in_this_stake": "LQ in this stake",
+    "your_adding_stake": "You're adding to your stake",
+    "your_reducing_stake": "You're reducing your stake",
+    "your_creating_stake": "You're creating a new stake",
+    "create_new_stake": "Create a new stake"
   },
   "lq_info": {
     "title": "LQ Info",
     "market_cap": "Market Cap",
     "fully_diluted_valuation": "Fully Diluted Valuation",
     "circulating_supply": "Circulating Supply",
-    "percentage_circulated_lq_staked": "Percentage of circulated LQ being staked",
     "amount_lq_staked": "Amount of LQ staked"
   },
   "stake_modal": {
@@ -420,24 +489,24 @@
       "max_amount": "You cannot stake more than your remaining limit of {{maxAmount}}."
     }
   },
-  "vote_modal": {
+  "vote_page": {
     "success": "You {{cosignOrVoteResult}} {{proposalTitle}}",
     "cosign_vote_for": "{{cosignOrVote}} for \"{{proposalTitle}}\"",
     "choose_proposal_result": "Choose a proposal result",
-    "select_all_stakes": "Select all stakes",
+    "choose_stakes_to_vote": "Choose the stakes you want to vote with",
     "select_one_stake": "Select one stake",
     "stake_amount": "Stake amount",
-    "delegated_by": "Delegated by {{address}}",
+    "submit_vote": "Submit Vote",
+    "total_vote": "Total Vote",
+    "most_voted_result": "Most voted result",
+    "vote_stakes_fees_info": "You can vote with up to 20 stakes, but the more you vote with at once, the higher the fees. We recommend voting gradually.",
     "error": {
       "should_select_proposal": "You should select a Proposal Result",
       "only_one_stake": "You can only cosign with 1 stake",
       "select_atleast_one": "You should select at least one Stake",
-      "max_five_stake": "You can only select 5 stakes or less in one voting transaction"  ,
+      "max_x_stake": "You can only select {{count}} stakes or less in one voting transaction"  ,
       "minimum_vote": "You should select at least 30 LQ total",
-      "select_proposal_result": "Selected Proposal result is not valid.",
-      "no_available_stakes": "No available stakes found.",
-      "no_stakes_selected": "No stakes selected.",
-      "no_valid_stakes_select": "No valid/unused stakes selected"
+      "no_available_stakes": "No available stakes found."
     }
   },
   "wrong_network_modal": {
@@ -508,7 +577,7 @@
     "reserve": "Reserve",
     "treasury": "Treasury",
     "collateral_parameters": "Collateral Parameters to borrow {{id}}",
-    "collateralization_against": "{{id}} is collateralized against these borrowings",
+    "collateralization_against": "{{id}} is enabled as collateral against these debt assets",
     "tooltip": {
       "market_utxo": "The number of unique accounts/pools in a market that users can interact with at a given moment in time. Liquidity in a market is spread across these accounts more or less evenly. If all the accounts are being interacted with simultaneously, new users will need to wait until these interactions complete until they can submit actions"
     }
@@ -517,7 +586,17 @@
     "current_utilization": "Current Utilization: {{utilization}}%",
     "utilization_tooltip": "Utilization: {{utilization}}%",
     "supply_apy_tooltip": "Supply APY: {{supply}}%",
-    "borrow_apy_tooltip": "Borrow APY: {{borrow}}%"
+    "borrow_apy_tooltip": "Borrow APY: {{borrow}}%",
+    "include_ada_staking": "This APY includes the ADA staking rewards for ADA that aren't borrowed"
+  },
+  "apy_graph": {
+    "current_apy": "Current APY"
+  },
+  "liquidity_graph": {
+    "current_liquidity": "Current Liquidity in {{asset}}",
+    "supply": "Supply: {{supply}}",
+    "borrow": "Borrow: {{borrow}}",
+    "liquidity": "Liquidity: {{liquidity}}"
   },
   "governance": {
     "title": "Governance",
@@ -531,11 +610,14 @@
     "lq_staked": "LQ Staked",
     "voting_power": "Voting Power",
     "delegate_vote": "Delegate Vote",
-    "share_delegation_pkh": "Want to share your delegation public key?",
+    "share_delegation_address": "Want to share your delegation address?",
     "here_is_yours": "Here's one of yours:",
     "you_can_vote": "You can vote on each proposal yourself or delegate voting to a third party.",
-    "want_receive_notification_proposal": "Want to receive notifications when a proposal goes live?",
-    "go_to_notification": "<Link>Go to the Notifications page</Link> and enable governance notifications."
+    "want_receive_notification_proposal": "Want to receive notifications when a proposal goes data?",
+    "go_to_notification": "<Link>Go to the Notifications page</Link> and enable governance notifications.",
+    "empty": "No proposals found that match your search criteria",
+    "no_stake_owned": "You don't own any stake",
+    "delegated_voting_power_to": "You have delegated your voting power to"
   },
   "proposal": {
     "title": "Proposal",
@@ -552,11 +634,12 @@
     "your_votes": "Your Votes",
     "no_votes_yet": "No votes yet",
     "vote_breakdown": "Vote breakdown",
-    "proposal_history": "Proposal History",
+    "proposal_timeline": "Proposal Timeline",
     "draft_created": "Draft created",
     "proposal_results": "Proposal Results",
     "cosigned_success": "You cosigned for Proposal {{proposalId}} of ${{proposalTitle}}",
-    "minimum_staked_to_vote": "A minimum of 30LQ is required for voting."
+    "minimum_staked_to_vote": "A minimum of 30LQ is required for voting.",
+    "vote_available_in_voting_phase": "Voting is only available in the voting phase"
   },
   "staking_page": {
     "stake_date": "Stake Date",
@@ -571,9 +654,9 @@
     "staking_rewards": "Staking Rewards",
     "average_apr": "Average APR",
     "rewards_apr": "Rewards APR",
-    "locked_by_proposals": "Locked by Proposals:",
+    "locked_by_proposals": "Locked by Proposals",
     "unstake_anytime": "During staking, you have the freedom to unstake your assets at any given point.",
-    "stake_lq_receive_rewards": "Please stake your LQ to vote and receive rewards",
+    "stake_lq_receive_rewards": "Please <0>stake</0> your LQ to vote and receive rewards",
     "connect_to_stake": "Please connect and stake your LQ to vote and receive rewards",
     "stakes_aquafarmers_not_same_addr": "Your stakes and aquafarmers are not on the same address",
     "not_same_addr_tooltip": "Your stakes and aquafarmers are not on the same address, please switch to a",
@@ -585,7 +668,9 @@
     "rarity": "Rarity",
     "apr_boost": "APR Boost",
     "see_aquafarmers": "If you want to view your aquafarmers and boost your APR in LQ staking, you need to have at least one",
-    "connect_see_aquafarmers": "Please connect to see your aquafarmers and the APY boost in your LQ staking"
+    "connect_see_aquafarmers": "Please connect to see your aquafarmers and the APY boost in your LQ staking",
+    "stake_locked_unlock_before_modify": "Your stake is locked. Please unlock it before attempting to modify it",
+    "no_delegation_found": "If you want to get your delegation address and share it with others"
   },
   "liquidation_page": {
     "liquidated_loans": "Your liquidated loans",
@@ -609,9 +694,12 @@
     "one_month": "1 month",
     "utilization": "Utilization",
     "oracle": "Oracle",
+    "apy": "APY",
+    "liquidity": "Liquidity",
     "1d": "1D",
     "1w": "1W",
     "1m": "1M",
+    "1y": "1Y",
     "max": "Max"
   },
   "settings_page": {
@@ -636,11 +724,12 @@
     "settings_updated": "Settings updated successfully",
     "verification_email_sent": "Verification email sent successfully",
     "sign": "Sign",
-    "save": "Save settings",
-    "delete_data_message": "Are you sure you want to delete all your notifications settings? It will delete all data related to your email.",
+    "save_verify_email": "Send and Verify Email",
+    "save_settings": "Save settings",
+    "delete_data_message": "<div>Are you sure you want to delete all your notifications settings?</div><div>It will delete all data related to your email.</div>",
     "delete_data": "Successfully deleted all your informations",
     "loan_alert": "Loan Alert",
-    "delete_saved_signatures_message": "Are you sure you want to delete all saved signatures? You will need to sign again to have access to your notifications settings.",
+    "delete_saved_signatures_message": "<div>Are you sure you want to delete all saved signatures?</div><div>You will need to sign again to have access to your notifications settings.</div>",
     "error": {
       "enable_email_notifications_first": "Please enable email notifications before verifying your email"
     }
@@ -661,5 +750,8 @@
     "bridge_token": "Bridge Token",
     "others": "Others",
     "show_assets_with_no_balance": "Show assets with no balance"
+  },
+  "transfer_from_cex_page": {
+    "title": "Transfer from CEX"
   }
 }
