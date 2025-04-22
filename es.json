@@ -1,3 +1,705 @@
 {
-  
+  "supply": "Suministrar",
+  "supplies": "Suministros",
+  "withdraw": "Retirar",
+  "borrow": "Pedir prestado",
+  "borrow_more": "Pedir más prestado",
+  "repay": "Reembolsar",
+  "modify": "Modificar",
+  "modify_loan": "Modificar Préstamo",
+  "close_position": "Cerrar Posición",
+  "borrowed": "Prestado",
+  "repaid": "Reembolsado",
+  "mint": "Acuñar",
+  "available": "Disponible",
+  "liquidate": "Liquidar",
+  "oracle_price": "Precio del Oráculo",
+  "max_borrow": "Máximo a Prestar",
+  "max_repay": "Máximo a Reembolsar",
+  "max_liquidate": "Máximo a Liquidar",
+  "interest_paid": "Interés Pagado",
+  "min_interest": "Interés Mínimo",
+  "collateral": "Colateral",
+  "total_collateral": "Colateral Total",
+  "collateral_before": "Colateral Antes",
+  "collateral_after": "Colateral Después",
+  "max_collateral": "Colateral Máximo",
+  "your_collateral": "Tu Colateral",
+  "max": "MÁX",
+  "collateralization": "Colateralización",
+  "asset": "Activo",
+  "assets": "Activos",
+  "your_assets": "Tus Activos",
+  "search_asset": "Buscar Activo",
+  "search_asset_collateral": "Buscar Activo o Colateral",
+  "search_by_date": "Buscar por Fecha",
+  "search_proposal": "Buscar Propuesta",
+  "balance": "Balance",
+  "wallet_balance": "Balance de la Billetera",
+  "price": "Precio",
+  "price_of": "Precio de {{asset}}",
+  "apy": "APY",
+  "apr": "APR",
+  "liquidity": "Liquidez",
+  "debt": "Deuda",
+  "amount": "Cantidad",
+  "locked_collateral": "Bloqueado como colateral",
+  "health_factor": "Factor de Salud",
+  "ltv": "LTV",
+  "liquidation": "Liquidación",
+  "liquidations": "Liquidaciones",
+  "loans": "Préstamos",
+  "error": "Error",
+  "hide": "Ocultar",
+  "more": "Más",
+  "show": "Mostrar",
+  "view": "Ver",
+  "type": "Tipo",
+  "back": "Volver",
+  "submit": "Enviar",
+  "actions": "Acciones",
+  "created": "Creado",
+  "date": "Fecha",
+  "details": "Detalles",
+  "more_details": "Más Detalles",
+  "vote": "Votar",
+  "voting": "Votando",
+  "cosign": "Cofirmar",
+  "cosigned": "Cofirmado",
+  "locked": "Bloqueado",
+  "finished": "Finalizado",
+  "disconnect": "Desconectar",
+  "connect_wallet": "Conectar Billetera",
+  "review": "Revisar",
+  "install": "Instalar",
+  "learn_more": "Más Información",
+  "your_stakes": "Tus Participaciones",
+  "unlock_stakes": "Desbloquear participaciones",
+  "market": "Mercado",
+  "markets": "Mercados",
+  "unlock": "Desbloquear",
+  "add_lq": "Agregar LQ",
+  "stake": "Stakear",
+  "staked": "Stakeado",
+  "unstake": "Deshacer Stake",
+  "forum": "Foro",
+  "delegate": "Delegar",
+  "delegated": "Delegado",
+  "delegatee": "Delegatario",
+  "undelegate": "Quitar Delegación",
+  "replace_delegate": "Reemplazar con un nuevo delegatario",
+  "notifications": "Notificaciones",
+  "notification": "Notificación",
+  "accepted_as_collateral": "Aceptado como colateral",
+  "loading": "Cargando",
+  "loading...": "Cargando...",
+  "next": "Siguiente",
+  "previous": "Anterior",
+  "result": "Resultado",
+  "invalid_data": "Datos Inválidos",
+  "invalid_market": "Mercado Inválido",
+  "none": "Ninguno",
+  "processing": "Procesando",
+  "building_transaction": "Construyendo Transacción",
+  "awaiting_confirmation": "Esperando Confirmación",
+  "user_cancel_transaction": "Has cancelado la transacción.",
+  "exchange_rate": "Tasa de Cambio",
+  "utilization": "Utilización",
+  "current_utilization": "Utilización Actual",
+  "utilization_is": "La utilización es {{utilization}}%",
+  "supply_apy": "APY de Suministro",
+  "borrow_apy": "APY de Préstamo",
+  "total_supply": "Suministro Total",
+  "total_borrow": "Préstamo Total",
+  "total_liquidity": "Liquidez Total",
+  "current_price": "Precio Actual",
+  "circulating_supply": "Suministro Circulante",
+  "supply_cap": "Límite de Suministro",
+  "borrow_cap": "Límite de Préstamo",
+  "minimum_amount": "Cantidad Mínima",
+  "liquidation_threshold": "Umbral de Liquidación",
+  "max_ltv": "LTV Máx",
+  "liquidation_penalty": "Penalización por Liquidación",
+  "liquidation_profitability": "Rentabilidad de Liquidación",
+  "address_copy": "Dirección copiada al portapapeles",
+  "public_key_copy": "Clave Pública copiada al portapapeles",
+  "public_keys_copy": "Claves públicas copiadas al portapapeles",
+  "co_signers_copy": "Cofirmantes copiados al portapapeles",
+  "adamail_copy": "ADAmail copiado al portapapeles",
+  "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Enlace a cálculos de APR</a><br />Esta APR indica el rendimiento estimado de las recompensas por participar en el mercado LQ. Es un cálculo basado en la fórmula de emisiones dinámicas actualizadas (época de 3 días). Las APR mostradas son solo informativas y se basan en estimaciones que pueden cambiar con el tiempo. No constituyen asesoramiento financiero, de inversión, fiscal, legal o técnico. El uso de protocolos DeFi implica diversos riesgos financieros. Nada de lo mostrado en esta app es consejo financiero y es tu responsabilidad realizar tu propia investigación.",
+  "safe_mode": "Modo Seguro",
+  "enabled": "Habilitado",
+  "disabled": "Deshabilitado",
+  "settings": "Configuraciones",
+  "filled": "Completado",
+  "supply_filled": "Suministro Completado",
+  "currently": "Actualmente",
+  "lending_apy": "APY de Préstamo",
+  "accepted_as_collateral_on": "Aceptado como colateral en",
+  "lq_market_participation_apy": "APY de Participación en el Mercado LQ",
+  "select_all_stakes": "Seleccionar todos o los primeros {{count}} stakes",
+  "deselect_all_stakes": "Deseleccionar todos los stakes seleccionados",
+  "the_healthfactor_is": "El Factor de Salud es",
+  "healthfactor_calculation": "HF = valor colateral en $ x umbral de liquidación / valor de la deuda en $",
+  "click_here": "Haz clic aquí",
+  "error_copied_to_clipboard": "Error copiado al portapapeles",
+  "executed": "Ejecutado",
+  "pending": "Pendiente",
+  "active": "Activo",
+  "status": "Estado",
+  "blocked": "Bloqueado",
+  "seo": {
+    "dashboard": {
+      "title": "Liqwid Finance",
+      "description": "Explora el futuro de DeFi en Cardano con la innovadora plataforma de préstamos y créditos de Liqwid Finance."
+    },
+    "market_details": {
+      "title": "Liqwid Finance - Detalles del Mercado {{id}}",
+      "description": "Liqwid Finance - Detalles del Mercado"
+    },
+    "loans": {
+      "title": "Liqwid Finance - Préstamos",
+      "description": "Explora la lista completa de préstamos disponibles en la app de Liqwid."
+    },
+    "liquidations": {
+      "title": "Liqwid Finance - Liquidaciones",
+      "description": "Consulta el historial completo de préstamos liquidados en la app de Liqwid."
+    },
+    "transactions": {
+      "title": "Liqwid Finance - Transacciones",
+      "description": "Revisa todas tus transacciones de Liqwid"
+    },
+    "analytics": {
+      "title": "Liqwid Finance - Analíticas",
+      "description": "Liqwid Finance - Analíticas"
+    },
+    "governance": {
+      "title": "Liqwid Finance - Gobernanza",
+      "description": "Participa en la gobernanza de Liqwid Finance votando en propuestas clave."
+    },
+    "proposal": {
+      "title": "Liqwid Finance - Propuesta",
+      "description": "Liqwid Finance - Propuesta"
+    },
+    "staking": {
+      "title": "Liqwid Finance - Staking",
+      "description": "Gana recompensas y participa en la gobernanza apostando tus activos en la app Liqwid."
+    },
+    "maintenance": {
+      "title": "Liqwid Finance - Mantenimiento",
+      "description": "Liqwid Finance - Mantenimiento"
+    },
+    "faucet": {
+      "title": "Liqwid Finance - Faucet",
+      "description": "Adquiere tokens de prueba para usar en tus aplicaciones y experimentar con DeFi sin riesgo."
+    },
+    "notifications": {
+      "title": "Liqwid Finance - Notificaciones",
+      "description": "No te pierdas actualizaciones importantes con las notificaciones de la app de Liqwid."
+    },
+    "delegate_action": {
+      "title": "Liqwid Finance - Delegar",
+      "description": "Delega tus LQ a otra dirección."
+    },
+    "unlock_action": {
+      "title": "Liqwid Finance - Desbloquear",
+      "description": "Desbloquea tus participaciones."
+    },
+    "modify_stake_action": {
+      "title": "Liqwid Finance - Staking",
+      "description": "Crea o modifica tu stake."
+    },
+    "vote_action": {
+      "title": "Liqwid Finance - Votar",
+      "description": "Vota en una propuesta."
+    }
+  },
+  "nav": {
+    "dashboard": "Tablero",
+    "liqwid": "Liqwid V2",
+    "governance": "Gobernanza",
+    "proposals": "Propuestas",
+    "staking": "Staking",
+    "liquidations": "Liquidaciones",
+    "loans": "Préstamos",
+    "markets": "Mercados",
+    "transaction": "Transacción",
+    "transactions": "Transacciones",
+    "analytics": "Analíticas",
+    "faucet": "Faucet",
+    "notification": "Asegúrate de visitar <a href='https://v2.liqwid.finance'> v2.liqwid.finance</a> - márcalo como favorito para mayor seguridad.",
+    "preview_banner": "Estás visitando la app de testnet V2 Preview",
+    "supply": "Suministrar",
+    "borrow": "Pedir Prestado",
+    "notification_page": "Notificaciones",
+    "more": ""
+  },
+  "footer": {
+    "protocol": "Protocolo",
+    "community": "Comunidad",
+    "docs": "Documentos",
+    "faq": "Preguntas Frecuentes",
+    "user_guide": "Guía del Usuario",
+    "status": "Estado",
+    "forum": "Foro",
+    "lq_rewards": "Recompensas LQ",
+    "discord": "Discord",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "substack": "Substack"
+  },
+  "graph": {
+    "tvl": "Valor Total Bloqueado",
+    "total_staked_lq": "Total de LQ en Stake"
+  },
+  "home_header": {
+    "your_supplies": "Tus Suministros",
+    "your_borrows": "Tus Préstamos",
+    "total_supplies": "Suministros Totales",
+    "total_borrows": "Préstamos Totales",
+    "net_apy": "APY Neto",
+    "net_apy_with_lq_rewards": "APY Neto con Recompensas LQ",
+    "your_position": ""
+  },
+  "supply_list": {
+    "title": "Tus Suministros",
+    "connect_wallet": "Conecta tu billetera para ver tus suministros",
+    "tooltip": {
+      "balance": "El balance es la cantidad total de tokens que has depositado en el protocolo",
+      "apy": "APY (Rendimiento Porcentual Anual) de cada activo",
+      "locked_collateral": "Bloqueado como colateral se refiere a la cantidad de activos usados como garantía al pedir prestado"
+    }
+  },
+  "borrow_list": {
+    "title": "Tus Préstamos",
+    "connect_wallet": "Conecta tu billetera para ver tus préstamos",
+    "loan_debt": "La deuda es {{amount}} {{id}}",
+    "loan_interest": "El interés acumulado es {{interest}} {{id}}",
+    "tooltip": {
+      "debt": "Cantidad total prestada por el usuario y la cantidad necesaria para reembolsar el préstamo.",
+      "apy": "Tasa anual de interés que paga el prestatario por el préstamo",
+      "health_factor": "Cuando el factor de salud llega a 1.00, tu posición puede ser liquidada",
+      "LTV": "LTV es la relación entre el monto del préstamo y el valor del colateral",
+      "health_factor_low": "Tu factor de salud es bajo, si llega a 1.0 podrías ser liquidado"
+    }
+  },
+  "transaction_history": {
+    "title": "Historial de Transacciones",
+    "empty": "No se encontraron transacciones"
+  },
+  "modal": {
+    "close_button": "OK, cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "action": {
+    "select_collateral": "Selecciona o escribe el colateral suministrado",
+    "transaction_overview": "Resumen de la Transacción",
+    "collateral_distribution": "Distribución del Colateral",
+    "liquidation": "Liquidación a <= 1.0",
+    "asset_supplied": "{{id}} suministrado",
+    "batching_fee": "Tarifa de Lote",
+    "eternl_fee": "Tarifa Eternl",
+    "loan_origination_fee": "Tarifa de Origen de Préstamo",
+    "no_collateral_available": "No hay colateral disponible, primero suministra alguno",
+    "success": {
+      "submit_transaction": "Transacción enviada con éxito - <0>hash de tx</0>"
+    },
+    "info": {
+      "max_borrow_cap_reached": "Tu cantidad máxima de préstamo {{maxBorrow}} {{id}} excede el límite permitido debido a la liquidez actual. El máximo actualmente es {{maxBorrowCap}} {{id}}.",
+      "max_supply_cap_reached": "La cantidad máxima que intentas suministrar {{maxSupply}} {{id}} excede el límite de suministro actual. El máximo por transacción es {{supplyCap}} {{id}}. Podrías necesitar múltiples transacciones.",
+      "max_withdraw_cap_reached": "La cantidad máxima que intentas retirar {{maxWithdraw}} {{id}} excede el límite debido al tope de préstamos. El máximo por transacción es {{withdrawCap}} {{id}}. Podrías necesitar múltiples transacciones.",
+      "wash_borrow": "Este es un préstamo wash borrow, solo puedes reembolsarlo parcial o totalmente.",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
+    },
+    "error": {
+      "running_batch": "El mercado está procesando un lote, espera por favor.",
+      "min_ada": "Necesitas al menos {{minAda}} ADA para realizar una acción en la plataforma.",
+      "min_health_factor": "El factor de salud mínimo es {{minHealthFactor}}. Aumenta tu colateral o reduce tu préstamo.",
+      "user_cancel_transaction": "Has cancelado la transacción.",
+      "max_collaterals_reached": "El máximo de colaterales que puedes agregar es {{maxCollaterals}}.",
+      "batching_expired": "",
+      "min_health_factor_safe_mode": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
+  },
+  "borrow_action": {
+    "select_asset": "Selecciona un activo para pedir prestado",
+    "error": {
+      "min_value": "La cantidad mínima para pedir prestado es {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "Necesitas un valor colateral no negativo para pedir prestado",
+      "max_amount": "No puedes pedir prestado más de {{maxAmount}} {{id}}",
+      "min_value_as_collateral": "La cantidad mínima como colateral es {{minValue}} {{id}}"
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
+  },
+  "modify_action": {
+    "title": "Modificar tu préstamo de {{id}}",
+    "select_loan": "Selecciona un préstamo para modificar",
+    "modify_loan_info": "Reduce la cantidad a reembolsar o aumenta la cantidad prestada",
+    "borrow_more": "Pedir {{amount}} {{id}} más",
+    "repay": "Reembolsar {{amount}} {{id}}",
+    "error": {
+      "min_value": "La deuda mínima para modificar tu préstamo es {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "Necesitas un valor colateral no negativo para modificar tu préstamo",
+      "min_value_repay": "La cantidad mínima para reembolsar es {{minValue}} {{id}}",
+      "min_value_borrow": "La cantidad mínima para pedir más prestado es {{minValue}} {{id}}",
+      "max_amount": "No puedes pedir prestado más de {{maxAmount}} {{id}}",
+      "insufficient_balance": "No tienes suficiente balance en tu billetera para reembolsar la deuda de {{amount}} {{id}}. En tu billetera hay {{walletAmount}} {{id}}."
+    },
+    "please_modify_to_save": ""
+  },
+  "supply_action": {
+    "select_asset": "Selecciona un activo para suministrar",
+    "error": {
+      "min_value": "La cantidad mínima para suministrar es {{minValue}} {{id}}",
+      "max_amount": "No puedes suministrar más de {{maxAmount}} {{id}}"
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
+  },
+  "withdraw_action": {
+    "select_asset": "Selecciona un activo para retirar",
+    "error": {
+      "min_value": "La cantidad mínima para retirar es {{minValue}} {{id}}",
+      "max_amount": "No puedes retirar más de {{maxAmount}} {{id}}",
+      "bad_rest": "No puedes dejar un suministro menor a {{minValue}} {{id}}, retira todo o elige una cantidad menor."
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
+  },
+  "liquidate_action": {
+    "title": "Liquidar Préstamo de {{id}}",
+    "select_loan": "Selecciona un préstamo para liquidar",
+    "liquidate_amount": "Cantidad a Liquidar",
+    "liquidation_profit": "Ganancia de Liquidación",
+    "collateral_seized": "Colateral Incautado",
+    "error": {
+      "min_value": "La cantidad mínima para liquidar es {{minValue}} {{id}}",
+      "max_amount_under_min_value": "Solo puedes liquidar el monto total del préstamo debido a que la deuda restante está por debajo del mínimo de {{minValue}} {{id}}",
+      "liquidation_profit_negative": "Tu ganancia por liquidación es negativa, liquidarás con pérdidas.",
+      "max_amount": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    }
+  },
+  "delegate_page": {
+    "title": "Delegar tu poder de voto",
+    "success": "Has {{delegate}} {{amount}} LQ a {{currentValue}} con éxito",
+    "enter_address": "Introduce una dirección para delegar",
+    "give_voting_power": "Otorga tu poder de voto a otra dirección",
+    "selected_name_suggestion": "Has seleccionado correctamente {{name}}",
+    "error": {
+      "delegate_yourself": "No puedes delegar en ti mismo",
+      "wrong_address": "Introduce una dirección válida"
+    }
+  },
+  "unlock_page": {
+    "title": "Desbloquear Participaciones - Propuesta {{proposalId}}",
+    "select_proposal": "Selecciona una propuesta",
+    "choose_stakes_to_unlock": "Elige las participaciones que deseas desbloquear",
+    "no_stakes_locked": "No tienes participaciones bloqueadas",
+    "unlock_stakes_fees_info": "Puedes desbloquear hasta 20 participaciones a la vez, pero cuantas más desbloquees mayor será la tarifa. Se recomienda hacerlo gradualmente.",
+    "error": {
+      "need_one_stake": "Necesitas seleccionar al menos una participación para desbloquear",
+      "max_x_stake": "Solo puedes seleccionar {{count}} o menos participaciones en una transacción de desbloqueo",
+      "cant_unlock_draft": "No puedes desbloquear participaciones de una propuesta en borrador"
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "Modificar Stake",
+    "modify_delegate": "Modificar Delegación",
+    "select_stake": "Selecciona un stake",
+    "unstake_all": "Deshacer Todo el Stake",
+    "add_more": "Agregar {{amount}} LQ más a tu stake",
+    "reduce_stake": "Reducir tu stake en {{amount}} LQ",
+    "creating_stake": "Creando un nuevo stake de {{amount}} LQ",
+    "lq_in_this_stake": "LQ en este stake",
+    "your_adding_stake": "Estás agregando a tu stake",
+    "your_reducing_stake": "Estás reduciendo tu stake",
+    "your_creating_stake": "Estás creando un nuevo stake",
+    "create_new_stake": "Crear Nuevo Stake"
+  },
+  "lq_info": {
+    "title": "Información LQ",
+    "market_cap": "Capitalización de Mercado",
+    "fully_diluted_valuation": "Valoración Totalmente Diluida",
+    "circulating_supply": "Suministro Circulante",
+    "amount_lq_staked": "Cantidad de LQ en Stake"
+  },
+  "vote_page": {
+    "success": "Has {{cosignOrVoteResult}} {{proposalTitle}}",
+    "cosign_vote_for": "{{cosignOrVote}} por \"{{proposalTitle}}\"",
+    "choose_proposal_result": "Elige un resultado de la propuesta",
+    "choose_stakes_to_vote": "Elige las participaciones con las que vas a votar",
+    "submit_vote": "Enviar Voto",
+    "total_vote": "Voto Total",
+    "most_voted_result": "Resultado más votado",
+    "vote_stakes_fees_info": "Puedes votar con hasta 20 participaciones, pero cuantas más uses en una sola vez mayor será la tarifa. Se recomienda votar gradualmente.",
+    "error": {
+      "select_atleast_one": "Debes seleccionar al menos un stake",
+      "max_x_stake": "Solo puedes seleccionar {{count}} stakes o menos en una sola votación",
+      "minimum_vote": "Debes seleccionar al menos un total de 30 LQ"
+    }
+  },
+  "wallet_modal": {
+    "automatic_support": "Soporte automático",
+    "automatic_support_message": "Soporte automático, la billetera podría causar problemas",
+    "your_wallet": "Tu Billetera",
+    "partial_compatability": "",
+    "terms": ""
+  },
+  "settings_modal": {
+    "title": "Configuraciones",
+    "hide_balance": "Ocultar Balance",
+    "language": "Idioma",
+    "currency": "Moneda",
+    "currency_format": "Formato de Moneda",
+    "loan_indicators": "Indicadores de Préstamo",
+    "cardano_explorer_link": "Enlace a Explorador de Cardano",
+    "warning_safe_mode": "Ten en cuenta que deshabilitar el modo seguro aumenta el riesgo de liquidación.",
+    "abbreviated_numbers": ""
+  },
+  "error_modal": {
+    "close_button": "OK, cerrar",
+    "something_wrong": "¡Algo salió mal!",
+    "close_dialog_try_again": "Cierra este diálogo e inténtalo de nuevo.",
+    "problem_persists": "Si el problema persiste, por favor <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contacta soporte</a>.",
+    "click_copy_debug_info": "haz clic <span className='active-error' onClick={copyToClipboard}>aquí</span> para copiar la información de depuración"
+  },
+  "market_page": {
+    "total_supplies": "Suministros Totales",
+    "total_available": "Total Disponible",
+    "total_borrows": "Préstamos Totales",
+    "empty": "Actualmente, no hay mercados disponibles que coincidan con tu búsqueda"
+  },
+  "loans_page": {
+    "empty": "Actualmente, no hay préstamos disponibles que coincidan con tu búsqueda",
+    "tooltip": {
+      "liquidate_info": "Cuando el factor de salud es 1.00 o menor, la liquidación es posible"
+    }
+  },
+  "market_details": {
+    "title": "Detalles de {{id}}",
+    "select_asset": "Selecciona un activo para ver",
+    "market_info": "Información del Mercado",
+    "exchange_rate_price": "Tasa de Cambio Actual de {{id}}",
+    "total_asset_supplies": "Suministro Total de {{id}}",
+    "total_asset_borrows": "Préstamo Total de {{id}}",
+    "total_asset_liquidity": "Liquidez Total de {{id}}",
+    "number_market_utxo": "Número de UTXO del mercado",
+    "bridged_token": "Token Puenteado",
+    "income_split": "División de Ingresos",
+    "supplier": "Proveedor",
+    "staker": "Stakeador",
+    "reserve": "Reserva",
+    "treasury": "Tesorería",
+    "collateral_parameters": "Parámetros de Colateral para pedir prestado {{id}}",
+    "collateralization_against": "{{id}} está habilitado como colateral contra estos activos de deuda",
+    "tooltip": {
+      "market_utxo": "El número de UTXO de mercado representa la cantidad de cuentas/pools únicas con las que los usuarios pueden interactuar en un momento dado. La liquidez del mercado se distribuye entre estas cuentas. Si todas las cuentas se están usando simultáneamente, los nuevos usuarios deben esperar a que finalicen estas interacciones antes de poder enviar acciones."
+    }
+  },
+  "utilization_graph": {
+    "current_utilization": "Utilización Actual: {{utilization}}%",
+    "utilization_tooltip": "Utilización: {{utilization}}%",
+    "supply_apy_tooltip": "APY de Suministro: {{supply}}%",
+    "borrow_apy_tooltip": "APY de Préstamo: {{borrow}}%",
+    "include_ada_staking": "Este APY incluye las recompensas de staking ADA para ADA no prestadas"
+  },
+  "apy_graph": {
+    "current_apy": "APY Actual"
+  },
+  "liquidity_graph": {
+    "current_liquidity": "Liquidez Actual en {{asset}}",
+    "supply": "Suministro: {{supply}}",
+    "borrow": "Préstamo: {{borrow}}",
+    "liquidity": "Liquidez: {{liquidity}}"
+  },
+  "governance": {
+    "title": "Gobernanza",
+    "your_wallet": "Tu Billetera",
+    "recent_proposals": "Propuestas Recientes",
+    "participate_in_governance": "Si quieres participar en la gobernanza, haz stake de tu LQ.",
+    "staked_lq_locked": "Tu LQ en Stake Bloqueado",
+    "staked_lq_balance": "Tu Balance de LQ Stakeado",
+    "lq_balance": "Tu Balance LQ",
+    "stake_lq": "Hacer Stake de LQ",
+    "lq_staked": "LQ Stakeado",
+    "voting_power": "Poder de Voto",
+    "delegate_vote": "Delegar Voto",
+    "share_delegation_address": "¿Quieres compartir tu dirección de delegación?",
+    "here_is_yours": "Aquí tienes una tuya:",
+    "you_can_vote": "Puedes votar en cada propuesta tú mismo o delegar el voto a un tercero.",
+    "want_receive_notification_proposal": "¿Quieres recibir notificaciones cuando haya una nueva propuesta?",
+    "go_to_notification": "<Link>Ve a la página de Notificaciones</Link> y habilita notificaciones de gobernanza.",
+    "empty": "No se encontraron propuestas que coincidan con tu búsqueda",
+    "no_stake_owned": "No posees ningún stake",
+    "delegated_voting_power_to": "Has delegado tu poder de voto a"
+  },
+  "proposal": {
+    "title": "Propuesta",
+    "finished": "Finalizado",
+    "co_sign": "Cofirmar",
+    "co_signers": "Cofirmantes",
+    "your_votes": "Tus Votos",
+    "vote_breakdown": "Desglose de Votos",
+    "proposal_timeline": "Línea de Tiempo de la Propuesta",
+    "draft_created": "Borrador creado",
+    "proposal_results": "Resultados de la Propuesta",
+    "vote_available_in_voting_phase": "La votación solo está disponible en la fase de votación"
+  },
+  "staking_page": {
+    "stake_date": "Fecha de Stake",
+    "your_sub_stakes": "Tus Sub-Stakes",
+    "your_delegated_power": "Tu Poder Delegado",
+    "delegated_by": "Delegado por",
+    "create_stake": "Crear Stake",
+    "total_staking": "Staking Total",
+    "total_balance": "Balance Total",
+    "total_staked": "Total Stakeado",
+    "total_voting_power": "Poder de Voto Total",
+    "staking_rewards": "Recompensas de Staking",
+    "average_apr": "APR Promedio",
+    "rewards_apr": "APR de Recompensas",
+    "locked_by_proposals": "Bloqueado por Propuestas",
+    "stake_lq_receive_rewards": "Por favor <0>haz stake</0> de tu LQ para votar y recibir recompensas",
+    "connect_to_stake": "Conecta tu billetera y haz stake de LQ para votar y recibir recompensas",
+    "max_apr": "APR Máx",
+    "buy_jpeg_store": "Comprar en JPG Store",
+    "rarity": "Rareza",
+    "apr_boost": "Aumento de APR",
+    "see_aquafarmers": "Si quieres ver tus aquafarmers y aumentar tu APR en LQ staking, necesitas tener al menos uno",
+    "connect_see_aquafarmers": "Conéctate para ver tus aquafarmers y el aumento de APR en tu staking LQ",
+    "stake_locked_unlock_before_modify": "Tu stake está bloqueado. Desbloquéalo antes de intentar modificarlo",
+    "no_delegation_found": "Si quieres obtener tu dirección de delegación y compartirla con otros"
+  },
+  "liquidation_page": {
+    "liquidated_loans": "Tus Préstamos Liquidados",
+    "all_liquidated_loans": "Todos los Préstamos Liquidados",
+    "amount": "Cantidad de Liquidación",
+    "ltv_before": "LTV Antes",
+    "ltv_after": "LTV Después",
+    "collateral_liquidated": "Colateral Liquidado",
+    "liquidator": "Liquidador",
+    "no_liquidation": "No has sido liquidado"
+  },
+  "maintenance_page": {
+    "coming_back_soon": "¡Volveremos pronto!",
+    "website_under_maintenance": "La App de Liqwid está en mantenimiento."
+  },
+  "chart": {
+    "utilization_rate": "Tasa de Utilización",
+    "oracle_price": "Precio del Oráculo",
+    "one_day": "1 día",
+    "one_week": "1 semana",
+    "one_month": "1 mes",
+    "utilization": "Utilización",
+    "oracle": "Oráculo",
+    "apy": "APY",
+    "liquidity": "Liquidez",
+    "1d": "1D",
+    "1w": "1S",
+    "1m": "1M",
+    "1y": "1A",
+    "max": "Máx"
+  },
+  "settings_page": {
+    "title": "Configuración de Notificaciones",
+    "clear_signatures": "Borrar firmas guardadas",
+    "no_adamail_nft": "No se encontró ningún NFT de AdaMail en tu billetera",
+    "adamail_link": "Obtén tu AdaMail gratis aquí",
+    "which_notifications": "¿Qué notificaciones deseas recibir?",
+    "unlock_email_by_signing": "Desbloquea las notificaciones por email firmando un mensaje con tu billetera",
+    "no_transaction_fee_required": "No se requiere tarifa de transacción para esta acción",
+    "enable_email_notifications": "Habilitar Notificaciones por Email",
+    "enable_adamail_notifications": "Habilitar Notificaciones ADAmail",
+    "loading": "Cargando...",
+    "email": "Email",
+    "verify_email": "Verificar Email",
+    "your_adamail": "Tu ADAmail",
+    "email_verified": "Email Verificado",
+    "general_communication": "Comunicación General",
+    "loading_settings_data": "Cargando datos de configuración...",
+    "signature_setup": "Tu verificación de firma se ha completado con éxito",
+    "waiting_for_signature": "Esperando firma...",
+    "settings_updated": "Configuraciones actualizadas con éxito",
+    "verification_email_sent": "Email de verificación enviado con éxito",
+    "sign": "Firmar",
+    "save_verify_email": "Enviar y Verificar Email",
+    "save_settings": "Guardar Configuración",
+    "delete_data_message": "<div>¿Estás seguro de que quieres eliminar toda tu configuración de notificaciones?</div><div>Esto eliminará todos los datos relacionados con tu email.</div>",
+    "delete_data": "Datos eliminados con éxito",
+    "loan_alert": "Alerta de Préstamo",
+    "delete_saved_signatures_message": "<div>¿Estás seguro de que quieres eliminar todas las firmas guardadas?</div><div>Necesitarás firmar de nuevo para acceder a tus configuraciones de notificaciones.</div>",
+    "error": {
+      "enable_email_notifications_first": "Habilita las notificaciones por email antes de verificar tu email"
+    }
+  },
+  "verify_email_page": {
+    "title": "Verificar Email",
+    "loading": "Cargando...",
+    "email_verified_success": "Email verificado con éxito",
+    "incorrect_code": "Código incorrecto",
+    "error": "Ha ocurrido un error",
+    "redirection_soon": "Serás redirigido automáticamente en 5 segundos."
+  },
+  "filters": {
+    "title": "Filtros",
+    "asset_types": "Tipos de Activo",
+    "stablecoin": "Stablecoin",
+    "cardano_native_token": "Token Nativo de Cardano",
+    "bridge_token": "Token Puenteado",
+    "others": "Otros",
+    "show_assets_with_no_balance": "Mostrar activos sin balance"
+  },
+  "transfer_from_cex_page": {
+    "title": "Transferir desde CEX"
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "close_loan": "",
+  "interest": "",
+  "collaterals": "",
+  "half": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "save": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "borrow_more_action": "",
+  "repay_action": "",
+  "faucet_action": "",
+  "notification_message": ""
 }

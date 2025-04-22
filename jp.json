@@ -11,7 +11,6 @@
   "borrowed": "借入済",
   "repaid": "返済済",
   "mint": "ミント",
-  "mint_optim": "OptimBond1のミント",
   "available": "利用可能",
   "liquidate": "清算",
   "oracle_price": "オラクル価格",
@@ -41,7 +40,6 @@
   "price_of": " {{asset}} の価格",
   "apy": "APY",
   "apr": "APR",
-  "apy_ada_tooltip": "ネットサプライヤーAPY（利息+ADAステーキング報酬）は{{apy}}です。<br />Liqwidで供給されたADAの利息は{{supplyApy}}%です。<br />ADAマーケット利用率は{{utilization}}%です。<br />ADAステーキング報酬は{{adaStakingApy}}%です（直近1エポックの平均に基づく計算）。<br />これを計算するために使用される式は次のとおりです：ネットADAサプライヤーAPY =（総預け入れADA x サプライヤーAPY）+（総預け入れADA（1-利用率）x ステーキングAPY)",
   "liquidity": "流動性",
   "debt": "負債",
   "amount": "金額",
@@ -141,10 +139,6 @@
       "title": "Liqwidアプリ - ダッシュボード",
       "description": "Liqwid Financeの革新的な貸借プラットフォームでCardanoのDeFiの未来を探ろう。"
     },
-    "market": {
-      "title": "Liqwidアプリ - マーケット",
-      "description": "Liqwid Financeプロトコル内のすべてのマーケットのリアルタイムマーケットデータにアクセス。"
-    },
     "market_details": {
       "title": "Liqwidアプリ - {{id}} マーケット詳細",
       "description": "Liqwidアプリ - マーケット詳細"
@@ -181,26 +175,6 @@
       "title": "Liqwidアプリ - メンテナンス",
       "description": "Liqwidアプリ - メンテナンス"
     },
-    "supply_action": {
-      "title": "Liqwidアプリ - 供給",
-      "description": "Liqwidアプリ - 供給"
-    },
-    "withdraw_action": {
-      "title": "Liqwidアプリ - 引出",
-      "description": "Liqwidアプリ - 引出"
-    },
-    "borrow_action": {
-      "title": "Liqwidアプリ - 借入",
-      "description": "Liqwidアプリ - 借入"
-    },
-    "modify_action": {
-      "title": "Liqwidアプリ - 変更",
-      "description": "Liqwidアプリ - 変更"
-    },
-    "liquidate_action": {
-      "title": "Liqwidアプリ - 清算",
-      "description": "Liqwidアプリ - 清算"
-    },
     "faucet": {
       "title": "Liqwidアプリ - ファウセット",
       "description": "アプリケーションで使用するテストトークンを取得し、ノーリスクでDeFi機能を試せます。"
@@ -208,7 +182,11 @@
     "notifications": {
       "title": "Liqwidアプリ - 通知",
       "description": "Liqwidアプリの通知で重要な更新情報を見逃さないようにしよう。"
-    }
+    },
+    "delegate_action": "",
+    "unlock_action": "",
+    "modify_stake_action": "",
+    "vote_action": ""
   },
   "nav": {
     "dashboard": "ダッシュボード",
@@ -223,12 +201,12 @@
     "transactions": "トランザクション",
     "analytics": "分析",
     "faucet": "ファウセット",
-    "switch_to": "{{mode}} モードに切り替える",
     "notification": "<a href='https://v2.liqwid.finance'>v2.liqwid.finance</a> にアクセスしていることを確認し、安全のためブックマークしてください。",
     "preview_banner": "現在、プレビューテストネットV2アプリを利用しています",
     "supply": "供給",
     "borrow": "借入",
-    "notification_page": "通知"
+    "notification_page": "通知",
+    "more": ""
   },
   "footer": {
     "protocol": "プロトコル",
@@ -236,13 +214,13 @@
     "docs": "ドキュメント",
     "faq": "FAQ",
     "user_guide": "ユーザーガイド",
-    "changelog": "変更履歴",
     "forum": "フォーラム",
     "lq_rewards": "LQ報酬",
     "discord": "Discord",
     "twitter": "Twitter",
     "github": "GitHub",
-    "substack": "Substack"
+    "substack": "Substack",
+    "status": ""
   },
   "graph": {
     "tvl": "ロックされた総価値額",
@@ -253,36 +231,31 @@
     "your_borrows": "あなたの借入",
     "total_supplies": "総供給",
     "total_borrows": "総借入",
-    "net_apy": "純APY"
+    "net_apy": "純APY",
+    "net_apy_with_lq_rewards": "",
+    "your_position": ""
   },
   "supply_list": {
     "title": "あなたの供給",
-    "empty": "まだ供給されていません",
-    "empty_search": "検索条件に一致する供給がありません",
     "connect_wallet": "供給を見るにはウォレットを接続してください",
     "tooltip": {
       "balance": "バランスはプロトコルにデポジットしたトークンの総量です",
-      "wallet_balance": "ウォレットバランスはウォレットにあるトークンの総量です",
       "apy": "各資産のAPY（年利）",
-      "locked_collateral": "抵当としてロックされているのは、借入時の保証として使用される資産の金額です",
-      "no_enough_balance_supply": "デポジットするにはウォレットに最低{{minValue}} {{asset}}が必要です",
-      "no_enough_balance_withdraw": "引き出すには最低{{minValue}} {{asset}}のデポジットが必要です"
+      "locked_collateral": "抵当としてロックされているのは、借入時の保証として使用される資産の金額です"
     }
   },
   "borrow_list": {
     "title": "あなたの借入",
-    "empty": "まだ借入されていません",
-    "empty_search": "検索条件に一致する貸出が見つかりません",
     "connect_wallet": "貸出を確認するにはウォレットを接続してください",
     "loan_interest": "あなたのローンの利息は{{interest}} {{id}}です",
     "tooltip": {
       "debt": "ユーザーが借りた合計金額とローンを返済するために必要な金額。",
-      "total_collateral": "現在のローンでロックされている担保の合計額",
       "apy": "借り手がローンのために支払う年間利率",
       "health_factor": "ヘルスファクターが1.00に達すると、あなたのポジションは清算される可能性があります",
       "LTV": "LTVとは、担保価値に対するローン額の比率です。",
       "health_factor_low": "現在、ヘルスファクターが低いです。1.0に達すると、清算される可能性があります"
-    }
+    },
+    "loan_debt": ""
   },
   "transaction_history": {
     "title": "トランザクション履歴",
@@ -302,41 +275,48 @@
     "batching_fee": "バッチング手数料",
     "eternl_fee": "Eternl手数料",
     "loan_origination_fee": "ローン組成手数料",
-    "asset_value_available": "{{id}} {{value}} 利用可能",
-    "asset_borrowed_against": "{{id}} に対して借りることができます",
     "no_collateral_available": "利用可能な担保がありません。まず担保を提供してください",
     "success": {
       "submit_transaction": "トランザクションは正常に送信されました - <0>tx hash</0>"
     },
     "info": {
-      "max_borrow_cap_reached": "あなたの最大借入額{{maxBorrow}} {{id}}は、現在の流動性により許可されている限度を超えています。現在の最大借入額は{{maxBorrowCap}} {{id}}です。",
+      "max_borrow_cap_reached": "あなたの最大借入額が借入制限に達しました。",
       "max_supply_cap_reached": "あなたの最大供給額 {{maxSupply}} {{id}} は、現在の供給上限により許可されている限度を超えています。1回のトランザクションで供給できる最大量は {{supplyCap}} {{id}} です。全額供給するためには複数のトランザクションが必要な場合があります。",
       "max_withdraw_cap_reached": "あなたの最大引出額 {{maxWithdraw}} {{id}} は、現在の借入上限により許可されている限度を超えています。1回のトランザクションで引き出せる最大量は{{withdrawCap}} {{id}} です。全額引き出すためには複数のトランザクションが必要な場合があります。",
-      "wash_borrow": "これはウォッシュ借入ローンであり、ローンを部分的にまたは完全に返済するオプションのみがあります。"
+      "wash_borrow": "これはウォッシュ借入ローンであり、ローンを部分的にまたは完全に返済するオプションのみがあります。",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
     },
     "error": {
       "running_batch": "市場はバッチング中です、お待ちください。",
       "min_ada": "プラットフォームで操作を行うには、少なくとも{{minAda}} ADAが必要です。",
-      "min_health_factor": "最低ヘルスファクターは{{minHealthFactor}}です。担保を増やすか、借入を減らしてください。",
-      "min_health_factor_safe_mode": "最低ヘルスファクターは{{minHealthFactor}}です。担保を増やすか、借入を減らすか、設定でセーフモードを無効にしてください。セーフモードを無効にすると、清算リスクが高くなることに注意してください。",
+      "min_health_factor": "最低ヘルスファクターは{{minHealthFactor}}です。",
       "user_cancel_transaction": "あなたはトランザクションをキャンセルしました。",
-      "max_collaterals_reached": "追加できる最大担保は{{maxCollaterals}}です。"
-    }
+      "max_collaterals_reached": "追加できる最大担保は{{maxCollaterals}}です。",
+      "batching_expired": "",
+      "min_health_factor_safe_mode": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
   },
   "borrow_action": {
     "select_asset": "借りる資産を選択してください",
-    "guide": {
-      "step_1": "まず借りる資産を選択してください。<br \\/>すべての資産をスクロールして、このトランザクションで借りたい資産を選択してください。",
-      "step_2": "担保として使用したい資産を選択し、それぞれの金額を指定してください。<br \\/>資産ロゴの横にあるアイコンをクリックして、スライダーでこの金額を調整するか、<span className='bold'>'最大'<\\/span>を押して全供給残高を使用してください。",
-      "step_3": "借りたい金額を入力してください。",
-      "step_4": "<span className='bold'>注意深く</span> トランザクションの詳細を確認してください。すべての情報が正確であることを確認してから進んでください。",
-      "step_5": "これは、プラットフォームから借り入れる資産の要約です。"
-    },
     "error": {
       "min_value": "借り入れるための最小金額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて借り入れることはできません",
-      "min_value_as_collateral": "担保としての最小金額は {{minValue}} {{id}} です"
-    }
+      "min_value_as_collateral": "担保としての最小金額は {{minValue}} {{id}} です",
+      "min_value_non_negative_collateral": ""
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
   },
   "modify_action": {
     "title": "{{id}} ローンを変更する",
@@ -344,33 +324,24 @@
     "modify_loan_info": "返済する額を減らすか、借り入れる額を増やす",
     "borrow_more": "さらに {{amount}} {{id}} を借りる",
     "repay": "{{amount}} {{id}} を返済する",
-    "guide": {
-      "step_1": "変更したいローンを選択することから始めます。<br />ローンのリストをスクロールして、このトランザクション用に調整したいものをクリックしてください。",
-      "step_2": "担保として追加または削除したい資産を選択し、希望額を入力します。<br />資産のロゴの横にあるアイコンをクリックしてスライダーでこの額を調整するか、<span className='bold'>'Max'</span> を押して提供された残高全体を使用します。",
-      "step_3": "返済または借り入れする新しい額を入力フィールドに指定します。借金を減らすには低い額を入力し、ローンを増やすには高い額を入力します。",
-      "step_4": "<span className='bold'>注意深く</span> トランザクションの詳細を確認してください。すべての情報が正確であることを確認してから進んでください。",
-      "step_5": "これは、プラットフォームから変更する資産の要約です。"
-    },
     "error": {
       "min_value": "ローンを変更するための最小債務は {{minValue}} {{id}} です",
       "min_value_repay": "返済するための最小額は {{minValue}} {{id}} です",
       "min_value_borrow": "追加借り入れのための最小額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて借り入れることはできません",
-      "insufficient_balance": "あなたのローンに対する {{amount}} {{id}} の債務を返済するための残高がウォレットに不足しています。ウォレット内の利用可能な金額は {{walletAmount}} {{id}} です。"
-    }
+      "insufficient_balance": "あなたのローンに対する {{amount}} {{id}} の債務を返済するための残高がウォレットに不足しています。ウォレット内の利用可能な金額は {{walletAmount}} {{id}} です。",
+      "min_value_non_negative_collateral": ""
+    },
+    "please_modify_to_save": ""
   },
   "supply_action": {
     "select_asset": "供給する資産を選択",
-    "guide": {
-      "step_1": "ウォレット内の利用可能な資産から供給する資産を選択することから始めます。<br />資産をスクロールして、このトランザクション用に希望する資産をクリックしてください。",
-      "step_2": "供給する額を入力します。<br />資産のロゴの横にあるアイコンをクリックしてスライダーでこの額を調整するか、<span className='bold'>'Max'</span> を押して残高全体を使用します。",
-      "step_3": "<span className='bold'>注意深く</span> トランザクションの詳細を確認してください。すべての情報が正確であることを確認してから進んでください。",
-      "step_4": "これは、プラットフォームの資産の要約です。"
-    },
     "error": {
       "min_value": "供給するための最小金額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて供給することはできません"
-    }
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
   },
   "withdraw_action": {
     "select_asset": "引き出する資産を選択",
@@ -378,7 +349,9 @@
       "min_value": "引き出しの最小金額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて引き出すことはできません",
       "bad_rest": "{{minValue}} {{id}} 未満の供給を残すことはできません。代わりに全額を引き出すか、低い額を入力してください。"
-    }
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
   },
   "liquidate_action": {
     "title": "{{id}} ローンを清算する",
@@ -386,21 +359,14 @@
     "liquidate_amount": "清算額",
     "liquidation_profit": "清算利益",
     "error": {
-      "min_value": "清算するための最小値は{{minValue}} {{id}}です"
-    }
-  },
-  "faucet_action": {
-    "mint_info": "左のボタンをクリックすると、それぞれのトークンを1,000ミントできます。右のボタンをクリックすると、テスト目的で10のOptimBond1トークンをミントできます！"
-  },
-  "delegate_modal": {
-    "success": "あなたは{{amount}}LQを{{currentValue}}に{{delegate}}しました！",
-    "enter_address": "委任するアドレスを入力してください",
-    "error": {
-      "min_char_pkh": "有効な公開鍵アドレスを入力してください。56文字未満で入力してください。",
-      "max_char_pkh": "有効な公開鍵アドレスを入力してください。56文字以上で入力してください。",
-      "enter_valid_pkh": "有効な公開鍵アドレスを入力してください。16進値ではありません。",
-      "delegate_yourself": "自分自身に委任することはできません。"
-    }
+      "min_value": "清算するための最小値は{{minValue}} {{id}}です",
+      "max_amount": "",
+      "max_amount_under_min_value": "",
+      "liquidation_profit_negative": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    },
+    "collateral_seized": ""
   },
   "lq_info": {
     "title": "LQ情報",
@@ -409,54 +375,12 @@
     "circulating_supply": "循環供給量",
     "amount_lq_staked": "ステーキングされているLQの量"
   },
-  "stake_modal": {
-    "success": "あなたは{{currentValue}}LQを{{stake}}しました",
-    "participate_governance_stake": "ガバナンスに参加したい場合は、LQをステーキングしてください。",
-    "non_zero_amount": "ステークするためにゼロ以外の金額を入力してください",
-    "error": {
-      "max_amount": "残りの上限{{maxAmount}}より多くのステークはできません。"
-    }
-  },
-  "vote_modal": {
-    "success": "あなたは{{proposalTitle}}に{{cosignOrVoteResult}}しました",
-    "cosign_vote_for": "「{{proposalTitle}}」に{{cosignOrVote}}",
-    "choose_proposal_result": "提案結果を選択してください",
-    "select_all_stakes": "すべてのステークを選択",
-    "select_one_stake": "1つのステークを選択",
-    "stake_amount": "ステーク額",
-    "delegated_by": "{{address}}によって委任された",
-    "error": {
-      "should_select_proposal": "提案結果を選択する必要があります",
-      "only_one_stake": "1つのステークでのみ共同署名できます",
-      "select_atleast_one": "少なくとも1つのステークを選択する必要があります",
-      "minimum_vote": "少なくとも30LQを選択する必要があります",
-      "select_proposal_result": "選択された提案結果は有効ではありません。",
-      "no_available_stakes": "利用可能なステークが見つかりません。",
-      "no_stakes_selected": "ステークが選択されていません。",
-      "no_valid_stakes_select": "有効な使われていないステークが選択されていません"
-    }
-  },
-  "wrong_network_modal": {
-    "title": "ウォレットネットワークエラー！",
-    "change_network": "ウォレットネットワークを<span className='active'>{{network}}<\\span>に変更してください。"
-  },
   "wallet_modal": {
-    "connect_to": "{{walletName}}に接続",
-    "start_using_liqwid": "liqwidの利用を開始するには",
-    "failed_to_connect": "{{walletName}}への接続に失敗しました",
-    "terms_accept": "接続することで、Liqwidの",
-    "terms_of_service": "利用規約",
     "automatic_support": "自動サポート",
     "automatic_support_message": "自動サポート、ウォレットが問題を引き起こす可能性があります",
-    "wait_access": "ウォレットアクセスを待っています...",
-    "wait_wallet_switch": "ウォレットの切り替え中はお待ちください。新しいウォレットによって承認リクエストが表示される場合があります。",
     "your_wallet": "あなたのウォレット",
-    "switch_wallet": "ウォレットを切り替える",
-    "copy_wallet_address": "ウォレットアドレスをコピー",
-    "copy_x_pkh": "{{pkhLength}}の鍵をコピー",
-    "non_endorsed_wallet": "未承認のインストール済みウォレット",
-    "using_non_endorsed_wallet": "このカテゴリに該当するウォレットを使用すると、アプリの使用中に重大な問題が発生する可能性があります。これらのウォレットはテストしていないため、アプリとの併用を推奨しません。",
-    "warning": "自己判断で使用するウォレットを選択してください。ウォレットの非互換性やウォレットの更新から生じるエラーに関して、一切の責任を負いません。"
+    "partial_compatability": "",
+    "terms": ""
   },
   "settings_modal": {
     "title": "設定",
@@ -464,10 +388,10 @@
     "language": "言語",
     "currency": "通貨",
     "currency_format": "通貨フォーマット",
-    "number_format": "数値フォーマット",
     "loan_indicators": "ローン指標",
     "cardano_explorer_link": "Cardanoエクスプローラリンク",
-    "warning_safe_mode": "セーフモードを無効にすると、清算のリスクが高まることに注意してください。"
+    "warning_safe_mode": "セーフモードを無効にすると、清算のリスクが高まることに注意してください。",
+    "abbreviated_numbers": ""
   },
   "error_modal": {
     "close_button": "OK、閉じる",
@@ -513,7 +437,8 @@
     "current_utilization": "現在の利用率：{{utilization}}%",
     "utilization_tooltip": "利用: {{utilization}}%",
     "supply_apy_tooltip": "供給APY: {{supply}}%",
-    "borrow_apy_tooltip": "借入APY: {{borrow}}%"
+    "borrow_apy_tooltip": "借入APY: {{borrow}}%",
+    "include_ada_staking": ""
   },
   "governance": {
     "title": "ガバナンス",
@@ -531,27 +456,22 @@
     "here_is_yours": "こちらはあなたのものの一つです：",
     "you_can_vote": "各提案に自分で投票するか、第三者に投票を委任することができます。",
     "want_receive_notification_proposal": "提案がライブになったときに通知を受け取りたいですか？",
-    "go_to_notification": "<Link>通知ページに移動</Link>して、ガバナンス通知を有効にしてください。"
+    "go_to_notification": "<Link>通知ページに移動</Link>して、ガバナンス通知を有効にしてください。",
+    "empty": "",
+    "no_stake_owned": "",
+    "delegated_voting_power_to": ""
   },
   "proposal": {
     "title": "提案",
-    "draft_end": "下書き終了まで",
-    "voting_starts": "投票開始まで",
-    "voting_ends": "投票終了まで",
-    "locking_ends": "ロック終了まで",
-    "executing_ends": "実行終了まで",
     "finished": "終了",
-    "co_signing": "共同署名",
     "co_sign": "共同署名する",
     "co_signers": "共同署名者",
-    "co_sign_message": "この提案に共同署名して、レビューと投票に移すことができます。",
     "your_votes": "あなたの投票",
-    "no_votes_yet": "まだ投票がありません",
     "vote_breakdown": "投票の内訳",
     "draft_created": "下書きを作成しました",
     "proposal_results": "提案の結果",
-    "cosigned_success": "あなたは提案{{proposalId}}の{{proposalTitle}}に共同署名しました",
-    "minimum_staked_to_vote": "投票には最低30LQが必要です。"
+    "proposal_timeline": "",
+    "vote_available_in_voting_phase": ""
   },
   "staking_page": {
     "stake_date": "ステーク日付",
@@ -567,20 +487,16 @@
     "average_apr": "平均APR",
     "rewards_apr": "報酬 APR",
     "locked_by_proposals": "提案によってロックされました",
-    "unstake_anytime": "ステーキング中に、いつでも資産をアンステークする自由があります。",
     "stake_lq_receive_rewards": "投票と報酬を受け取るために、<0>LQをステーク</0>してください",
     "connect_to_stake": "投票と報酬を受け取るために、LQを接続してステークしてください",
-    "stakes_aquafarmers_not_same_addr": "あなたのステークとアクアファーマーズは同じアドレスにありません",
-    "not_same_addr_tooltip": "あなたのステークとアクアファーマーズは同じアドレスにありません、に切り替えてください",
-    "single_wallet_addr": "単一のウォレットアドレス",
-    "otherwise_no_boost": "さもなければ、APRブーストを受けることができません。",
-    "stakes_aquafarmers_same_addr": "あなたのステークとアクアファーマーズは同じアドレスにあります",
     "max_apr": "最大APR",
     "buy_jpeg_store": "JPGストアから購入",
     "rarity": "希少性",
     "apr_boost": "APRブースト",
     "see_aquafarmers": "アクアファーマーズを見てLQステーキングでのAPRをブーストするには、少なくとも一つ必要です",
-    "connect_see_aquafarmers": "アクアファーマーズとLQステーキングのAPYブーストを表示するために接続してください"
+    "connect_see_aquafarmers": "アクアファーマーズとLQステーキングのAPYブーストを表示するために接続してください",
+    "stake_locked_unlock_before_modify": "",
+    "no_delegation_found": ""
   },
   "liquidation_page": {
     "liquidated_loans": "あなたの清算されたローン",
@@ -608,7 +524,9 @@
     "1w": "1週間",
     "1m": "1ヶ月",
     "1y": "1年",
-    "max": "最大"
+    "max": "最大",
+    "apy": "",
+    "liquidity": ""
   },
   "settings_page": {
     "title": "通知設定",
@@ -632,14 +550,15 @@
     "settings_updated": "設定が正常に更新されました",
     "verification_email_sent": "確認メールが正常に送信されました",
     "sign": "署名",
-    "save": "設定を保存",
     "delete_data_message": "すべての通知設定を削除してもよろしいですか？ これにより、メールに関連するすべてのデータが削除されます。",
     "delete_data": "すべての情報を正常に削除しました",
     "loan_alert": "融資のアラート",
     "delete_saved_signatures_message": "保存された署名をすべて削除してもよろしいですか？ これにより、通知設定にアクセスするために再度署名が必要になります。",
     "error": {
       "enable_email_notifications_first": "メールを確認する前に、メール通知を有効にしてください"
-    }
+    },
+    "save_verify_email": "",
+    "save_settings": ""
   },
   "verify_email_page": {
     "title": "メールを確認",
@@ -657,5 +576,61 @@
     "bridge_token": "ブリッジトークン",
     "others": "その他",
     "show_assets_with_no_balance": "残高なしのアセットを表示"
-  }
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "close_loan": "",
+  "interest": "",
+  "collaterals": "",
+  "half": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "delegatee": "",
+  "replace_delegate": "",
+  "save": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "supply_filled": "",
+  "select_all_stakes": "",
+  "deselect_all_stakes": "",
+  "the_healthfactor_is": "",
+  "healthfactor_calculation": "",
+  "click_here": "",
+  "error_copied_to_clipboard": "",
+  "executed": "",
+  "pending": "",
+  "active": "",
+  "status": "",
+  "blocked": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "borrow_more_action": "",
+  "repay_action": "",
+  "faucet_action": "",
+  "delegate_page": "",
+  "unlock_page": "",
+  "modify_stake_page": "",
+  "vote_page": "",
+  "apy_graph": "",
+  "liquidity_graph": "",
+  "transfer_from_cex_page": "",
+  "notification_message": ""
 }

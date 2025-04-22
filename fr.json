@@ -8,10 +8,10 @@
   "modify": "Modifier",
   "modify_loan": "Modifier le prêt",
   "close_position": "Fermer la position",
+  "close_loan": "Fermer le prêt",
   "borrowed": "Emprunté",
   "repaid": "Remboursé",
   "mint": "Émettre",
-  "mint_optim": "Émettre OptimBond1",
   "available": "Disponible",
   "liquidate": "Liquider",
   "oracle_price": "Prix de l'Oracle",
@@ -26,7 +26,8 @@
   "collateral_after": "Collatéral après",
   "max_collateral": "Max collatéral",
   "your_collateral": "Votre collatéral",
-  "max": "MAX",
+  "half": "Moitié",
+  "max": "Max",
   "collateralization": "Collatéralisation",
   "asset": "Actif",
   "assets": "Actifs",
@@ -41,7 +42,6 @@
   "price_of": "Prix d'un {{asset}}",
   "apy": "APY",
   "apr": "APR",
-  "apy_ada_tooltip": "The Net supplier APY (interest + ADA staking rewards) is {{apy}}.<br />The interest earned on supplied ADA in Liqwid is {{supplyApy}}%.<br />ADA market utilization is {{utilization}}%.<br />The ADA staking reward is {{adaStakingApy}}% (calculated based on the average of the last 1 epochs).<br />The formula used to calculate this is: Net ADA Supplier APY = (Total deposited ADA x Supplier APY) + (Total deposited ADA (1-Utilization Rate) x Staking APY)",
   "liquidity": "Liquidité",
   "debt": "Emprunt",
   "amount": "Montant",
@@ -95,6 +95,7 @@
   "loading...": "Chargement...",
   "next": "Prochain",
   "previous": "Précédent",
+  "save": "Sauvegarder",
   "result": "Résultat",
   "invalid_data": "Données invalides",
   "invalid_market": "Marché invalide",
@@ -139,17 +140,18 @@
     "staking": "Staking",
     "liquidations": "Liquidations",
     "loans": "Emprunts",
-    "market": "Marché",
     "transaction": "Transaction",
     "transactions": "Transactions",
     "analytics": "Analytique",
     "faucet": "Faucet",
-    "switch_to": "Passer en {{mode}} Mode",
     "notification": "Veuillez-vous assurer que vous visitez <a href='https://v2.liqwid.finance'>v2.liqwid.finance</a> - mettez la page en favoris pour être sûr.",
     "preview_banner": "Vous visitez l'application de testnet Preview V2",
     "supply": "Approvisionner",
     "borrow": "Emprunter",
-    "notification_page": "Notifications"
+    "notification_page": "Notifications",
+    "liqwid": "",
+    "markets": "",
+    "more": ""
   },
   "footer": {
     "protocol": "Protocole",
@@ -157,13 +159,13 @@
     "docs": "Documentation",
     "faq": "FAQ",
     "user_guide": "Guide de l'utilisateur",
-    "changelog": "Journal des modifications",
     "forum": "Forum",
     "lq_rewards": "Récompenses des LQ",
     "discord": "Discord",
     "twitter": "Twitter",
     "github": "GitHub",
-    "substack": "Substack"
+    "substack": "Substack",
+    "status": ""
   },
   "graph": {
     "tvl": "Valeur totale bloquée",
@@ -174,33 +176,31 @@
     "your_borrows": "Vos emprunts",
     "total_supplies": "Total des dépôts",
     "total_borrows": "Total des emprunts",
-    "net_apy": "APY net"
+    "net_apy": "APY net",
+    "net_apy_with_lq_rewards": "",
+    "your_position": ""
   },
   "supply_list": {
     "title": "Vos dépôts",
-    "empty": "Rien n'a été encore déposé",
     "connect_wallet": "Connectez votre portefeuille pour voir vos dépôts",
     "tooltip": {
       "balance": "Le solde fait référence au montant total de jetons que vous avez dans votre portefeuille.",
-      "wallet_balance": "Le solde du portefeuille est le montant total de tokens que vous avez dans votre portefeuille",
       "apy": "APY (Rendement en Pourcentage Annuel) pour chaque actif.",
       "locked_collateral": "Actifs acceptés comme garantie pour un emprunt."
     }
   },
   "borrow_list": {
     "title": "Vos emprunts",
-    "empty": "Rien d'emprunté pour l'instant",
-    "empty_search": "Aucun emprunt ne correspond aux critères de recherche",
     "connect_wallet": "Connectez votre portefeuille pour voir vos emprunts",
     "loan_interest": "Les intérêts sur votre prêt sont de {{interest}} {{id}}",
     "tooltip": {
       "debt": "Montant total emprunté par l'utilisateur et montant nécessaire au remboursement du prêt.",
-      "total_collateral": "Montant total des collatéraux bloqués dans le prêt actuel",
-      "apr": "Taux d'intérêt annuel payé par l'emprunteur pour le prêt.",
-      "health_factor": "Lorsque le facteur santé atteint 1,00, votre position peut être liquidée.",
+      "health_factor": "Lorsque le facteur santé atteint 1.00, votre position peut être liquidée.",
       "LTV": "LTV est le ratio du montant du prêt à la valeur du collatéral",
-      "health_factor_low": "Votre facteur de santé est actuellement faible, s'il atteint 1,0, vous pourriez être liquidé"
-    }
+      "health_factor_low": "Votre facteur de santé est actuellement faible, s'il atteint 1,0, vous pourriez être liquidé",
+      "apy": ""
+    },
+    "loan_debt": ""
   },
   "transaction_history": {
     "title": "Historique des transactions",
@@ -220,41 +220,48 @@
     "batching_fee": "Frais de batching",
     "eternl_fee": "Frais Eternl",
     "loan_origination_fee": "Frais d'origine du prêt",
-    "asset_value_available": "{{id}} {{value}} disponible",
-    "asset_borrowed_against": "{{id}} peut être emprunté contre",
     "no_collateral_available": "Aucun collatéral disponible, veuillez en ajouter d'abord",
     "success": {
       "submit_transaction": "Transaction soumise avec succès - <0>tx hash</0>"
     },
     "info": {
-      "max_borrow_cap_reached": "Votre montant maximum d'emprunt de {{maxBorrow}} {{id}} dépasse la limite autorisée en raison de la liquidité actuelle. Le montant maximum d'emprunt en ce moment est de {{maxBorrowCap}} {{id}}.",
+      "max_borrow_cap_reached": "Votre montant d'emprunt maximum a atteint la limite autorisée.",
       "max_supply_cap_reached": "Votre montant maximum de dépôt de {{maxSupply}} {{id}} dépasse la limite autorisée en raison du plafond de dépôt actuel. Le maximum que vous pouvez déposer en une seule transaction est de {{supplyCap}} {{id}}. Plusieurs transactions peuvent être nécessaires pour le montant total.",
       "max_withdraw_cap_reached": "Votre montant maximum de retrait de {{maxWithdraw}} {{id}} dépasse la limite autorisée en raison du plafond d'emprunt actuel. Le maximum que vous pouvez retirer en une seule transaction est de {{withdrawCap}} {{id}}. Plusieurs transactions peuvent être nécessaires pour le montant total.",
-      "wash_borrow": "Ceci est un wash borrow, vous avez seulement l'option de rembourser partiellement ou totalement le prêt."
+      "wash_borrow": "Ceci est un wash borrow, vous avez seulement l'option de rembourser partiellement ou totalement le prêt.",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
     },
     "error": {
       "running_batch": "Le marché est en cours de batching, veuillez patienter.",
       "min_ada": "Vous devez avoir au moins {{minAda}} ADA pour effectuer une action sur la plateforme.",
-      "min_health_factor": "Le facteur de santé minimum est de {{minHealthFactor}}. Augmentez votre collatéral ou diminuez votre emprunt.",
-      "min_health_factor_safe_mode": "Le facteur de santé minimum est de {{minHealthFactor}}. Augmentez votre collatéral ou diminuez votre emprunt ou désactivez le mode sécurisé dans les paramètres. Veuillez noter qu'en désactivant le mode sécurisé, vous vous exposez à un risque plus élevé de liquidation.",
+      "min_health_factor": "Le facteur de santé minimum est de {{minHealthFactor}}.",
       "user_cancel_transaction": "Vous avez annulé la transaction.",
-      "max_collaterals_reached": "Le collatéral maximum que vous pouvez ajouter est de {{maxCollaterals}}."
-    }
+      "max_collaterals_reached": "Le collatéral maximum que vous pouvez ajouter est de {{maxCollaterals}}.",
+      "batching_expired": "",
+      "min_health_factor_safe_mode": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
   },
   "borrow_action": {
     "select_asset": "Sélectionnez un actif à emprunter",
-    "guide": {
-      "step_1": "Commencez par sélectionner un actif à emprunter.<br />Parcourez tous les actifs et cliquez sur celui que vous souhaitez emprunter pour cette transaction.",
-      "step_2": "Sélectionnez les actifs que vous souhaitez utiliser comme collatéral et spécifiez le montant pour chacun.<br />Ajustez ce montant à l'aide du curseur en cliquant sur l'icône à côté du logo de l'actif, ou appuyez sur <span className='bold'>'Max'</span> pour utiliser le solde total déposé.",
-      "step_3": "Entrez le montant que vous souhaitez emprunter.",
-      "step_4": "Revoyez <span className='bold'>attentivement</span> les détails de votre transaction. Assurez-vous que toutes les informations sont exactes avant de continuer.",
-      "step_5": "Voici un résumé de l'actif que vous empruntez sur la plateforme."
-    },
     "error": {
       "min_value": "Le montant minimum à emprunter est de {{minValue}} {{id}}",
       "max_amount": "Vous ne pouvez pas emprunter plus que votre limite de {{maxAmount}} {{id}}",
-      "min_value_as_collateral": "Le montant minimum comme collatéral est de {{minValue}} {{id}}"
-    }
+      "min_value_as_collateral": "Le montant minimum comme collatéral est de {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": ""
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
   },
   "modify_action": {
     "title": "Modifier votre prêt {{id}}",
@@ -262,33 +269,24 @@
     "modify_loan_info": "Réduisez le montant à rembourser ou augmentez-le pour emprunter davantage",
     "borrow_more": "Emprunter en plus {{amount}} {{id}}",
     "repay": "Rembourser {{amount}} {{id}}",
-    "guide": {
-      "step_1": "Commencez par sélectionner le prêt que vous souhaitez modifier.<br />Parcourez la liste des prêts et cliquez sur celui que vous souhaitez ajuster pour cette transaction.",
-      "step_2": "Choisissez les actifs que vous souhaitez ajouter ou retirer en tant que collatéral et entrez les montants souhaités.<br />Ajustez ce montant à l'aide du curseur en cliquant sur l'icône à côté du logo de l'actif, ou appuyez sur <span className='bold'>'Max'</span> pour utiliser le solde total fourni.",
-      "step_3": "Spécifiez le nouveau montant que vous souhaitez emprunter ou rembourser dans le champ de saisie. Pour réduire votre dette, entrez un montant inférieur, pour augmenter le prêt, entrez un montant supérieur.",
-      "step_4": "Revoyez <span className='bold'>attentivement</span> les détails de votre transaction. Assurez-vous que toutes les informations sont exactes avant de continuer.",
-      "step_5": "Voici un résumé de l'actif que vous modifiez sur la plateforme."
-    },
     "error": {
       "min_value": "La dette minimale pour modifier votre prêt est de {{minValue}} {{id}}",
       "min_value_repay": "Le montant minimum à rembourser est de {{minValue}} {{id}}",
       "min_value_borrow": "Le montant minimum pour emprunter plus est de {{minValue}} {{id}}",
       "max_amount": "Vous ne pouvez pas emprunter plus que votre limite de {{maxAmount}} {{id}}",
-      "insufficient_balance": "Vous avez un solde insuffisant dans votre portefeuille pour rembourser la dette de {{amount}} {{id}} sur votre prêt. Le montant disponible dans votre portefeuille est de {{walletAmount}} {{id}}."
-    }
+      "insufficient_balance": "Vous avez un solde insuffisant dans votre portefeuille pour rembourser la dette de {{amount}} {{id}} sur votre prêt. Le montant disponible dans votre portefeuille est de {{walletAmount}} {{id}}.",
+      "min_value_non_negative_collateral": ""
+    },
+    "please_modify_to_save": ""
   },
   "supply_action": {
     "select_asset": "Sélectionnez un actif à déposer",
-    "guide": {
-      "step_1": "Commencez par sélectionner un actif à déposer parmi ceux disponibles dans votre portefeuille.<br />Parcourez vos actifs et cliquez sur celui désiré pour cette transaction.",
-      "step_2": "Entrez le montant que vous souhaitez déposer.<br />Ajustez ce montant à l'aide du curseur en cliquant sur l'icône à côté du logo de l'actif, ou appuyez sur <span className='bold'>'Max'</span> pour utiliser l'intégralité du solde.",
-      "step_3": "Revoyez <span className='bold'>attentivement</span> les détails de votre transaction. Assurez-vous que toutes les informations sont exactes avant de continuer.",
-      "step_4": "Voici un résumé de l'actif sur la plateforme."
-    },
     "error": {
       "min_value": "Le montant minimum à déposer est de {{minValue}} {{id}}",
       "max_amount": "Vous ne pouvez pas déposer plus que votre limite de {{maxAmount}} {{id}}"
-    }
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
   },
   "withdraw_action": {
     "select_asset": "Sélectionnez un actif à retirer",
@@ -296,7 +294,9 @@
       "min_value": "Le montant minimum à retirer est de {{minValue}} {{id}}",
       "max_amount": "Vous ne pouvez pas retirer plus que votre limite de {{maxAmount}} {{id}}",
       "bad_rest": "Vous ne pouvez pas laisser un dépôt inférieur à {{minValue}} {{id}}, veuillez retirer tout le montant ou entrer un montant inférieur."
-    }
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
   },
   "liquidate_action": {
     "title": "Liquider le prêt {{id}}",
@@ -304,21 +304,28 @@
     "liquidate_amount": "Montant à liquider",
     "liquidation_profit": "Profit de liquidation",
     "error": {
-      "min_value": "La valeur minimum à liquider est de {{minValue}} {{id}}"
-    }
+      "min_value": "La valeur minimum à liquider est de {{minValue}} {{id}}",
+      "max_amount": "",
+      "max_amount_under_min_value": "",
+      "liquidation_profit_negative": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    },
+    "collateral_seized": ""
   },
   "faucet_action": {
-    "mint_info": "Cliquez sur le bouton de gauche pour Émettre 1 000 de chaque token. Cliquez sur le bouton de droite pour émettre 10 tokens OptimBond1, à des fins de test!"
+    "mint_info": "Cliquez sur le bouton pour Émettre 1 000 de chaque token, à des fins de test !"
   },
   "delegate_page": {
     "success": "Vous avez {{delegate}} {{amount}} LQ à {{currentValue}} avec succès !",
     "enter_address": "Entrez une adresse pour déléguer",
     "error": {
-      "min_char_pkh": "Veuillez saisir une adresse de clé publique valide, inférieure à 56 caractères.",
-      "max_char_pkh": "Veuillez saisir une adresse de clé publique valide, supérieure à 56 caractères.",
-      "enter_valid_pkh": "Veuillez saisir une adresse de clé publique valide, et non une valeur hexadécimale.",
-      "delegate_yourself": "Vous ne pouvez pas vous déléguer."
-    }
+      "delegate_yourself": "Vous ne pouvez pas vous déléguer.",
+      "wrong_address": ""
+    },
+    "title": "",
+    "give_voting_power": "",
+    "selected_name_suggestion": ""
   },
   "lq_info": {
     "title": "Informations sur le LQ",
@@ -327,51 +334,27 @@
     "circulating_supply": "Offre en circulation",
     "amount_lq_staked": "Montant de LQ mis en staking"
   },
-  "stake_modal": {
-    "success": "Vous {{stake}} {{currentValue}} LQ",
-    "participate_governance_stake": "Si vous souhaitez participer à la gouvernance, veuillez miser votre LQ.",
-    "non_zero_amount": "Saisissez un montant non nul à miser",
-    "error": {
-      "max_amount": "Vous ne pouvez pas miser plus que votre limite restante de {{maxAmount}}."
-    }
-  },
   "vote_page": {
     "success": "Vous {{cosignOrVoteResult}} {{proposalTitle}}",
     "cosign_vote_for": "{{cosignOrVote}} pour \"{{proposalTitle}}\"",
     "choose_proposal_result": "Choisissez un résultat",
-    "select_one_stake": "Sélectionnez une mise",
-    "stake_amount": "Montant de la mise",
-    "delegated_by": "Délégué par {{address}}",
     "error": {
-      "should_select_proposal": "Vous devez sélectionner un résultat",
-      "only_one_stake": "Vous ne pouvez cosigner qu'avec 1 mise",
       "select_atleast_one": "Vous devez sélectionner au moins une mise",
       "max_x_stake": "Vous ne pouvez sélectionner que {{count}} stake ou moins en une seule transaction de vote",
-      "minimum_vote": "Vous devez sélectionner au moins 30 LQ au total",
-      "no_available_stakes": "Aucune mise disponible trouvée."
-    }
-  },
-  "wrong_network_modal": {
-    "title": "Erreur de réseau de portefeuille !",
-    "change_network": "Veuillez modifier votre réseau de portefeuille en <span className='active'>{{network}}</span>."
+      "minimum_vote": "Vous devez sélectionner au moins 30 LQ au total"
+    },
+    "choose_stakes_to_vote": "",
+    "submit_vote": "",
+    "total_vote": "",
+    "most_voted_result": "",
+    "vote_stakes_fees_info": ""
   },
   "wallet_modal": {
-    "connect_to": "Connectez-vous à {{walletName}}",
-    "start_using_liqwid": "Pour commencer à utiliser Liqwid",
-    "failed_to_connect": "Échec de la connexion à {{walletName}}",
-    "terms_accept": "En me connectant, j'accepte l'avis de Liqwid",
-    "terms_of_service": "Conditions d'utilisation",
     "automatic_support": "Prise en charge automatique",
     "automatic_support_message": "Prise en charge automatique, le portefeuille peut causer des problèmes",
-    "wait_access": "En attente de l'accès au portefeuille...",
-    "wait_wallet_switch": "Veuillez patienter pendant le changement de portefeuille, votre nouveau portefeuille peut vous demander une demande d'autorisation.",
     "your_wallet": "Ton portefeuille",
-    "switch_wallet": "Changez de portefeuille",
-    "copy_wallet_address": "Copier l'adresse du portefeuille",
-    "copy_x_pkh": "Copier les clés {{pkhLength}}",
-    "non_endorsed_wallet": "Portefeuilles installés non approuvés",
-    "using_non_endorsed_wallet": "L'utilisation de portefeuilles entrant dans cette catégorie peut provoquer de graves problèmes lors de l'utilisation de l'application. Nous n'approuvons pas l'utilisation de ces portefeuilles avec l'application car nous ne les avons pas testés.",
-    "warning": "Veuillez sélectionner le portefeuille que vous souhaitez utiliser à votre propre discrétion. Nous n'assumons aucune responsabilité pour les erreurs pouvant résulter d'incompatibilités de portefeuille ou de mises à jour de portefeuille."
+    "partial_compatability": "",
+    "terms": ""
   },
   "settings_modal": {
     "title": "Paramètres",
@@ -379,10 +362,10 @@
     "language": "Langue",
     "currency": "Devise",
     "currency_format": "Format de la devise",
-    "number_format": "Format des nombres",
     "loan_indicators": "Indicateurs de prêt",
     "cardano_explorer_link": "Lien vers l'explorateur Cardano",
-    "warning_safe_mode": "Veuillez noter qu'en désactivant le mode sécurisé, vous vous exposez à un risque plus élevé de liquidation."
+    "warning_safe_mode": "Veuillez noter qu'en désactivant le mode sécurisé, vous vous exposez à un risque plus élevé de liquidation.",
+    "abbreviated_numbers": ""
   },
   "error_modal": {
     "close_button": "OK, fermé",
@@ -428,7 +411,8 @@
     "current_utilization": "Utilisation actuelle : {{utilization}}%",
     "utilization_tooltip": "Utilisation : {{utilization}}%",
     "supply_apy_tooltip": "APY des dépôts : {{supply}}%",
-    "borrow_apy_tooltip": "APY des emprunts : {{borrow}}%"
+    "borrow_apy_tooltip": "APY des emprunts : {{borrow}}%",
+    "include_ada_staking": ""
   },
   "governance": {
     "title": "Gouvernance",
@@ -446,27 +430,22 @@
     "here_is_yours": "Voici l'une des vôtres :",
     "you_can_vote": "Vous pouvez voter sur chaque proposition vous-même ou déléguer le vote à un tiers.",
     "want_receive_notification_proposal": "Vous voulez recevoir des notifications lorsqu'une proposition est mise en ligne ?",
-    "go_to_notification": "<Link>Allez sur la page des notifications</Link> et activez les notifications de gouvernance."
+    "go_to_notification": "<Link>Allez sur la page des notifications</Link> et activez les notifications de gouvernance.",
+    "empty": "",
+    "no_stake_owned": "",
+    "delegated_voting_power_to": ""
   },
   "proposal": {
     "title": "Proposition",
-    "draft_end": "Le brouillon se termine dans",
-    "voting_starts": "Le vote commence dans",
-    "voting_ends": "Le vote se termine dans",
-    "locking_ends": "Le verrouillage se termine dans",
-    "executing_ends": "L'exécution se termine dans",
     "finished": "Terminé",
-    "co_signing": "Co-signature",
     "co_sign": "Co-signer",
     "co_signers": "Co-signataires",
-    "co_sign_message": "Vous pouvez co-signer cette proposition pour la passer en revue et au vote.",
     "your_votes": "Vos votes",
-    "no_votes_yet": "Aucun vote pour l'instant",
     "vote_breakdown": "Répartition des votes",
     "draft_created": "Brouillon créé",
     "proposal_results": "Résultats de la proposition",
-    "cosigned_success": "Vous avez co-signé la proposition {{proposalId}} de ${{proposalTitle}}",
-    "minimum_staked_to_vote": "Un minimum de 30LQ est requis pour voter."
+    "proposal_timeline": "",
+    "vote_available_in_voting_phase": ""
   },
   "staking_page": {
     "stake_date": "Date de staking",
@@ -482,20 +461,16 @@
     "average_apr": "APR moyen",
     "rewards_apr": "APR des récompenses",
     "locked_by_proposals": "Verrouillé par des votes",
-    "unstake_anytime": "Pendant le staking, vous avez la liberté de retirer vos actifs à tout moment.",
     "stake_lq_receive_rewards": "Veuillez <0>staker</0> vos LQ pour voter et recevoir des récompenses",
     "connect_to_stake": "Veuillez vous connecter et staker vos LQ pour voter et recevoir des récompenses",
-    "stakes_aquafarmers_not_same_addr": "Vos stakings et aquafarmers ne sont pas à la même adresse",
-    "not_same_addr_tooltip": "Vos stakings et aquafarmers ne sont pas à la même adresse, veuillez passer à une",
-    "single_wallet_addr": "adresse de portefeuille unique",
-    "otherwise_no_boost": "sinon vous ne pourrez pas obtenir votre boost d'APR.",
-    "stakes_aquafarmers_same_addr": "Vos stakes et aquafarmers sont à la même adresse",
     "max_apr": "APR maximum",
     "buy_jpeg_store": "Acheter depuis JPG store",
     "rarity": "Rareté",
     "apr_boost": "Boost d'APR",
     "see_aquafarmers": "Si vous souhaitez visualiser vos aquafarmers et booster votre APR en stakant des LQ, vous devez en avoir au moins un",
-    "connect_see_aquafarmers": "Veuillez vous connecter pour voir vos aquafarmers et le boost d'APY dans votre staking de LQ"
+    "connect_see_aquafarmers": "Veuillez vous connecter pour voir vos aquafarmers et le boost d'APY dans votre staking de LQ",
+    "stake_locked_unlock_before_modify": "",
+    "no_delegation_found": ""
   },
   "liquidation_page": {
     "liquidated_loans": "Vos prêts liquidés",
@@ -522,7 +497,10 @@
     "1d": "1D",
     "1w": "1W",
     "1m": "1M",
-    "max": "Max"
+    "max": "Max",
+    "apy": "",
+    "liquidity": "",
+    "1y": ""
   },
   "settings_page": {
     "title": "Paramètres des notifications",
@@ -539,19 +517,22 @@
     "verify_email": "Vérifier l'e-mail",
     "your_adamail": "Votre ADAmail",
     "email_verified": "E-mail vérifié",
-    "announcements": "Annonces",
     "loading_settings_data": "Chargement des données des paramètres...",
     "signature_setup": "La vérification de votre signature a été complétée avec succès",
     "waiting_for_signature": "En attente de la signature...",
     "settings_updated": "Paramètres mis à jour avec succès",
     "verification_email_sent": "E-mail de vérification envoyé avec succès",
     "sign": "Signer",
-    "save": "Enregistrer les paramètres",
     "delete_data_message": "Êtes-vous sûr de vouloir supprimer toutes les données de vos notifications ?",
     "delete_data": "Toutes vos informations ont été supprimées avec succès",
     "error": {
       "enable_email_notifications_first": "Veuillez activer les notifications par e-mail avant de vérifier votre e-mail"
-    }
+    },
+    "general_communication": "",
+    "save_verify_email": "",
+    "save_settings": "",
+    "loan_alert": "",
+    "delete_saved_signatures_message": ""
   },
   "verify_email_page": {
     "title": "Vérifier l'e-mail",
@@ -569,5 +550,60 @@
     "bridge_token": "Token bridgé",
     "others": "Autres",
     "show_assets_with_no_balance": "Afficher les actifs sans solde"
-  }
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "interest": "",
+  "collaterals": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "delegatee": "",
+  "replace_delegate": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "filled": "",
+  "supply_filled": "",
+  "currently": "",
+  "lending_apy": "",
+  "accepted_as_collateral_on": "",
+  "lq_market_participation_apy": "",
+  "deselect_all_stakes": "",
+  "the_healthfactor_is": "",
+  "healthfactor_calculation": "",
+  "click_here": "",
+  "error_copied_to_clipboard": "",
+  "executed": "",
+  "pending": "",
+  "active": "",
+  "status": "",
+  "blocked": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "seo": "",
+  "borrow_more_action": "",
+  "repay_action": "",
+  "unlock_page": "",
+  "modify_stake_page": "",
+  "apy_graph": "",
+  "liquidity_graph": "",
+  "transfer_from_cex_page": "",
+  "notification_message": ""
 }

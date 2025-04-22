@@ -1,0 +1,705 @@
+{
+  "supply": "供应",
+  "supplies": "供应品",
+  "withdraw": "提取",
+  "borrow": "借款",
+  "borrow_more": "增加借款",
+  "repay": "还款",
+  "modify": "修改",
+  "modify_loan": "修改贷款",
+  "close_position": "关闭头寸",
+  "borrowed": "已借出",
+  "repaid": "已还清",
+  "mint": "铸造",
+  "available": "可用",
+  "liquidate": "清算",
+  "oracle_price": "预言机价格",
+  "max_borrow": "最大可借数额",
+  "max_repay": "最大可还数额",
+  "max_liquidate": "最大清算数额",
+  "interest_paid": "已支付利息",
+  "min_interest": "最小利息",
+  "collateral": "抵押品",
+  "total_collateral": "抵押品总额",
+  "collateral_before": "修改前抵押品",
+  "collateral_after": "修改后抵押品",
+  "max_collateral": "最大抵押品数量",
+  "your_collateral": "你的抵押品",
+  "max": "最大值",
+  "collateralization": "抵押率",
+  "asset": "资产",
+  "assets": "资产",
+  "your_assets": "你的资产",
+  "search_asset": "搜索资产",
+  "search_asset_collateral": "搜索资产或抵押品",
+  "search_by_date": "按日期搜索",
+  "search_proposal": "搜索提案",
+  "balance": "余额",
+  "wallet_balance": "钱包余额",
+  "price": "价格",
+  "price_of": "{{asset}} 的价格",
+  "apy": "年化收益率(APY)",
+  "apr": "年化利率(APR)",
+  "liquidity": "流动性",
+  "debt": "债务",
+  "amount": "数量",
+  "locked_collateral": "作为抵押锁定",
+  "health_factor": "健康系数",
+  "ltv": "贷款价值比(LTV)",
+  "liquidation": "清算",
+  "liquidations": "清算记录",
+  "loans": "贷款",
+  "error": "错误",
+  "hide": "隐藏",
+  "more": "更多",
+  "show": "显示",
+  "view": "查看",
+  "type": "类型",
+  "back": "返回",
+  "submit": "提交",
+  "actions": "操作",
+  "created": "已创建",
+  "date": "日期",
+  "details": "详情",
+  "more_details": "更多详情",
+  "vote": "投票",
+  "voting": "正在投票",
+  "cosign": "共同签署",
+  "cosigned": "已共同签署",
+  "locked": "已锁定",
+  "finished": "已结束",
+  "disconnect": "断开连接",
+  "connect_wallet": "连接钱包",
+  "review": "审查",
+  "install": "安装",
+  "learn_more": "了解更多",
+  "your_stakes": "你的质押",
+  "unlock_stakes": "解锁质押",
+  "market": "市场",
+  "markets": "市场",
+  "unlock": "解锁",
+  "add_lq": "添加LQ",
+  "stake": "质押",
+  "staked": "已质押",
+  "unstake": "取消质押",
+  "forum": "论坛",
+  "delegate": "委托",
+  "delegated": "已委托",
+  "delegatee": "被委托人",
+  "undelegate": "取消委托",
+  "replace_delegate": "更换新的被委托人",
+  "notifications": "通知",
+  "notification": "通知",
+  "accepted_as_collateral": "可作为抵押品",
+  "loading": "加载中",
+  "loading...": "加载中...",
+  "next": "下一步",
+  "previous": "上一步",
+  "result": "结果",
+  "invalid_data": "无效数据",
+  "invalid_market": "无效市场",
+  "none": "无",
+  "processing": "处理中",
+  "building_transaction": "构建交易中",
+  "awaiting_confirmation": "等待确认中",
+  "user_cancel_transaction": "你已取消交易。",
+  "exchange_rate": "汇率",
+  "utilization": "利用率",
+  "current_utilization": "当前利用率",
+  "utilization_is": "利用率为 {{utilization}}%",
+  "supply_apy": "供应APY",
+  "borrow_apy": "借款APY",
+  "total_supply": "总供应量",
+  "total_borrow": "总借款量",
+  "total_liquidity": "总流动性",
+  "current_price": "当前价格",
+  "circulating_supply": "流通供应量",
+  "supply_cap": "供应上限",
+  "borrow_cap": "借款上限",
+  "minimum_amount": "最小数量",
+  "liquidation_threshold": "清算阈值",
+  "max_ltv": "最大贷款价值比",
+  "liquidation_penalty": "清算罚金",
+  "liquidation_profitability": "清算利润率",
+  "address_copy": "地址已复制到剪贴板",
+  "public_key_copy": "公钥已复制到剪贴板",
+  "public_keys_copy": "公钥已复制到剪贴板",
+  "co_signers_copy": "共同签署者已复制到剪贴板",
+  "adamail_copy": "ADAmail已复制到剪贴板",
+  "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>APR计算链接</a><br />此APR显示了通过LQ市场参与奖励获得的预计回报。该计算基于最新的动态排放公式（3天纪元）。所显示的APR仅供参考，根据时间动态变化。所显示的APR并非财务、投资、税务、法律或技术建议。使用去中心化金融协议存在多种风险。此应用显示的内容不构成财务建议，须自行尽职调查（自行研究）。",
+  "safe_mode": "安全模式",
+  "enabled": "已启用",
+  "disabled": "已禁用",
+  "settings": "设置",
+  "filled": "已完成",
+  "supply_filled": "供应已完成",
+  "currently": "当前",
+  "lending_apy": "出借APY",
+  "accepted_as_collateral_on": "在此可作为抵押品",
+  "lq_market_participation_apy": "LQ市场参与APY",
+  "select_all_stakes": "选择全部或前 {{count}} 个质押",
+  "deselect_all_stakes": "取消选择已选质押",
+  "the_healthfactor_is": "健康系数为",
+  "healthfactor_calculation": "健康系数计算公式: HF = 抵押价值（美元计） × 清算阈值 / 借款价值（美元计）",
+  "click_here": "点击这里",
+  "error_copied_to_clipboard": "错误信息已复制到剪贴板",
+  "executed": "已执行",
+  "pending": "待处理",
+  "active": "活跃",
+  "status": "状态",
+  "blocked": "已阻止",
+  "seo": {
+    "dashboard": {
+      "title": "Liqwid Finance",
+      "description": "在Cardano上探索未来DeFi，使用Liqwid Finance创新的借贷平台。"
+    },
+    "market_details": {
+      "title": "Liqwid Finance - {{id}} 市场详情",
+      "description": "Liqwid Finance - 市场详情"
+    },
+    "loans": {
+      "title": "Liqwid Finance - 贷款",
+      "description": "在Liqwid应用中查看所有可用贷款列表。"
+    },
+    "liquidations": {
+      "title": "Liqwid Finance - 清算",
+      "description": "在Liqwid应用中查看所有已清算贷款的完整历史记录。"
+    },
+    "transactions": {
+      "title": "Liqwid Finance - 交易",
+      "description": "查看你在Liqwid的全部交易记录。"
+    },
+    "analytics": {
+      "title": "Liqwid Finance - 分析",
+      "description": "Liqwid Finance - 分析"
+    },
+    "governance": {
+      "title": "Liqwid Finance - 治理",
+      "description": "通过对关键提案进行投票来参与Liqwid Finance的治理。"
+    },
+    "proposal": {
+      "title": "Liqwid Finance - 提案",
+      "description": "Liqwid Finance - 提案"
+    },
+    "staking": {
+      "title": "Liqwid Finance - 质押",
+      "description": "在Liqwid应用中质押资产以获取奖励并参与治理。"
+    },
+    "maintenance": {
+      "title": "Liqwid Finance - 维护中",
+      "description": "Liqwid Finance - 维护中"
+    },
+    "faucet": {
+      "title": "Liqwid Finance - 水龙头",
+      "description": "获取测试代币以在你的应用中进行无风险的DeFi功能测试。"
+    },
+    "notifications": {
+      "title": "Liqwid Finance - 通知",
+      "description": "在Liqwid应用中永不错过重要更新。"
+    },
+    "delegate_action": {
+      "title": "Liqwid Finance - 委托",
+      "description": "将你的LQ委托给其他地址。"
+    },
+    "unlock_action": {
+      "title": "Liqwid Finance - 解锁",
+      "description": "解锁你的质押。"
+    },
+    "modify_stake_action": {
+      "title": "Liqwid Finance - 质押",
+      "description": "创建或修改你的质押。"
+    },
+    "vote_action": {
+      "title": "Liqwid Finance - 投票",
+      "description": "对提案进行投票。"
+    }
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "liqwid": "Liqwid V2",
+    "governance": "治理",
+    "proposals": "提案",
+    "staking": "质押",
+    "liquidations": "清算",
+    "loans": "贷款",
+    "markets": "市场",
+    "transaction": "交易",
+    "transactions": "交易记录",
+    "analytics": "分析",
+    "faucet": "水龙头",
+    "notification": "请确保你在访问 <a href='https://v2.liqwid.finance'> v2.liqwid.finance</a>，并将其加入书签以确保安全。",
+    "preview_banner": "你正在访问Preview测试网的V2应用",
+    "supply": "供应",
+    "borrow": "借款",
+    "notification_page": "通知",
+    "more": ""
+  },
+  "footer": {
+    "protocol": "协议",
+    "community": "社区",
+    "docs": "文档",
+    "faq": "常见问题",
+    "user_guide": "用户指南",
+    "status": "状态",
+    "forum": "论坛",
+    "lq_rewards": "LQ奖励",
+    "discord": "Discord",
+    "twitter": "推特",
+    "github": "GitHub",
+    "substack": "Substack"
+  },
+  "graph": {
+    "tvl": "总锁仓价值",
+    "total_staked_lq": "总质押LQ数量"
+  },
+  "home_header": {
+    "your_supplies": "你的供应",
+    "your_borrows": "你的借款",
+    "total_supplies": "总供应",
+    "total_borrows": "总借款",
+    "net_apy": "净APY",
+    "net_apy_with_lq_rewards": "包含LQ奖励的净APY",
+    "your_position": ""
+  },
+  "supply_list": {
+    "title": "你的供应",
+    "connect_wallet": "连接你的钱包以查看你的供应",
+    "tooltip": {
+      "balance": "余额是你在协议中存入的代币总量",
+      "apy": "每种资产的年化收益率(APY)",
+      "locked_collateral": "作为抵押锁定的资产数量"
+    }
+  },
+  "borrow_list": {
+    "title": "你的借款",
+    "connect_wallet": "连接你的钱包以查看你的借款",
+    "loan_debt": "当前债务为 {{amount}} {{id}}",
+    "loan_interest": "已产生利息为 {{interest}} {{id}}",
+    "tooltip": {
+      "debt": "用户总借款额及偿还该贷款所需的数额",
+      "apy": "借款人支付的年化利率",
+      "health_factor": "当健康系数达到1.00时，你的头寸可被清算",
+      "LTV": "贷款价值比是贷款金额与抵押品价值的比率",
+      "health_factor_low": "你的健康系数较低，如达到1.0，你可能会被清算"
+    }
+  },
+  "transaction_history": {
+    "title": "交易历史",
+    "empty": "未找到交易记录"
+  },
+  "modal": {
+    "close_button": "好的，关闭",
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "action": {
+    "select_collateral": "选择或输入已供应的抵押品",
+    "transaction_overview": "交易概览",
+    "collateral_distribution": "抵押品分布",
+    "liquidation": "在<=1.0时清算",
+    "asset_supplied": "已供应{{id}}",
+    "batching_fee": "批处理费用",
+    "eternl_fee": "Eternl费用",
+    "loan_origination_fee": "贷款发起费",
+    "no_collateral_available": "无可用抵押品，请先供应一些资产",
+    "success": {
+      "submit_transaction": "交易提交成功 - <0>交易哈希</0>"
+    },
+    "info": {
+      "max_borrow_cap_reached": "你的最大借款数额 {{maxBorrow}} {{id}} 超过当前流动性限制。目前最大可借数额为 {{maxBorrowCap}} {{id}}。",
+      "max_supply_cap_reached": "你的最大供应数额 {{maxSupply}} {{id}} 超过当前供应上限。单笔交易最大可供应为 {{supplyCap}} {{id}}。可能需要多笔交易。",
+      "max_withdraw_cap_reached": "你的最大提取数额 {{maxWithdraw}} {{id}} 超过当前借款上限。单笔交易最大可提取 {{withdrawCap}} {{id}}，可能需多笔交易。",
+      "wash_borrow": "这是一次Wash Borrow贷款，你只能部分或全部还清该贷款。",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
+    },
+    "error": {
+      "running_batch": "市场正在批处理，请稍等。",
+      "min_ada": "你需要至少 {{minAda}} ADA 才能在平台上执行操作。",
+      "min_health_factor": "最低健康系数为 {{minHealthFactor}}。请增加抵押品或减少借款。",
+      "min_health_factor_safe_mode": "最低健康系数为 {{minHealthFactor}}。请增加抵押品或减少借款，或在设置中禁用安全模式。请注意，禁用安全模式将提高被清算的风险。",
+      "user_cancel_transaction": "你已取消交易。",
+      "max_collaterals_reached": "最多可添加 {{maxCollaterals}} 个抵押品。",
+      "batching_expired": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
+  },
+  "borrow_action": {
+    "select_asset": "选择要借出的资产",
+    "error": {
+      "min_value": "最小借款量为 {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "你需要有非负的抵押品价值才能借款",
+      "max_amount": "你无法借出超过 {{maxAmount}} {{id}} 的数额",
+      "min_value_as_collateral": "最小抵押数额为 {{minValue}} {{id}}"
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
+  },
+  "modify_action": {
+    "title": "修改你的 {{id}} 贷款",
+    "select_loan": "选择要修改的贷款",
+    "modify_loan_info": "减少还款金额或增加借款金额",
+    "borrow_more": "增加借款 {{amount}} {{id}}",
+    "repay": "还款 {{amount}} {{id}}",
+    "error": {
+      "min_value": "要修改你的贷款，最低债务为 {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "你需要有非负的抵押品价值才能修改贷款",
+      "min_value_repay": "最小还款金额为 {{minValue}} {{id}}",
+      "min_value_borrow": "最小增加借款金额为 {{minValue}} {{id}}",
+      "max_amount": "你无法借出超过 {{maxAmount}} {{id}} 的数额",
+      "insufficient_balance": "你的钱包余额不足以还清 {{amount}} {{id}} 的贷款。你的钱包中只有 {{walletAmount}} {{id}}。"
+    },
+    "please_modify_to_save": ""
+  },
+  "supply_action": {
+    "select_asset": "选择要供应的资产",
+    "error": {
+      "min_value": "最小供应量为 {{minValue}} {{id}}",
+      "max_amount": "你无法供应超过 {{maxAmount}} {{id}} 的数额"
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
+  },
+  "withdraw_action": {
+    "select_asset": "选择要提取的资产",
+    "error": {
+      "min_value": "最小提取量为 {{minValue}} {{id}}",
+      "max_amount": "你无法提取超过 {{maxAmount}} {{id}} 的数额",
+      "bad_rest": "你无法将剩余供应量降低到 {{minValue}} {{id}} 以下，请选择全部提取或输入更小的提取数量。"
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
+  },
+  "liquidate_action": {
+    "title": "清算 {{id}} 贷款",
+    "select_loan": "选择要清算的贷款",
+    "liquidate_amount": "清算数量",
+    "liquidation_profit": "清算利润",
+    "collateral_seized": "被没收的抵押品",
+    "error": {
+      "min_value": "最小清算数额为 {{minValue}} {{id}}",
+      "max_amount_under_min_value": "由于剩余债务低于最小值 {{minValue}} {{id}}，你只能清算全部贷款。",
+      "liquidation_profit_negative": "你的清算利润为负数，你将会亏损。",
+      "max_amount": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    }
+  },
+  "delegate_page": {
+    "title": "委托你的投票权",
+    "success": "你已将 {{amount}} LQ {{delegate}} 给 {{currentValue}}！",
+    "enter_address": "输入委托地址",
+    "give_voting_power": "将你的投票权委托给他人",
+    "selected_name_suggestion": "你已成功选择 {{name}}",
+    "error": {
+      "delegate_yourself": "你不能委托给自己",
+      "wrong_address": "请输入一个有效的地址"
+    }
+  },
+  "unlock_page": {
+    "title": "解锁质押 - 提案 {{proposalId}}",
+    "select_proposal": "选择一个提案",
+    "choose_stakes_to_unlock": "选择要解锁的质押",
+    "no_stakes_locked": "你目前没有被锁定的质押",
+    "unlock_stakes_fees_info": "你最多可一次解锁20个质押，但同时解锁越多费用越高。建议分批解锁。",
+    "error": {
+      "need_one_stake": "你需要至少选择一个质押进行解锁",
+      "max_x_stake": "你一次最多只能选择 {{count}} 个质押进行解锁",
+      "cant_unlock_draft": "你无法从草案提案中解锁质押"
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "修改质押",
+    "modify_delegate": "修改委托",
+    "select_stake": "选择一个质押",
+    "unstake_all": "全部取消质押",
+    "add_more": "增加 {{amount}} LQ 到你的质押",
+    "reduce_stake": "减少你的质押 {{amount}} LQ",
+    "creating_stake": "创建一个新质押 {{amount}} LQ",
+    "lq_in_this_stake": "该质押中的LQ数量",
+    "your_adding_stake": "你正在增加你的质押数量",
+    "your_reducing_stake": "你正在减少你的质押数量",
+    "your_creating_stake": "你正在创建新的质押",
+    "create_new_stake": "创建新质押"
+  },
+  "lq_info": {
+    "title": "LQ信息",
+    "market_cap": "市值",
+    "fully_diluted_valuation": "全面摊薄估值",
+    "circulating_supply": "流通供应量",
+    "amount_lq_staked": "质押LQ总量"
+  },
+  "vote_page": {
+    "success": "你已 {{cosignOrVoteResult}} {{proposalTitle}}",
+    "cosign_vote_for": "{{cosignOrVote}} “{{proposalTitle}}”",
+    "choose_proposal_result": "选择提案结果",
+    "choose_stakes_to_vote": "选择你要使用投票的质押",
+    "submit_vote": "提交投票",
+    "total_vote": "总投票数",
+    "most_voted_result": "最高票结果",
+    "vote_stakes_fees_info": "你最多可用20个质押进行投票，但一次性投票越多费用越高。建议分批投票。",
+    "error": {
+      "select_atleast_one": "你应至少选择一个质押",
+      "max_x_stake": "你一次最多只能选择 {{count}} 个质押进行投票",
+      "minimum_vote": "你应选择至少30 LQ的总额进行投票"
+    }
+  },
+  "wallet_modal": {
+    "automatic_support": "自动支持",
+    "automatic_support_message": "自动支持，钱包可能导致问题",
+    "your_wallet": "你的钱包",
+    "partial_compatability": "",
+    "terms": ""
+  },
+  "settings_modal": {
+    "title": "设置",
+    "hide_balance": "隐藏余额",
+    "language": "语言",
+    "currency": "货币",
+    "currency_format": "货币格式",
+    "loan_indicators": "贷款指标",
+    "cardano_explorer_link": "Cardano区块浏览器链接",
+    "warning_safe_mode": "请注意，禁用安全模式会提高被清算的风险。",
+    "abbreviated_numbers": ""
+  },
+  "error_modal": {
+    "close_button": "好的，关闭",
+    "something_wrong": "出现问题！",
+    "close_dialog_try_again": "请关闭此对话框并重试。",
+    "problem_persists": "若问题仍存在，请<a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">联系支持</a>。",
+    "click_copy_debug_info": "点击 <span className='active-error' onClick={copyToClipboard}>这里</span> 复制调试信息"
+  },
+  "market_page": {
+    "total_supplies": "总供应",
+    "total_available": "总可用",
+    "total_borrows": "总借款",
+    "empty": "当前无匹配搜索条件的市场"
+  },
+  "loans_page": {
+    "empty": "当前无匹配搜索条件的贷款",
+    "tooltip": {
+      "liquidate_info": "当健康系数为1.00或更低时，即可清算"
+    }
+  },
+  "market_details": {
+    "title": "{{id}} 详情",
+    "select_asset": "选择要查看的资产",
+    "market_info": "市场信息",
+    "exchange_rate_price": "当前 {{id}} 汇率",
+    "total_asset_supplies": "{{id}} 总供应",
+    "total_asset_borrows": "{{id}} 总借款",
+    "total_asset_liquidity": "{{id}} 总流动性",
+    "number_market_utxo": "市场UTXO数量",
+    "bridged_token": "跨链代币",
+    "income_split": "收入分配",
+    "supplier": "供应者",
+    "staker": "质押者",
+    "reserve": "储备",
+    "treasury": "金库",
+    "collateral_parameters": "借 {{id}} 的抵押参数",
+    "collateralization_against": "{{id}} 可作为对以下债务资产的抵押",
+    "tooltip": {
+      "market_utxo": "市场UTXO数量表示在任一时刻可供用户交互的唯一账户/池数量。市场流动性在这些账户间平均分布。如果所有账户正被同时交互，新用户需要等待这些交互完成后才能提交操作。"
+    }
+  },
+  "utilization_graph": {
+    "current_utilization": "当前利用率：{{utilization}}%",
+    "utilization_tooltip": "利用率：{{utilization}}%",
+    "supply_apy_tooltip": "供应APY：{{supply}}%",
+    "borrow_apy_tooltip": "借款APY：{{borrow}}%",
+    "include_ada_staking": "此APY包括未被借出的ADA的质押奖励"
+  },
+  "apy_graph": {
+    "current_apy": "当前APY"
+  },
+  "liquidity_graph": {
+    "current_liquidity": "{{asset}}当前流动性",
+    "supply": "供应: {{supply}}",
+    "borrow": "借款: {{borrow}}",
+    "liquidity": "流动性: {{liquidity}}"
+  },
+  "governance": {
+    "title": "治理",
+    "your_wallet": "你的钱包",
+    "recent_proposals": "近期提案",
+    "participate_in_governance": "若想参与治理，请质押你的LQ。",
+    "staked_lq_locked": "你已锁定的LQ质押",
+    "staked_lq_balance": "你的LQ质押余额",
+    "lq_balance": "你的LQ余额",
+    "stake_lq": "质押LQ",
+    "lq_staked": "LQ已质押",
+    "voting_power": "投票权重",
+    "delegate_vote": "委托投票",
+    "share_delegation_address": "想分享你的委托地址吗？",
+    "here_is_yours": "这是你的其中一个地址：",
+    "you_can_vote": "你可自行对每个提案投票，或将投票权委托给第三方。",
+    "want_receive_notification_proposal": "想在有新提案时收到通知吗？",
+    "go_to_notification": "<Link>前往通知页面</Link>并启用治理通知。",
+    "empty": "无匹配搜索条件的提案",
+    "no_stake_owned": "你没有任何质押",
+    "delegated_voting_power_to": "你已将投票权委托给"
+  },
+  "proposal": {
+    "title": "提案",
+    "finished": "已结束",
+    "co_sign": "共同签署",
+    "co_signers": "共同签署者",
+    "your_votes": "你的投票",
+    "vote_breakdown": "投票细分",
+    "proposal_timeline": "提案时间线",
+    "draft_created": "草案已创建",
+    "proposal_results": "提案结果",
+    "vote_available_in_voting_phase": "只有在投票阶段才能进行投票"
+  },
+  "staking_page": {
+    "stake_date": "质押日期",
+    "your_sub_stakes": "你的子质押",
+    "your_delegated_power": "你的被委托投票权",
+    "delegated_by": "委托来源",
+    "create_stake": "创建质押",
+    "total_staking": "总质押",
+    "total_balance": "总余额",
+    "total_staked": "总质押量",
+    "total_voting_power": "总投票权重",
+    "staking_rewards": "质押奖励",
+    "average_apr": "平均APR",
+    "rewards_apr": "奖励APR",
+    "locked_by_proposals": "被提案锁定",
+    "stake_lq_receive_rewards": "请<0>质押</0>你的LQ以投票和获得奖励",
+    "connect_to_stake": "请连接钱包并质押LQ以投票和获得奖励",
+    "max_apr": "最大APR",
+    "buy_jpeg_store": "在JPG商店购买",
+    "rarity": "稀有度",
+    "apr_boost": "APR提升",
+    "see_aquafarmers": "若要查看你的aquafarmers并提升LQ质押中的APR，你需要至少拥有一个",
+    "connect_see_aquafarmers": "请连接以查看你的aquafarmers及LQ质押中的APR提升",
+    "stake_locked_unlock_before_modify": "你的质押已锁定。请先解锁后再尝试修改。",
+    "no_delegation_found": "若你想获取你的委托地址并与他人分享"
+  },
+  "liquidation_page": {
+    "liquidated_loans": "你的已清算贷款",
+    "all_liquidated_loans": "所有已清算贷款",
+    "amount": "清算金额",
+    "ltv_before": "清算前LTV",
+    "ltv_after": "清算后LTV",
+    "collateral_liquidated": "被清算的抵押品",
+    "liquidator": "清算人",
+    "no_liquidation": "你尚未被清算过"
+  },
+  "maintenance_page": {
+    "coming_back_soon": "即将回归！",
+    "website_under_maintenance": "Liqwid应用正在维护中。"
+  },
+  "chart": {
+    "utilization_rate": "利用率",
+    "oracle_price": "预言机价格",
+    "one_day": "1天",
+    "one_week": "1周",
+    "one_month": "1个月",
+    "utilization": "利用率",
+    "oracle": "预言机",
+    "apy": "APY",
+    "liquidity": "流动性",
+    "1d": "1天",
+    "1w": "1周",
+    "1m": "1月",
+    "1y": "1年",
+    "max": "最大"
+  },
+  "settings_page": {
+    "title": "通知设置",
+    "clear_signatures": "清除已保存签名",
+    "no_adamail_nft": "你的钱包中未找到AdaMail NFT",
+    "adamail_link": "在此处获取你的免费AdaMail",
+    "which_notifications": "你希望接收哪些通知？",
+    "unlock_email_by_signing": "通过用你的钱包签名来解锁邮件通知",
+    "no_transaction_fee_required": "此操作无需交易费用",
+    "enable_email_notifications": "启用邮件通知",
+    "enable_adamail_notifications": "启用ADAmail通知",
+    "loading": "加载中...",
+    "email": "邮箱",
+    "verify_email": "验证邮箱",
+    "your_adamail": "你的ADAmail",
+    "email_verified": "邮箱已验证",
+    "general_communication": "常规交流",
+    "loading_settings_data": "正在加载设置数据...",
+    "signature_setup": "你的签名验证已成功完成",
+    "waiting_for_signature": "等待签名...",
+    "settings_updated": "设置已成功更新",
+    "verification_email_sent": "验证邮件已发送",
+    "sign": "签名",
+    "save_verify_email": "发送并验证邮箱",
+    "save_settings": "保存设置",
+    "delete_data_message": "<div>你确定要删除所有通知设置吗？</div><div>这将删除与你的邮箱相关的所有数据。</div>",
+    "delete_data": "已成功删除你的所有信息",
+    "loan_alert": "贷款警报",
+    "delete_saved_signatures_message": "<div>你确定要删除所有已保存的签名吗？</div><div>你将需要重新签名才能访问你的通知设置。</div>",
+    "error": {
+      "enable_email_notifications_first": "请先启用邮件通知再验证邮箱"
+    }
+  },
+  "verify_email_page": {
+    "title": "验证邮箱",
+    "loading": "加载中...",
+    "email_verified_success": "邮箱验证成功",
+    "incorrect_code": "验证码错误",
+    "error": "发生错误",
+    "redirection_soon": "5秒后将自动重定向。"
+  },
+  "filters": {
+    "title": "过滤器",
+    "asset_types": "资产类型",
+    "stablecoin": "稳定币",
+    "cardano_native_token": "Cardano原生代币",
+    "bridge_token": "跨链代币",
+    "others": "其他",
+    "show_assets_with_no_balance": "显示无余额资产"
+  },
+  "transfer_from_cex_page": {
+    "title": "从中心化交易所转移"
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "close_loan": "",
+  "interest": "",
+  "collaterals": "",
+  "half": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "save": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "borrow_more_action": "",
+  "repay_action": "",
+  "faucet_action": "",
+  "notification_message": ""
+}

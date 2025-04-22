@@ -1,3 +1,705 @@
 {
-  
+  "supply": "Предоставить",
+  "supplies": "Предоставленные активы",
+  "withdraw": "Вывести",
+  "borrow": "Взять в долг",
+  "borrow_more": "Взять больше в долг",
+  "repay": "Погасить",
+  "modify": "Изменить",
+  "modify_loan": "Изменить заем",
+  "close_position": "Закрыть позицию",
+  "borrowed": "Заимствовано",
+  "repaid": "Погашено",
+  "mint": "Выпустить",
+  "available": "Доступно",
+  "liquidate": "Ликвидировать",
+  "oracle_price": "Цена оракула",
+  "max_borrow": "Максимальный заем",
+  "max_repay": "Максимальное погашение",
+  "max_liquidate": "Максимальная ликвидация",
+  "interest_paid": "Выплаченные проценты",
+  "min_interest": "Минимальный процент",
+  "collateral": "Залог",
+  "total_collateral": "Общий залог",
+  "collateral_before": "Залог до",
+  "collateral_after": "Залог после",
+  "max_collateral": "Максимальный залог",
+  "your_collateral": "Ваш залог",
+  "max": "МАКС",
+  "collateralization": "Залоговое обеспечение",
+  "asset": "Актив",
+  "assets": "Активы",
+  "your_assets": "Ваши активы",
+  "search_asset": "Поиск актива",
+  "search_asset_collateral": "Поиск актива или залога",
+  "search_by_date": "Поиск по дате",
+  "search_proposal": "Поиск предложения",
+  "balance": "Баланс",
+  "wallet_balance": "Баланс кошелька",
+  "price": "Цена",
+  "price_of": "Цена {{asset}}",
+  "apy": "APY",
+  "apr": "APR",
+  "liquidity": "Ликвидность",
+  "debt": "Долг",
+  "amount": "Сумма",
+  "locked_collateral": "Заблокировано как залог",
+  "health_factor": "Показатель здоровья",
+  "ltv": "LTV (соотношение заем/стоимость)",
+  "liquidation": "Ликвидация",
+  "liquidations": "Ликвидации",
+  "loans": "Займы",
+  "error": "Ошибка",
+  "hide": "Скрыть",
+  "more": "Еще",
+  "show": "Показать",
+  "view": "Просмотр",
+  "type": "Тип",
+  "back": "Назад",
+  "submit": "Отправить",
+  "actions": "Действия",
+  "created": "Создано",
+  "date": "Дата",
+  "details": "Детали",
+  "more_details": "Подробнее",
+  "vote": "Голосовать",
+  "voting": "Голосование",
+  "cosign": "Подписать совместно",
+  "cosigned": "Совместно подписано",
+  "locked": "Заблокировано",
+  "finished": "Завершено",
+  "disconnect": "Отключить",
+  "connect_wallet": "Подключить кошелек",
+  "review": "Проверить",
+  "install": "Установить",
+  "learn_more": "Подробнее",
+  "your_stakes": "Ваши стейки",
+  "unlock_stakes": "Разблокировать стейки",
+  "market": "Рынок",
+  "markets": "Рынки",
+  "unlock": "Разблокировать",
+  "add_lq": "Добавить LQ",
+  "stake": "Застейкать",
+  "staked": "Застейкано",
+  "unstake": "Отменить стейк",
+  "forum": "Форум",
+  "delegate": "Делегировать",
+  "delegated": "Делегировано",
+  "delegatee": "Получатель делегирования",
+  "undelegate": "Отменить делегирование",
+  "replace_delegate": "Заменить новым делегатом",
+  "notifications": "Уведомления",
+  "notification": "Уведомление",
+  "accepted_as_collateral": "Принято как залог",
+  "loading": "Загрузка",
+  "loading...": "Загрузка...",
+  "next": "Далее",
+  "previous": "Назад",
+  "result": "Результат",
+  "invalid_data": "Недействительные данные",
+  "invalid_market": "Недействительный рынок",
+  "none": "Нет",
+  "processing": "Обработка",
+  "building_transaction": "Формирование транзакции",
+  "awaiting_confirmation": "Ожидание подтверждения",
+  "user_cancel_transaction": "Вы отменили транзакцию.",
+  "exchange_rate": "Обменный курс",
+  "utilization": "Использование",
+  "current_utilization": "Текущее использование",
+  "utilization_is": "Использование равно {{utilization}}%",
+  "supply_apy": "APY поставки",
+  "borrow_apy": "APY заема",
+  "total_supply": "Общий объем поставки",
+  "total_borrow": "Общий объем заемных средств",
+  "total_liquidity": "Общая ликвидность",
+  "current_price": "Текущая цена",
+  "circulating_supply": "Циркулирующее предложение",
+  "supply_cap": "Лимит поставки",
+  "borrow_cap": "Лимит заема",
+  "minimum_amount": "Минимальная сумма",
+  "liquidation_threshold": "Порог ликвидации",
+  "max_ltv": "Максимальный LTV",
+  "liquidation_penalty": "Штраф за ликвидацию",
+  "liquidation_profitability": "Рентабельность ликвидации",
+  "address_copy": "Адрес скопирован в буфер обмена",
+  "public_key_copy": "Публичный ключ скопирован в буфер обмена",
+  "public_keys_copy": "Публичные ключи скопированы в буфер обмена",
+  "co_signers_copy": "Со-подписанты скопированы в буфер обмена",
+  "adamail_copy": "ADAmail скопирован в буфер обмена",
+  "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Ссылка на расчеты APR</a><br />Этот APR указывает на предполагаемую доходность от вознаграждений за участие в рынке LQ. Расчет основан на обновленных динамических формулах эмиссии (эпоха 3 дня). Отображаемые APR являются оценочными и могут изменяться со временем. Они не являются финансовым, инвестиционным, налоговым, юридическим или техническим советом. Использование DeFi протоколов связано с финансовыми рисками. Все представленные данные не являются финансовым советом, вам следует провести собственное исследование.",
+  "safe_mode": "Безопасный режим",
+  "enabled": "Включен",
+  "disabled": "Отключен",
+  "settings": "Настройки",
+  "filled": "Заполнено",
+  "supply_filled": "Поставка завершена",
+  "currently": "В настоящее время",
+  "lending_apy": "APY кредитования",
+  "accepted_as_collateral_on": "Принят как залог для",
+  "lq_market_participation_apy": "APY участия в рынке LQ",
+  "select_all_stakes": "Выбрать все или первые {{count}} стейков",
+  "deselect_all_stakes": "Снять выделение со всех выбранных стейков",
+  "the_healthfactor_is": "Показатель здоровья:",
+  "healthfactor_calculation": "HF = стоимость залога в $ × порог ликвидации / стоимость долга в $",
+  "click_here": "Нажмите здесь",
+  "error_copied_to_clipboard": "Ошибка скопирована в буфер обмена",
+  "executed": "Выполнено",
+  "pending": "В ожидании",
+  "active": "Активно",
+  "status": "Статус",
+  "blocked": "Заблокировано",
+  "seo": {
+    "dashboard": {
+      "title": "Liqwid Finance",
+      "description": "Исследуйте будущее DeFi на Cardano с инновационной платформой кредитования Liqwid Finance."
+    },
+    "market_details": {
+      "title": "Liqwid Finance - Детали рынка {{id}}",
+      "description": "Liqwid Finance - Детали рынка"
+    },
+    "loans": {
+      "title": "Liqwid Finance - Займы",
+      "description": "Изучите полный список займов, доступных в приложении Liqwid."
+    },
+    "liquidations": {
+      "title": "Liqwid Finance - Ликвидации",
+      "description": "Просмотрите полный журнал ликвидированных займов в приложении Liqwid."
+    },
+    "transactions": {
+      "title": "Liqwid Finance - Транзакции",
+      "description": "Просмотрите все свои транзакции в Liqwid"
+    },
+    "analytics": {
+      "title": "Liqwid Finance - Аналитика",
+      "description": "Liqwid Finance - Аналитика"
+    },
+    "governance": {
+      "title": "Liqwid Finance - Управление",
+      "description": "Участвуйте в управлении Liqwid Finance, голосуя по ключевым предложениям."
+    },
+    "proposal": {
+      "title": "Liqwid Finance - Предложение",
+      "description": "Liqwid Finance - Предложение"
+    },
+    "staking": {
+      "title": "Liqwid Finance - Стейкинг",
+      "description": "Зарабатывайте награды и участвуйте в управлении, делая стейк своих активов в приложении Liqwid."
+    },
+    "maintenance": {
+      "title": "Liqwid Finance - Техническое обслуживание",
+      "description": "Liqwid Finance - Техническое обслуживание"
+    },
+    "faucet": {
+      "title": "Liqwid Finance - Кран",
+      "description": "Получите тестовые токены для экспериментов с DeFi без риска."
+    },
+    "notifications": {
+      "title": "Liqwid Finance - Уведомления",
+      "description": "Никогда не пропускайте важные обновления с уведомлениями приложения Liqwid."
+    },
+    "delegate_action": {
+      "title": "Liqwid Finance - Делегирование",
+      "description": "Делегируйте свои LQ на другой адрес."
+    },
+    "unlock_action": {
+      "title": "Liqwid Finance - Разблокировать",
+      "description": "Разблокируйте свои стейки."
+    },
+    "modify_stake_action": {
+      "title": "Liqwid Finance - Стейкинг",
+      "description": "Создайте или измените свой стейк."
+    },
+    "vote_action": {
+      "title": "Liqwid Finance - Голосование",
+      "description": "Проголосуйте за предложение."
+    }
+  },
+  "nav": {
+    "dashboard": "Панель",
+    "liqwid": "Liqwid V2",
+    "governance": "Управление",
+    "proposals": "Предложения",
+    "staking": "Стейкинг",
+    "liquidations": "Ликвидации",
+    "loans": "Займы",
+    "markets": "Рынки",
+    "transaction": "Транзакция",
+    "transactions": "Транзакции",
+    "analytics": "Аналитика",
+    "faucet": "Кран",
+    "notification": "Убедитесь, что вы посещаете <a href='https://v2.liqwid.finance'> v2.liqwid.finance</a> - добавьте в закладки для безопасности.",
+    "preview_banner": "Вы посещаете тестовую версию приложения V2 Preview",
+    "supply": "Предоставить",
+    "borrow": "Взять в долг",
+    "notification_page": "Уведомления",
+    "more": ""
+  },
+  "footer": {
+    "protocol": "Протокол",
+    "community": "Сообщество",
+    "docs": "Документация",
+    "faq": "FAQ",
+    "user_guide": "Руководство пользователя",
+    "status": "Статус",
+    "forum": "Форум",
+    "lq_rewards": "Награды LQ",
+    "discord": "Discord",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "substack": "Substack"
+  },
+  "graph": {
+    "tvl": "Общая заблокированная стоимость (TVL)",
+    "total_staked_lq": "Общий стейк LQ"
+  },
+  "home_header": {
+    "your_supplies": "Ваши поставки",
+    "your_borrows": "Ваши займы",
+    "total_supplies": "Общая поставка",
+    "total_borrows": "Общий заем",
+    "net_apy": "Чистый APY",
+    "net_apy_with_lq_rewards": "Чистый APY с наградами LQ",
+    "your_position": ""
+  },
+  "supply_list": {
+    "title": "Ваши поставки",
+    "connect_wallet": "Подключите кошелек, чтобы увидеть свои поставки",
+    "tooltip": {
+      "balance": "Баланс — это общее количество токенов, которые вы внесли в протокол",
+      "apy": "Годовая доходность (APY) для каждого актива",
+      "locked_collateral": "Заблокировано как залог — количество активов, используемых в качестве обеспечения при займе"
+    }
+  },
+  "borrow_list": {
+    "title": "Ваши займы",
+    "connect_wallet": "Подключите кошелек, чтобы увидеть свои займы",
+    "loan_debt": "Долг составляет {{amount}} {{id}}",
+    "loan_interest": "Начисленные проценты составляют {{interest}} {{id}}",
+    "tooltip": {
+      "debt": "Общая сумма, взятая в долг, и сумма, необходимая для погашения",
+      "apy": "Годовая ставка процента, выплачиваемая заемщиком",
+      "health_factor": "Когда показатель здоровья достигает 1.00, вашу позицию можно ликвидировать",
+      "LTV": "LTV — соотношение суммы займа к стоимости залога",
+      "health_factor_low": "Ваш показатель здоровья низкий, если он достигнет 1.0, возможна ликвидация"
+    }
+  },
+  "transaction_history": {
+    "title": "История транзакций",
+    "empty": "Транзакции не найдены"
+  },
+  "modal": {
+    "close_button": "Хорошо, закрыть",
+    "cancel": "Отмена",
+    "confirm": "Подтвердить"
+  },
+  "action": {
+    "select_collateral": "Выберите или введите предоставленный залог",
+    "transaction_overview": "Обзор транзакции",
+    "collateral_distribution": "Распределение залога",
+    "liquidation": "Ликвидация при <= 1.0",
+    "asset_supplied": "{{id}} поставлено",
+    "batching_fee": "Сбор за пакетную обработку",
+    "eternl_fee": "Сбор Eternl",
+    "loan_origination_fee": "Комиссия за оформление займа",
+    "no_collateral_available": "Нет доступного залога, сначала внесите активы",
+    "success": {
+      "submit_transaction": "Транзакция успешно отправлена - <0>хэш tx</0>"
+    },
+    "info": {
+      "max_borrow_cap_reached": "Ваша максимальная сумма заема {{maxBorrow}} {{id}} превышает допустимый предел из-за текущей ликвидности. Максимум сейчас {{maxBorrowCap}} {{id}}.",
+      "max_supply_cap_reached": "Максимальная сумма, которую вы хотите поставить {{maxSupply}} {{id}}, превышает текущий лимит. За одну транзакцию максимум {{supplyCap}} {{id}}. Возможно, потребуется несколько транзакций.",
+      "max_withdraw_cap_reached": "Максимальная сумма вывода {{maxWithdraw}} {{id}} превышает допустимый предел из-за текущих ограничений. За одну транзакцию максимум {{withdrawCap}} {{id}}. Возможно, потребуется несколько транзакций.",
+      "wash_borrow": "Это wash borrow заем, вы можете частично или полностью его погасить.",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
+    },
+    "error": {
+      "running_batch": "Рынок обрабатывает пакет, подождите.",
+      "min_ada": "Вам нужно минимум {{minAda}} ADA, чтобы совершить действие на платформе.",
+      "min_health_factor": "Минимальный показатель здоровья {{minHealthFactor}}. Увеличьте залог или уменьшите заем.",
+      "min_health_factor_safe_mode": "Минимальный показатель здоровья {{minHealthFactor}}. Увеличьте залог, уменьшите заем или отключите безопасный режим в настройках. Обратите внимание, что отключение безопасного режима повышает риск ликвидации.",
+      "user_cancel_transaction": "Вы отменили транзакцию.",
+      "max_collaterals_reached": "Максимальное количество залогов, которые вы можете добавить, — {{maxCollaterals}}.",
+      "batching_expired": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
+  },
+  "borrow_action": {
+    "select_asset": "Выберите актив для заимствования",
+    "error": {
+      "min_value": "Минимальная сумма заема {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "Вам нужен неотрицательный залог для заимствования",
+      "max_amount": "Нельзя взять в долг больше, чем {{maxAmount}} {{id}}",
+      "min_value_as_collateral": "Минимальный залог {{minValue}} {{id}}"
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
+  },
+  "modify_action": {
+    "title": "Изменить ваш заем {{id}}",
+    "select_loan": "Выберите заем для изменения",
+    "modify_loan_info": "Уменьшите сумму погашения или увеличьте сумму заема",
+    "borrow_more": "Взять еще {{amount}} {{id}}",
+    "repay": "Погасить {{amount}} {{id}}",
+    "error": {
+      "min_value": "Минимальный долг для изменения займа {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "Нужен неотрицательный залог для изменения займа",
+      "min_value_repay": "Минимальная сумма погашения {{minValue}} {{id}}",
+      "min_value_borrow": "Минимальная сумма для увеличения заема {{minValue}} {{id}}",
+      "max_amount": "Нельзя взять в долг больше, чем {{maxAmount}} {{id}}",
+      "insufficient_balance": "Недостаточно средств в кошельке для погашения долга {{amount}} {{id}}. В кошельке {{walletAmount}} {{id}}."
+    },
+    "please_modify_to_save": ""
+  },
+  "supply_action": {
+    "select_asset": "Выберите актив для поставки",
+    "error": {
+      "min_value": "Минимальная сумма поставки {{minValue}} {{id}}",
+      "max_amount": "Нельзя предоставить больше, чем {{maxAmount}} {{id}}"
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
+  },
+  "withdraw_action": {
+    "select_asset": "Выберите актив для вывода",
+    "error": {
+      "min_value": "Минимальная сумма вывода {{minValue}} {{id}}",
+      "max_amount": "Нельзя вывести больше, чем {{maxAmount}} {{id}}",
+      "bad_rest": "Нельзя оставить поставку меньше {{minValue}} {{id}}, выведите все или введите меньшую сумму."
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
+  },
+  "liquidate_action": {
+    "title": "Ликвидировать заем {{id}}",
+    "select_loan": "Выберите заем для ликвидации",
+    "liquidate_amount": "Сумма ликвидации",
+    "liquidation_profit": "Прибыль от ликвидации",
+    "collateral_seized": "Изъятый залог",
+    "error": {
+      "min_value": "Минимальная сумма ликвидации {{minValue}} {{id}}",
+      "max_amount_under_min_value": "Вы можете ликвидировать весь заем, так как оставшийся долг ниже минимального значения {{minValue}} {{id}}",
+      "liquidation_profit_negative": "Ваша прибыль от ликвидации отрицательна, вы ликвидируете с убытком.",
+      "max_amount": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    }
+  },
+  "delegate_page": {
+    "title": "Делегирование вашей голосующей силы",
+    "success": "Вы успешно {{delegate}} {{amount}} LQ на {{currentValue}}",
+    "enter_address": "Введите адрес для делегирования",
+    "give_voting_power": "Делегируйте вашу голосующую силу другому адресу",
+    "selected_name_suggestion": "Вы успешно выбрали {{name}}",
+    "error": {
+      "delegate_yourself": "Нельзя делегировать самому себе",
+      "wrong_address": "Введите действительный адрес"
+    }
+  },
+  "unlock_page": {
+    "title": "Разблокировать стейки - Предложение {{proposalId}}",
+    "select_proposal": "Выберите предложение",
+    "choose_stakes_to_unlock": "Выберите стейки для разблокировки",
+    "no_stakes_locked": "У вас нет заблокированных стейков",
+    "unlock_stakes_fees_info": "Вы можете разблокировать до 20 стейков за раз, но чем больше вы разблокируете, тем выше комиссия. Рекомендуется разблокировать постепенно.",
+    "error": {
+      "need_one_stake": "Нужно выбрать хотя бы один стейк для разблокировки",
+      "max_x_stake": "Вы можете выбрать не более {{count}} стейков за одну разблокировку",
+      "cant_unlock_draft": "Вы не можете разблокировать стейки из черновика предложения"
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "Изменить стейк",
+    "modify_delegate": "Изменить делегирование",
+    "select_stake": "Выберите стейк",
+    "unstake_all": "Отменить стейк полностью",
+    "add_more": "Добавить еще {{amount}} LQ к вашему стейку",
+    "reduce_stake": "Уменьшить ваш стейк на {{amount}} LQ",
+    "creating_stake": "Создание нового стейка на {{amount}} LQ",
+    "lq_in_this_stake": "Количество LQ в этом стейке",
+    "your_adding_stake": "Вы увеличиваете ваш стейк",
+    "your_reducing_stake": "Вы уменьшаете ваш стейк",
+    "your_creating_stake": "Вы создаете новый стейк",
+    "create_new_stake": "Создать новый стейк"
+  },
+  "lq_info": {
+    "title": "Информация о LQ",
+    "market_cap": "Рыночная капитализация",
+    "fully_diluted_valuation": "Полностью разводненная оценка",
+    "circulating_supply": "Циркулирующее предложение",
+    "amount_lq_staked": "Количество застейканных LQ"
+  },
+  "vote_page": {
+    "success": "Вы {{cosignOrVoteResult}} {{proposalTitle}}",
+    "cosign_vote_for": "{{cosignOrVote}} за «{{proposalTitle}}»",
+    "choose_proposal_result": "Выберите результат предложения",
+    "choose_stakes_to_vote": "Выберите стейки для голосования",
+    "submit_vote": "Отправить голос",
+    "total_vote": "Всего голосов",
+    "most_voted_result": "Наиболее популярный результат",
+    "vote_stakes_fees_info": "Вы можете голосовать до 20 стейков за раз, но чем больше стейков, тем выше комиссия. Рекомендуется голосовать постепенно.",
+    "error": {
+      "select_atleast_one": "Нужно выбрать как минимум один стейк",
+      "max_x_stake": "Вы можете выбрать не более {{count}} стейков за один раз голосования",
+      "minimum_vote": "Нужно выбрать как минимум 30 LQ в сумме"
+    }
+  },
+  "wallet_modal": {
+    "automatic_support": "Автоматическая поддержка",
+    "automatic_support_message": "Автоматическая поддержка, кошелек может вызвать проблемы",
+    "your_wallet": "Ваш кошелек",
+    "partial_compatability": "",
+    "terms": ""
+  },
+  "settings_modal": {
+    "title": "Настройки",
+    "hide_balance": "Скрыть баланс",
+    "language": "Язык",
+    "currency": "Валюта",
+    "currency_format": "Формат валюты",
+    "loan_indicators": "Индикаторы займа",
+    "cardano_explorer_link": "Ссылка на Cardano Explorer",
+    "warning_safe_mode": "Обратите внимание, что отключение безопасного режима повышает риск ликвидации.",
+    "abbreviated_numbers": ""
+  },
+  "error_modal": {
+    "close_button": "Хорошо, закрыть",
+    "something_wrong": "Что-то пошло не так!",
+    "close_dialog_try_again": "Закройте это окно и попробуйте снова.",
+    "problem_persists": "Если проблема не исчезнет, <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">обратитесь в поддержку</a>.",
+    "click_copy_debug_info": "Нажмите <span className='active-error' onClick={copyToClipboard}>здесь</span>, чтобы скопировать отладочную информацию"
+  },
+  "market_page": {
+    "total_supplies": "Общая поставка",
+    "total_available": "Всего доступно",
+    "total_borrows": "Общий заем",
+    "empty": "В настоящее время нет рынков, соответствующих критериям поиска"
+  },
+  "loans_page": {
+    "empty": "В настоящее время нет займов, соответствующих критериям поиска",
+    "tooltip": {
+      "liquidate_info": "Когда показатель здоровья 1.00 или ниже, возможна ликвидация"
+    }
+  },
+  "market_details": {
+    "title": "Детали {{id}}",
+    "select_asset": "Выберите актив для просмотра",
+    "market_info": "Информация о рынке",
+    "exchange_rate_price": "Текущий обменный курс {{id}}",
+    "total_asset_supplies": "Общая поставка {{id}}",
+    "total_asset_borrows": "Общий заем {{id}}",
+    "total_asset_liquidity": "Общая ликвидность {{id}}",
+    "number_market_utxo": "Количество UTXO рынка",
+    "bridged_token": "Мостовой токен",
+    "income_split": "Распределение дохода",
+    "supplier": "Поставщик",
+    "staker": "Стейкер",
+    "reserve": "Резерв",
+    "treasury": "Казна",
+    "collateral_parameters": "Параметры залога для заимствования {{id}}",
+    "collateralization_against": "{{id}} активирован как залог против этих долговых активов",
+    "tooltip": {
+      "market_utxo": "Количество UTXO рынка - это число уникальных счетов/пулов, с которыми пользователи могут взаимодействовать в данный момент. Ликвидность распределена между этими счетами. Если все счета заняты, новые пользователи должны дождаться завершения операций прежде, чем отправлять свои."
+    }
+  },
+  "utilization_graph": {
+    "current_utilization": "Текущее использование: {{utilization}}%",
+    "utilization_tooltip": "Использование: {{utilization}}%",
+    "supply_apy_tooltip": "APY поставки: {{supply}}%",
+    "borrow_apy_tooltip": "APY заема: {{borrow}}%",
+    "include_ada_staking": "Этот APY включает награды за стейкинг ADA для незаемных средств"
+  },
+  "apy_graph": {
+    "current_apy": "Текущий APY"
+  },
+  "liquidity_graph": {
+    "current_liquidity": "Текущая ликвидность в {{asset}}",
+    "supply": "Поставка: {{supply}}",
+    "borrow": "Заем: {{borrow}}",
+    "liquidity": "Ликвидность: {{liquidity}}"
+  },
+  "governance": {
+    "title": "Управление",
+    "your_wallet": "Ваш кошелек",
+    "recent_proposals": "Недавние предложения",
+    "participate_in_governance": "Чтобы участвовать в управлении, застейкайте LQ.",
+    "staked_lq_locked": "Ваш застейканный LQ заблокирован",
+    "staked_lq_balance": "Ваш баланс застейканного LQ",
+    "lq_balance": "Ваш баланс LQ",
+    "stake_lq": "Застейкать LQ",
+    "lq_staked": "LQ застейкано",
+    "voting_power": "Голосующая сила",
+    "delegate_vote": "Делегировать голос",
+    "share_delegation_address": "Хотите поделиться адресом для делегирования?",
+    "here_is_yours": "Вот один из ваших:",
+    "you_can_vote": "Вы можете голосовать по каждому предложению сами или делегировать право голоса третьей стороне.",
+    "want_receive_notification_proposal": "Хотите получать уведомления, когда появляется новое предложение?",
+    "go_to_notification": "<Link>Перейдите на страницу уведомлений</Link> и включите уведомления о предложениях.",
+    "empty": "Нет предложений, соответствующих критериям поиска",
+    "no_stake_owned": "У вас нет стейка",
+    "delegated_voting_power_to": "Вы делегировали свою голосующую силу"
+  },
+  "proposal": {
+    "title": "Предложение",
+    "finished": "Завершено",
+    "co_sign": "Совместно подписать",
+    "co_signers": "Со-подписанты",
+    "your_votes": "Ваши голоса",
+    "vote_breakdown": "Разбивка голосов",
+    "proposal_timeline": "Хронология предложения",
+    "draft_created": "Черновик создан",
+    "proposal_results": "Результаты предложения",
+    "vote_available_in_voting_phase": "Голосование доступно только на этапе голосования"
+  },
+  "staking_page": {
+    "stake_date": "Дата стейкинга",
+    "your_sub_stakes": "Ваши подсейки",
+    "your_delegated_power": "Ваша делегированная сила",
+    "delegated_by": "Делегировано кем",
+    "create_stake": "Создать стейк",
+    "total_staking": "Общий стейкинг",
+    "total_balance": "Общий баланс",
+    "total_staked": "Всего застейкано",
+    "total_voting_power": "Общая голосующая сила",
+    "staking_rewards": "Награды за стейкинг",
+    "average_apr": "Средний APR",
+    "rewards_apr": "APR наград",
+    "locked_by_proposals": "Заблокировано предложениями",
+    "stake_lq_receive_rewards": "Пожалуйста, <0>застейкайте</0> ваш LQ для голосования и получения наград",
+    "connect_to_stake": "Подключитесь и застейкайте LQ для голосования и получения наград",
+    "max_apr": "Максимальный APR",
+    "buy_jpeg_store": "Купить на JPG Store",
+    "rarity": "Редкость",
+    "apr_boost": "Повышение APR",
+    "see_aquafarmers": "Если хотите увидеть своих aquafarmers и увеличить APR для стейкинга LQ, вам нужен хотя бы один",
+    "connect_see_aquafarmers": "Подключитесь, чтобы увидеть своих aquafarmers и повышение APR для стейкинга LQ",
+    "stake_locked_unlock_before_modify": "Ваш стейк заблокирован. Разблокируйте его, прежде чем изменять.",
+    "no_delegation_found": "Если хотите получить адрес делегирования и поделиться им"
+  },
+  "liquidation_page": {
+    "liquidated_loans": "Ваши ликвидированные займы",
+    "all_liquidated_loans": "Все ликвидированные займы",
+    "amount": "Сумма ликвидации",
+    "ltv_before": "LTV до",
+    "ltv_after": "LTV после",
+    "collateral_liquidated": "Залог ликвидирован",
+    "liquidator": "Ликвидатор",
+    "no_liquidation": "У вас не было ликвидаций"
+  },
+  "maintenance_page": {
+    "coming_back_soon": "Скоро вернемся!",
+    "website_under_maintenance": "Приложение Liqwid находится на обслуживании."
+  },
+  "chart": {
+    "utilization_rate": "Уровень использования",
+    "oracle_price": "Цена оракула",
+    "one_day": "1 день",
+    "one_week": "1 неделя",
+    "one_month": "1 месяц",
+    "utilization": "Использование",
+    "oracle": "Оракул",
+    "apy": "APY",
+    "liquidity": "Ликвидность",
+    "1d": "1Д",
+    "1w": "1Н",
+    "1m": "1М",
+    "1y": "1Г",
+    "max": "Макс"
+  },
+  "settings_page": {
+    "title": "Настройки уведомлений",
+    "clear_signatures": "Очистить сохраненные подписи",
+    "no_adamail_nft": "NFT AdaMail не найден в вашем кошельке",
+    "adamail_link": "Получить бесплатный AdaMail здесь",
+    "which_notifications": "Какие уведомления вы хотите получать?",
+    "unlock_email_by_signing": "Разблокируйте email-уведомления, подписав сообщение кошельком",
+    "no_transaction_fee_required": "Комиссия за транзакцию не требуется",
+    "enable_email_notifications": "Включить email-уведомления",
+    "enable_adamail_notifications": "Включить уведомления ADAmail",
+    "loading": "Загрузка...",
+    "email": "Email",
+    "verify_email": "Подтвердить Email",
+    "your_adamail": "Ваш ADAmail",
+    "email_verified": "Email подтвержден",
+    "general_communication": "Общение в целом",
+    "loading_settings_data": "Загрузка данных настроек...",
+    "signature_setup": "Проверка подписи успешно завершена",
+    "waiting_for_signature": "Ожидание подписи...",
+    "settings_updated": "Настройки успешно обновлены",
+    "verification_email_sent": "Письмо для подтверждения отправлено",
+    "sign": "Подписать",
+    "save_verify_email": "Отправить и подтвердить Email",
+    "save_settings": "Сохранить настройки",
+    "delete_data_message": "<div>Вы уверены, что хотите удалить все настройки уведомлений?</div><div>Это удалит все данные, связанные с вашим email.</div>",
+    "delete_data": "Все данные успешно удалены",
+    "loan_alert": "Оповещение о займе",
+    "delete_saved_signatures_message": "<div>Вы уверены, что хотите удалить все сохраненные подписи?</div><div>Вам нужно будет подписать снова для доступа к настройкам уведомлений.</div>",
+    "error": {
+      "enable_email_notifications_first": "Сначала включите email-уведомления, затем подтвердите email"
+    }
+  },
+  "verify_email_page": {
+    "title": "Подтвердить Email",
+    "loading": "Загрузка...",
+    "email_verified_success": "Email успешно подтвержден",
+    "incorrect_code": "Неверный код",
+    "error": "Произошла ошибка",
+    "redirection_soon": "Вы будете перенаправлены автоматически через 5 секунд."
+  },
+  "filters": {
+    "title": "Фильтры",
+    "asset_types": "Типы активов",
+    "stablecoin": "Стейблкоин",
+    "cardano_native_token": "Нативный токен Cardano",
+    "bridge_token": "Мостовой токен",
+    "others": "Другие",
+    "show_assets_with_no_balance": "Показать активы без баланса"
+  },
+  "transfer_from_cex_page": {
+    "title": "Перевод с CEX"
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "close_loan": "",
+  "interest": "",
+  "collaterals": "",
+  "half": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "save": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "borrow_more_action": "",
+  "repay_action": "",
+  "faucet_action": "",
+  "notification_message": ""
 }
