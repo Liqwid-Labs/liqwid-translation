@@ -183,10 +183,22 @@
       "title": "Liqwidアプリ - 通知",
       "description": "Liqwidアプリの通知で重要な更新情報を見逃さないようにしよう。"
     },
-    "delegate_action": "",
-    "unlock_action": "",
-    "modify_stake_action": "",
-    "vote_action": ""
+    "delegate_action": {
+      "title": "",
+      "description": ""
+    },
+    "unlock_action": {
+      "title": "",
+      "description": ""
+    },
+    "modify_stake_action": {
+      "title": "",
+      "description": ""
+    },
+    "vote_action": {
+      "title": "",
+      "description": ""
+    }
   },
   "nav": {
     "dashboard": "ダッシュボード",
@@ -320,18 +332,6 @@
   },
   "modify_action": {
     "title": "{{id}} ローンを変更する",
-    "select_loan": "変更するローンを選択",
-    "modify_loan_info": "返済する額を減らすか、借り入れる額を増やす",
-    "borrow_more": "さらに {{amount}} {{id}} を借りる",
-    "repay": "{{amount}} {{id}} を返済する",
-    "error": {
-      "min_value": "ローンを変更するための最小債務は {{minValue}} {{id}} です",
-      "min_value_repay": "返済するための最小額は {{minValue}} {{id}} です",
-      "min_value_borrow": "追加借り入れのための最小額は {{minValue}} {{id}} です",
-      "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて借り入れることはできません",
-      "insufficient_balance": "あなたのローンに対する {{amount}} {{id}} の債務を返済するための残高がウォレットに不足しています。ウォレット内の利用可能な金額は {{walletAmount}} {{id}} です。",
-      "min_value_non_negative_collateral": ""
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -400,6 +400,10 @@
     "problem_persists": "問題が解決しない場合は、<a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">サポートに連絡してください</a>。",
     "click_copy_debug_info": "デバッグ情報をコピーするには、<span className='active-error' onClick={copyToClipboard}>ここをクリック</span>してください"
   },
+  "redirect_modal": {
+    "title": "⚠️ v1.liqwid.finance からリダイレクトされました",
+    "message": "v1.liqwid.finance アプリは現在利用できません。ブックマークを更新して新しいバージョンをご利用ください。"
+  },
   "market_page": {
     "total_supplies": "総供給",
     "total_available": "全体の使用可能量",
@@ -430,7 +434,8 @@
     "collateral_parameters": "{{id}}を借りるための担保パラメータ",
     "collateralization_against": "これらの借入に対して{{id}}が担保されています",
     "tooltip": {
-      "market_utxo": "マーケット内でユーザーが特定の瞬間に相互作用できるユニークなアカウント/プールの数。市場の流動性は、これらのアカウントにほぼ均等に分散されています。すべてのアカウントが同時に相互作用している場合、新しいユーザーはこれらの相互作用が完了するまで待つ必要があります。"
+      "market_utxo": "マーケット内でユーザーが特定の瞬間に相互作用できるユニークなアカウント/プールの数。市場の流動性は、これらのアカウントにほぼ均等に分散されています。すべてのアカウントが同時に相互作用している場合、新しいユーザーはこれらの相互作用が完了するまで待つ必要があります。",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -622,15 +627,97 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "faucet_action": "",
-  "delegate_page": "",
-  "unlock_page": "",
-  "modify_stake_page": "",
-  "vote_page": "",
-  "apy_graph": "",
-  "liquidity_graph": "",
-  "transfer_from_cex_page": "",
-  "notification_message": ""
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "delegate_page": {
+    "title": "",
+    "success": "",
+    "enter_address": "",
+    "give_voting_power": "",
+    "selected_name_suggestion": "",
+    "error": {
+      "delegate_yourself": "",
+      "wrong_address": ""
+    }
+  },
+  "unlock_page": {
+    "title": "",
+    "select_proposal": "",
+    "choose_stakes_to_unlock": "",
+    "no_stakes_locked": "",
+    "unlock_stakes_fees_info": "",
+    "error": {
+      "need_one_stake": "",
+      "max_x_stake": "",
+      "cant_unlock_draft": ""
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "",
+    "modify_delegate": "",
+    "select_stake": "",
+    "unstake_all": "",
+    "add_more": "",
+    "reduce_stake": "",
+    "creating_stake": "",
+    "lq_in_this_stake": "",
+    "your_adding_stake": "",
+    "your_reducing_stake": "",
+    "your_creating_stake": "",
+    "create_new_stake": ""
+  },
+  "vote_page": {
+    "success": "",
+    "cosign_vote_for": "",
+    "choose_proposal_result": "",
+    "choose_stakes_to_vote": "",
+    "submit_vote": "",
+    "total_vote": "",
+    "most_voted_result": "",
+    "vote_stakes_fees_info": "",
+    "error": {
+      "select_atleast_one": "",
+      "max_x_stake": "",
+      "minimum_vote": ""
+    }
+  },
+  "apy_graph": {
+    "current_apy": ""
+  },
+  "liquidity_graph": {
+    "current_liquidity": "",
+    "supply": "",
+    "borrow": "",
+    "liquidity": ""
+  },
+  "transfer_from_cex_page": {
+    "title": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

@@ -346,18 +346,6 @@
   },
   "modify_action": {
     "title": "Modificar tu préstamo de {{id}}",
-    "select_loan": "Selecciona un préstamo para modificar",
-    "modify_loan_info": "Reduce la cantidad a reembolsar o aumenta la cantidad prestada",
-    "borrow_more": "Pedir {{amount}} {{id}} más",
-    "repay": "Reembolsar {{amount}} {{id}}",
-    "error": {
-      "min_value": "La deuda mínima para modificar tu préstamo es {{minValue}} {{id}}",
-      "min_value_non_negative_collateral": "Necesitas un valor colateral no negativo para modificar tu préstamo",
-      "min_value_repay": "La cantidad mínima para reembolsar es {{minValue}} {{id}}",
-      "min_value_borrow": "La cantidad mínima para pedir más prestado es {{minValue}} {{id}}",
-      "max_amount": "No puedes pedir prestado más de {{maxAmount}} {{id}}",
-      "insufficient_balance": "No tienes suficiente balance en tu billetera para reembolsar la deuda de {{amount}} {{id}}. En tu billetera hay {{walletAmount}} {{id}}."
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -478,6 +466,10 @@
     "problem_persists": "Si el problema persiste, por favor <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contacta soporte</a>.",
     "click_copy_debug_info": "haz clic <span className='active-error' onClick={copyToClipboard}>aquí</span> para copiar la información de depuración"
   },
+  "redirect_modal": {
+    "title": "⚠️ Redirigido desde v1.liqwid.finance",
+    "message": "La aplicación v1.liqwid.finance ya no está operativa. Por favor, actualice sus marcadores para usar la nueva versión."
+  },
   "market_page": {
     "total_supplies": "Suministros Totales",
     "total_available": "Total Disponible",
@@ -508,7 +500,8 @@
     "collateral_parameters": "Parámetros de Colateral para pedir prestado {{id}}",
     "collateralization_against": "{{id}} está habilitado como colateral contra estos activos de deuda",
     "tooltip": {
-      "market_utxo": "El número de UTXO de mercado representa la cantidad de cuentas/pools únicas con las que los usuarios pueden interactuar en un momento dado. La liquidez del mercado se distribuye entre estas cuentas. Si todas las cuentas se están usando simultáneamente, los nuevos usuarios deben esperar a que finalicen estas interacciones antes de poder enviar acciones."
+      "market_utxo": "El número de UTXO de mercado representa la cantidad de cuentas/pools únicas con las que los usuarios pueden interactuar en un momento dado. La liquidez del mercado se distribuye entre estas cuentas. Si todas las cuentas se están usando simultáneamente, los nuevos usuarios deben esperar a que finalicen estas interacciones antes de poder enviar acciones.",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -698,8 +691,33 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "faucet_action": "",
-  "notification_message": ""
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

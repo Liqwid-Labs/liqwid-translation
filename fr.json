@@ -265,18 +265,6 @@
   },
   "modify_action": {
     "title": "Modifier votre prêt {{id}}",
-    "select_loan": "Sélectionnez un prêt à modifier",
-    "modify_loan_info": "Réduisez le montant à rembourser ou augmentez-le pour emprunter davantage",
-    "borrow_more": "Emprunter en plus {{amount}} {{id}}",
-    "repay": "Rembourser {{amount}} {{id}}",
-    "error": {
-      "min_value": "La dette minimale pour modifier votre prêt est de {{minValue}} {{id}}",
-      "min_value_repay": "Le montant minimum à rembourser est de {{minValue}} {{id}}",
-      "min_value_borrow": "Le montant minimum pour emprunter plus est de {{minValue}} {{id}}",
-      "max_amount": "Vous ne pouvez pas emprunter plus que votre limite de {{maxAmount}} {{id}}",
-      "insufficient_balance": "Vous avez un solde insuffisant dans votre portefeuille pour rembourser la dette de {{amount}} {{id}} sur votre prêt. Le montant disponible dans votre portefeuille est de {{walletAmount}} {{id}}.",
-      "min_value_non_negative_collateral": ""
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -374,6 +362,10 @@
     "problem_persists": "Si le problème persiste, veuillez <a target=\"_blank\"  href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">Contacter le support</a>.",
     "click_copy_debug_info": "cliquez <span className='active-error' onClick={copyToClipboard}>ici</span> pour copier les informations de débogage"
   },
+  "redirect_modal": {
+    "title": "⚠️ Redirigé depuis v1.liqwid.finance",
+    "message": "L'application v1.liqwid.finance n'est plus opérationnelle. Veuillez mettre à jour vos favoris pour utiliser la nouvelle version."
+  },
   "market_page": {
     "total_supplies": "Total déposer",
     "total_available": "Total disponible",
@@ -404,7 +396,8 @@
     "collateral_parameters": "Paramètres de collatéralisation pour emprunter {{id}}",
     "collateralization_against": "{{id}} est collatéralisé contre ces emprunts",
     "tooltip": {
-      "market_utxo": "Le nombre de comptes/pools uniques dans un marché avec lesquels les utilisateurs peuvent interagir à un moment donné. La liquidité dans un marché est répartie plus ou moins uniformément entre ces comptes. Si tous les comptes sont utilisés simultanément, les nouveaux utilisateurs devront attendre que ces interactions se terminent avant de pouvoir soumettre des actions."
+      "market_utxo": "Le nombre de comptes/pools uniques dans un marché avec lesquels les utilisateurs peuvent interagir à un moment donné. La liquidité dans un marché est répartie plus ou moins uniformément entre ces comptes. Si tous les comptes sont utilisés simultanément, les nouveaux utilisateurs devront attendre que ces interactions se terminent avant de pouvoir soumettre des actions.",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -597,13 +590,134 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "seo": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "unlock_page": "",
-  "modify_stake_page": "",
-  "apy_graph": "",
-  "liquidity_graph": "",
-  "transfer_from_cex_page": "",
-  "notification_message": ""
+  "seo": {
+    "dashboard": {
+      "title": "",
+      "description": ""
+    },
+    "market_details": {
+      "title": "",
+      "description": ""
+    },
+    "loans": {
+      "title": "",
+      "description": ""
+    },
+    "liquidations": {
+      "title": "",
+      "description": ""
+    },
+    "transactions": {
+      "title": "",
+      "description": ""
+    },
+    "analytics": {
+      "title": "",
+      "description": ""
+    },
+    "governance": {
+      "title": "",
+      "description": ""
+    },
+    "proposal": {
+      "title": "",
+      "description": ""
+    },
+    "staking": {
+      "title": "",
+      "description": ""
+    },
+    "maintenance": {
+      "title": "",
+      "description": ""
+    },
+    "faucet": {
+      "title": "",
+      "description": ""
+    },
+    "notifications": {
+      "title": "",
+      "description": ""
+    },
+    "delegate_action": {
+      "title": "",
+      "description": ""
+    },
+    "unlock_action": {
+      "title": "",
+      "description": ""
+    },
+    "modify_stake_action": {
+      "title": "",
+      "description": ""
+    },
+    "vote_action": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "unlock_page": {
+    "title": "",
+    "select_proposal": "",
+    "choose_stakes_to_unlock": "",
+    "no_stakes_locked": "",
+    "unlock_stakes_fees_info": "",
+    "error": {
+      "need_one_stake": "",
+      "max_x_stake": "",
+      "cant_unlock_draft": ""
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "",
+    "modify_delegate": "",
+    "select_stake": "",
+    "unstake_all": "",
+    "add_more": "",
+    "reduce_stake": "",
+    "creating_stake": "",
+    "lq_in_this_stake": "",
+    "your_adding_stake": "",
+    "your_reducing_stake": "",
+    "your_creating_stake": "",
+    "create_new_stake": ""
+  },
+  "apy_graph": {
+    "current_apy": ""
+  },
+  "liquidity_graph": {
+    "current_liquidity": "",
+    "supply": "",
+    "borrow": "",
+    "liquidity": ""
+  },
+  "transfer_from_cex_page": {
+    "title": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

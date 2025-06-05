@@ -346,18 +346,6 @@
   },
   "modify_action": {
     "title": "Ihr {{id}} Darlehen ändern",
-    "select_loan": "Wählen Sie ein Darlehen zum Ändern aus",
-    "modify_loan_info": "Reduzieren Sie den Rückzahlungsbetrag oder erhöhen Sie das Darlehen",
-    "borrow_more": "Zusätzlich {{amount}} {{id}} leihen",
-    "repay": "{{amount}} {{id}} zurückzahlen",
-    "error": {
-      "min_value": "Der Mindestschuldwert, um Ihr Darlehen zu ändern, ist {{minValue}} {{id}}",
-      "min_value_non_negative_collateral": "Sie benötigen einen nichtnegativen Sicherheitenwert, um Ihr Darlehen zu ändern",
-      "min_value_repay": "Der Mindestbetrag zur Rückzahlung ist {{minValue}} {{id}}",
-      "min_value_borrow": "Der Mindestbetrag zum zusätzlichen Leihen ist {{minValue}} {{id}}",
-      "max_amount": "Sie können nicht mehr als {{maxAmount}} {{id}} leihen",
-      "insufficient_balance": "Sie haben nicht genügend Guthaben in Ihrer Wallet, um die Schulden von {{amount}} {{id}} zurückzuzahlen. Der verfügbare Betrag in Ihrer Wallet ist {{walletAmount}} {{id}}."
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -478,6 +466,10 @@
     "problem_persists": "Wenn das Problem weiterhin besteht, <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">kontaktieren Sie den Support</a>.",
     "click_copy_debug_info": "Klicken Sie <span className='active-error' onClick={copyToClipboard}>hier</span>, um Debug-Informationen zu kopieren"
   },
+  "redirect_modal": {
+    "title": "⚠️ Weiterleitung von v1.liqwid.finance",
+    "message": "Die v1.liqwid.finance-App ist nicht mehr verfügbar. Bitte aktualisieren Sie Ihre Lesezeichen und verwenden Sie die neue Version."
+  },
   "market_page": {
     "total_supplies": "Gesamtbereitstellungen",
     "total_available": "Gesamt verfügbar",
@@ -508,7 +500,8 @@
     "collateral_parameters": "Sicherheitsparameter für das Leihen von {{id}}",
     "collateralization_against": "{{id}} ist als Sicherheit für diese Schulden-Assets aktiviert",
     "tooltip": {
-      "market_utxo": "Die Anzahl der Market-UTXO repräsentiert die Anzahl eindeutiger Konten/Pools, mit denen Nutzer zu einem bestimmten Zeitpunkt interagieren können. Die Liquidität ist über diese Konten verteilt. Wenn alle Konten gleichzeitig genutzt werden, müssen neue Nutzer warten, bis diese Interaktionen abgeschlossen sind."
+      "market_utxo": "Die Anzahl der Market-UTXO repräsentiert die Anzahl eindeutiger Konten/Pools, mit denen Nutzer zu einem bestimmten Zeitpunkt interagieren können. Die Liquidität ist über diese Konten verteilt. Wenn alle Konten gleichzeitig genutzt werden, müssen neue Nutzer warten, bis diese Interaktionen abgeschlossen sind.",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -698,8 +691,33 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "faucet_action": "",
-  "notification_message": ""
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

@@ -169,9 +169,32 @@
     "asset_can_be_used_as_collateral": "",
     "no_collateral_available": "",
     "loan_after": "",
-    "success": "",
-    "info": "",
-    "error": ""
+    "success": {
+      "submit_transaction": ""
+    },
+    "info": {
+      "max_borrow_cap_reached": "",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "max_supply_cap_reached": "",
+      "supply_cap_reached": "",
+      "max_withdraw_cap_reached": "",
+      "wash_borrow": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
+    },
+    "error": {
+      "running_batch": "",
+      "min_ada": "",
+      "batching_expired": "",
+      "min_health_factor": "",
+      "min_health_factor_safe_mode": "",
+      "min_health_factor_safe_mode_modify": "",
+      "user_cancel_transaction": "",
+      "max_collaterals_reached": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    }
   },
   "borrow_action": {
     "error": {
@@ -186,19 +209,7 @@
     "enter_amount_to_borrow": ""
   },
   "modify_action": {
-    "error": {
-      "min_value": "",
-      "min_value_non_negative_collateral": "",
-      "min_value_repay": "",
-      "min_value_borrow": "",
-      "max_amount": "",
-      "insufficient_balance": ""
-    },
     "title": "",
-    "select_loan": "",
-    "modify_loan_info": "",
-    "borrow_more": "",
-    "repay": "",
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -278,6 +289,10 @@
     "problem_persists": "Caso o problema persista, por favor <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">entre em contato</a>.",
     "click_copy_debug_info": "clique <span className='active-error' onClick={copyToClipboard}>aqui</span> para copiar a informação de debugging"
   },
+  "redirect_modal": {
+    "title": "⚠️ Redirecionado de v1.liqwid.finance",
+    "message": "O aplicativo v1.liqwid.finance não está mais operacional. Por favor, atualize seus favoritos para usar a nova versão."
+  },
   "market_page": {
     "total_supplies": "Depósitos totais",
     "total_available": "Total dísponível",
@@ -301,7 +316,10 @@
     "treasury": "",
     "collateral_parameters": "",
     "collateralization_against": "",
-    "tooltip": ""
+    "tooltip": {
+      "market_utxo": "",
+      "hardcap_price": ""
+    }
   },
   "governance": {
     "title": "Governança",
@@ -399,7 +417,6 @@
   "close_position": "",
   "close_loan": "",
   "mint": "",
-  "mint_optim": "",
   "max_repay": "",
   "min_interest": "",
   "interest": "",
@@ -478,22 +495,229 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "seo": "",
-  "footer": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "liquidate_action": "",
-  "faucet_action": "",
-  "unlock_page": "",
-  "modify_stake_page": "",
-  "loans_page": "",
-  "utilization_graph": "",
-  "apy_graph": "",
-  "liquidity_graph": "",
-  "settings_page": "",
-  "verify_email_page": "",
-  "filters": "",
-  "transfer_from_cex_page": "",
-  "notification_message": "",
-  "markets": ""
+  "seo": {
+    "dashboard": {
+      "title": "",
+      "description": ""
+    },
+    "market_details": {
+      "title": "",
+      "description": ""
+    },
+    "loans": {
+      "title": "",
+      "description": ""
+    },
+    "liquidations": {
+      "title": "",
+      "description": ""
+    },
+    "transactions": {
+      "title": "",
+      "description": ""
+    },
+    "analytics": {
+      "title": "",
+      "description": ""
+    },
+    "governance": {
+      "title": "",
+      "description": ""
+    },
+    "proposal": {
+      "title": "",
+      "description": ""
+    },
+    "staking": {
+      "title": "",
+      "description": ""
+    },
+    "maintenance": {
+      "title": "",
+      "description": ""
+    },
+    "faucet": {
+      "title": "",
+      "description": ""
+    },
+    "notifications": {
+      "title": "",
+      "description": ""
+    },
+    "delegate_action": {
+      "title": "",
+      "description": ""
+    },
+    "unlock_action": {
+      "title": "",
+      "description": ""
+    },
+    "modify_stake_action": {
+      "title": "",
+      "description": ""
+    },
+    "vote_action": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "footer": {
+    "protocol": "",
+    "community": "",
+    "docs": "",
+    "faq": "",
+    "user_guide": "",
+    "status": "",
+    "forum": "",
+    "lq_rewards": "",
+    "discord": "",
+    "twitter": "",
+    "github": "",
+    "substack": ""
+  },
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "liquidate_action": {
+    "title": "",
+    "select_loan": "",
+    "liquidate_amount": "",
+    "liquidation_profit": "",
+    "collateral_seized": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "max_amount_under_min_value": "",
+      "liquidation_profit_negative": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "unlock_page": {
+    "title": "",
+    "select_proposal": "",
+    "choose_stakes_to_unlock": "",
+    "no_stakes_locked": "",
+    "unlock_stakes_fees_info": "",
+    "error": {
+      "need_one_stake": "",
+      "max_x_stake": "",
+      "cant_unlock_draft": ""
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "",
+    "modify_delegate": "",
+    "select_stake": "",
+    "unstake_all": "",
+    "add_more": "",
+    "reduce_stake": "",
+    "creating_stake": "",
+    "lq_in_this_stake": "",
+    "your_adding_stake": "",
+    "your_reducing_stake": "",
+    "your_creating_stake": "",
+    "create_new_stake": ""
+  },
+  "loans_page": {
+    "empty": "",
+    "tooltip": {
+      "liquidate_info": ""
+    }
+  },
+  "utilization_graph": {
+    "current_utilization": "",
+    "utilization_tooltip": "",
+    "supply_apy_tooltip": "",
+    "borrow_apy_tooltip": "",
+    "include_ada_staking": ""
+  },
+  "apy_graph": {
+    "current_apy": ""
+  },
+  "liquidity_graph": {
+    "current_liquidity": "",
+    "supply": "",
+    "borrow": "",
+    "liquidity": ""
+  },
+  "settings_page": {
+    "title": "",
+    "clear_signatures": "",
+    "no_adamail_nft": "",
+    "adamail_link": "",
+    "which_notifications": "",
+    "unlock_email_by_signing": "",
+    "no_transaction_fee_required": "",
+    "enable_email_notifications": "",
+    "enable_adamail_notifications": "",
+    "loading": "",
+    "email": "",
+    "verify_email": "",
+    "your_adamail": "",
+    "email_verified": "",
+    "general_communication": "",
+    "loading_settings_data": "",
+    "signature_setup": "",
+    "waiting_for_signature": "",
+    "settings_updated": "",
+    "verification_email_sent": "",
+    "sign": "",
+    "save_verify_email": "",
+    "save_settings": "",
+    "delete_data_message": "",
+    "delete_data": "",
+    "loan_alert": "",
+    "delete_saved_signatures_message": "",
+    "error": {
+      "enable_email_notifications_first": ""
+    }
+  },
+  "verify_email_page": {
+    "title": "",
+    "loading": "",
+    "email_verified_success": "",
+    "incorrect_code": "",
+    "error": "",
+    "redirection_soon": ""
+  },
+  "filters": {
+    "title": "",
+    "asset_types": "",
+    "stablecoin": "",
+    "cardano_native_token": "",
+    "bridge_token": "",
+    "others": "",
+    "show_assets_with_no_balance": ""
+  },
+  "transfer_from_cex_page": {
+    "title": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "markets": "",
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

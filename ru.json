@@ -346,18 +346,6 @@
   },
   "modify_action": {
     "title": "Изменить ваш заем {{id}}",
-    "select_loan": "Выберите заем для изменения",
-    "modify_loan_info": "Уменьшите сумму погашения или увеличьте сумму заема",
-    "borrow_more": "Взять еще {{amount}} {{id}}",
-    "repay": "Погасить {{amount}} {{id}}",
-    "error": {
-      "min_value": "Минимальный долг для изменения займа {{minValue}} {{id}}",
-      "min_value_non_negative_collateral": "Нужен неотрицательный залог для изменения займа",
-      "min_value_repay": "Минимальная сумма погашения {{minValue}} {{id}}",
-      "min_value_borrow": "Минимальная сумма для увеличения заема {{minValue}} {{id}}",
-      "max_amount": "Нельзя взять в долг больше, чем {{maxAmount}} {{id}}",
-      "insufficient_balance": "Недостаточно средств в кошельке для погашения долга {{amount}} {{id}}. В кошельке {{walletAmount}} {{id}}."
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -478,6 +466,10 @@
     "problem_persists": "Если проблема не исчезнет, <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">обратитесь в поддержку</a>.",
     "click_copy_debug_info": "Нажмите <span className='active-error' onClick={copyToClipboard}>здесь</span>, чтобы скопировать отладочную информацию"
   },
+  "redirect_modal": {
+    "title": "⚠️ Перенаправлено с v1.liqwid.finance",
+    "message": "Приложение v1.liqwid.finance больше не работает. Пожалуйста, обновите свои закладки, чтобы использовать новую версию."
+  },
   "market_page": {
     "total_supplies": "Общая поставка",
     "total_available": "Всего доступно",
@@ -508,7 +500,8 @@
     "collateral_parameters": "Параметры залога для заимствования {{id}}",
     "collateralization_against": "{{id}} активирован как залог против этих долговых активов",
     "tooltip": {
-      "market_utxo": "Количество UTXO рынка - это число уникальных счетов/пулов, с которыми пользователи могут взаимодействовать в данный момент. Ликвидность распределена между этими счетами. Если все счета заняты, новые пользователи должны дождаться завершения операций прежде, чем отправлять свои."
+      "market_utxo": "Количество UTXO рынка - это число уникальных счетов/пулов, с которыми пользователи могут взаимодействовать в данный момент. Ликвидность распределена между этими счетами. Если все счета заняты, новые пользователи должны дождаться завершения операций прежде, чем отправлять свои.",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -698,8 +691,33 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "faucet_action": "",
-  "notification_message": ""
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }

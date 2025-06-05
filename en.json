@@ -179,6 +179,7 @@
   "api_new_version": "A new API version is available.<br />Refresh the page to update and ensure proper functionality.",
   "delisted_tag_info": "The {{id}} market has been disabled. The price is no longer being updated since {{id}} is no longer a collateral or debt asset, but users can freely withdraw {{id}} from the protocol.",
   "private_tag_info": "Access to the {{id}} market is restricted, supplying or borrowing {{id}} is not allowed.",
+  "hardcap_price": "Hardcap Price",
   "seo": {
     "dashboard": {
       "title": "Liqwid Finance",
@@ -371,7 +372,7 @@
     "error": {
       "min_value": "Minimum amount to borrow is {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "You need to have a non-negative collateral value to borrow",
-      "max_amount": "You cannot borrow more than your limit of {{maxAmount}} {{id}}",
+      "max_amount": "You cannot borrow more than {{maxAmount}} {{id}}",
       "min_value_as_collateral": "Minimum amount as collateral is {{minValue}} {{id}}"
     }
   },
@@ -380,31 +381,20 @@
     "enter_amount_to_borrow_more": "Enter amount to borrow more",
     "error": {
       "min_value": "Minimum amount to borrow more is {{minValue}} {{id}}",
-      "max_amount": "You cannot borrow more than your limit of {{maxBorrow}} {{id}}"
+      "max_amount": "You cannot borrow more than {{maxBorrow}} {{id}}"
     }
   },
   "repay_action": {
     "title": "Repay {{id}}",
     "error": {
       "min_value": "Minimum amount to repay is {{minValue}} {{id}}",
-      "max_amount": "You cannot repay more than your limit of {{maxRepay}} {{id}}"
+      "min_debt": "You cannot repay an amount that would leave your loan below {{minValue}} {{id}}. Please either repay the loan fully or reduce your repayment amount.",
+      "max_amount": "You cannot repay more than {{maxRepay}} {{id}}"
     }
   },
   "modify_action": {
     "title": "Modify loan",
-    "select_loan": "Select a loan to modify",
-    "modify_loan_info": "Reduce the amount to repay or Increase to borrow more",
-    "borrow_more": "Borrow more {{amount}} {{id}}",
-    "repay": "Repay {{amount}} {{id}}",
-    "please_modify_to_save": "Please, modify a collateral to save",
-    "error": {
-      "min_value": "Minimum debt to modify your loan is {{minValue}} {{id}}",
-      "min_value_non_negative_collateral": "You need to have a non-negative collateral value to modify your loan",
-      "min_value_repay": "Minimum amount to repay is {{minValue}} {{id}}",
-      "min_value_borrow": "Minimum amount to borrow more is {{minValue}} {{id}}",
-      "max_amount": "You cannot borrow more than your limit of {{maxAmount}} {{id}}",
-      "insufficient_balance": "You have an insufficient wallet balance to repay the debt of {{amount}} {{id}} on your loan. The available amount in your wallet is {{walletAmount}} {{id}}."
-    }
+    "please_modify_to_save": "Please, modify a collateral to save"
   },
   "supply_action": {
     "title": "Supply {{id}}",
@@ -412,7 +402,13 @@
     "enter_amount_to_supply": "Enter amount to supply",
     "error": {
       "min_value": "Minimum amount to supply is {{minValue}} {{id}}",
-      "max_amount": "You cannot supply more than your limit of {{maxAmount}} {{id}}"
+      "max_amount": "You cannot supply more than {{maxAmount}} {{id}}"
+    }
+  },
+  "stake_action": {
+    "error": {
+      "min_value": "Minimum amount to stake is {{minValue}} {{id}}",
+      "max_amount": "You cannot stake more than {{maxAmount}} {{id}}"
     }
   },
   "withdraw_action": {
@@ -421,7 +417,7 @@
     "enter_amount_to_withdraw": "Enter amount to withdraw",
     "error": {
       "min_value": "Minimum amount to withdraw is {{minValue}} {{id}}",
-      "max_amount": "You cannot withdraw more than your limit of {{maxAmount}} {{id}}",
+      "max_amount": "You cannot withdraw more than {{maxAmount}} {{id}}",
       "bad_rest": "You cannot be left with a supply under {{minValue}} {{id}}, please withdraw all instead or enter a lower amount."
     }
   },
@@ -433,7 +429,7 @@
     "collateral_seized": "Collateral Seized",
     "error": {
       "min_value": "Minimum value to liquidate is {{minValue}} {{id}}",
-      "max_amount": "You cannot liquidate more than your limit of {{maxAmount}} {{id}}",
+      "max_amount": "You cannot liquidate more than {{maxAmount}} {{id}}",
       "max_amount_under_min_value": "You can only liquidate the full amount of the loan because the remaining debt is under the minimum value of {{minValue}} {{id}}",
       "liquidation_profit_negative": "Your liquidation profit is negative, you will liquidate at a loss.",
       "under_min_value_remaining": "You can either liquidate the full debt of {{debt}} {{id}} or liquidate less than {{debtMinusMinValue}} {{id}}, as the loan debt must always be greater than {{minValue}} or closed",
@@ -498,7 +494,7 @@
     "vote_stakes_fees_info": "You can vote with up to 20 stakes, but the more you vote with at once, the higher the fees. We recommend voting gradually.",
     "error": {
       "select_atleast_one": "You should select at least one Stake",
-      "max_x_stake": "You can only select {{count}} stakes or less in one voting transaction"  ,
+      "max_x_stake": "You can only select {{count}} stakes or less in one voting transaction",
       "minimum_vote": "You should select at least 30 LQ total"
     }
   },
@@ -526,6 +522,10 @@
     "close_dialog_try_again": "Please close this dialog and try again.",
     "problem_persists": "If the problem persists, please <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contact support</a>.",
     "click_copy_debug_info": "click <span className='active-error' onClick={copyToClipboard}>here</span> to copy debug information"
+  },
+  "redirect_modal": {
+    "title": "⚠️ Redirected from v1.liqwid.finance",
+    "message": "The v1.liqwid.finance app is no longer operational. Please update your bookmarks to use the new version."
   },
   "market_page": {
     "total_supplies": "Total Supplies",
@@ -557,7 +557,8 @@
     "collateral_parameters": "Collateral Parameters to borrow {{id}}",
     "collateralization_against": "{{id}} is enabled as collateral against these debt assets",
     "tooltip": {
-      "market_utxo": "The number of unique accounts/pools in a market that users can interact with at a given moment in time. Liquidity in a market is spread across these accounts more or less evenly. If all the accounts are being interacted with simultaneously, new users will need to wait until these interactions complete until they can submit actions"
+      "market_utxo": "The number of unique accounts/pools in a market that users can interact with at a given moment in time. Liquidity in a market is spread across these accounts more or less evenly. If all the accounts are being interacted with simultaneously, new users will need to wait until these interactions complete until they can submit actions",
+      "hardcap_price": "The hard cap is a safety mechanism designed to prevent a market's price from exceeding a certain threshold. It is updated frequently to reflect market conditions."
     }
   },
   "utilization_graph": {

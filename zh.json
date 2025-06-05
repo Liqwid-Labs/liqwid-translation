@@ -346,18 +346,6 @@
   },
   "modify_action": {
     "title": "修改你的 {{id}} 贷款",
-    "select_loan": "选择要修改的贷款",
-    "modify_loan_info": "减少还款金额或增加借款金额",
-    "borrow_more": "增加借款 {{amount}} {{id}}",
-    "repay": "还款 {{amount}} {{id}}",
-    "error": {
-      "min_value": "要修改你的贷款，最低债务为 {{minValue}} {{id}}",
-      "min_value_non_negative_collateral": "你需要有非负的抵押品价值才能修改贷款",
-      "min_value_repay": "最小还款金额为 {{minValue}} {{id}}",
-      "min_value_borrow": "最小增加借款金额为 {{minValue}} {{id}}",
-      "max_amount": "你无法借出超过 {{maxAmount}} {{id}} 的数额",
-      "insufficient_balance": "你的钱包余额不足以还清 {{amount}} {{id}} 的贷款。你的钱包中只有 {{walletAmount}} {{id}}。"
-    },
     "please_modify_to_save": ""
   },
   "supply_action": {
@@ -478,6 +466,10 @@
     "problem_persists": "若问题仍存在，请<a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">联系支持</a>。",
     "click_copy_debug_info": "点击 <span className='active-error' onClick={copyToClipboard}>这里</span> 复制调试信息"
   },
+  "redirect_modal": {
+    "title": "⚠️ 已从 v1.liqwid.finance 重定向",
+    "message": "v1.liqwid.finance 应用程序已停止运行。请更新您的书签以使用新版本。"
+  },
   "market_page": {
     "total_supplies": "总供应",
     "total_available": "总可用",
@@ -508,7 +500,8 @@
     "collateral_parameters": "借 {{id}} 的抵押参数",
     "collateralization_against": "{{id}} 可作为对以下债务资产的抵押",
     "tooltip": {
-      "market_utxo": "市场UTXO数量表示在任一时刻可供用户交互的唯一账户/池数量。市场流动性在这些账户间平均分布。如果所有账户正被同时交互，新用户需要等待这些交互完成后才能提交操作。"
+      "market_utxo": "市场UTXO数量表示在任一时刻可供用户交互的唯一账户/池数量。市场流动性在这些账户间平均分布。如果所有账户正被同时交互，新用户需要等待这些交互完成后才能提交操作。",
+      "hardcap_price": ""
     }
   },
   "utilization_graph": {
@@ -698,8 +691,33 @@
   "api_new_version": "",
   "delisted_tag_info": "",
   "private_tag_info": "",
-  "borrow_more_action": "",
-  "repay_action": "",
-  "faucet_action": "",
-  "notification_message": ""
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "max_amount": "",
+      "min_debt": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  },
+  "hardcap_price": "",
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  }
 }
