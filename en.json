@@ -331,7 +331,6 @@
     "modify_collateral_description": "You can modify your collateral distribution",
     "liquidation": "Liquidation at <= 1.0",
     "asset_supplied": "{{id}} supplied",
-    "batching_fee": "Batching Fee",
     "eternl_fee": "Eternl Fee",
     "loan_origination_fee": "Loan Origination Fee",
     "asset_can_be_used_as_collateral": "Assets that can be used as collateral",

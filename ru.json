@@ -298,7 +298,6 @@
     "collateral_distribution": "Распределение залога",
     "liquidation": "Ликвидация при <= 1.0",
     "asset_supplied": "{{id}} поставлено",
-    "batching_fee": "Сбор за пакетную обработку",
     "eternl_fee": "Сбор Eternl",
     "loan_origination_fee": "Комиссия за оформление займа",
     "no_collateral_available": "Нет доступного залога, сначала внесите активы",

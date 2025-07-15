@@ -217,7 +217,6 @@
     "collateral_distribution": "Répartition du collatéral",
     "liquidation": "Liquidation à <= 1.0",
     "asset_supplied": "{{id}} fourni",
-    "batching_fee": "Frais de batching",
     "eternl_fee": "Frais Eternl",
     "loan_origination_fee": "Frais d'origine du prêt",
     "no_collateral_available": "Aucun collatéral disponible, veuillez en ajouter d'abord",

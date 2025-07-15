@@ -298,7 +298,6 @@
     "collateral_distribution": "Distribución del Colateral",
     "liquidation": "Liquidación a <= 1.0",
     "asset_supplied": "{{id}} suministrado",
-    "batching_fee": "Tarifa de Lote",
     "eternl_fee": "Tarifa Eternl",
     "loan_origination_fee": "Tarifa de Origen de Préstamo",
     "no_collateral_available": "No hay colateral disponible, primero suministra alguno",

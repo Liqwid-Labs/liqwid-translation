@@ -284,7 +284,6 @@
     "collateral_distribution": "担保分布",
     "liquidation": "清算 <= 1.0",
     "asset_supplied": "{{id}} 提供済み",
-    "batching_fee": "バッチング手数料",
     "eternl_fee": "Eternl手数料",
     "loan_origination_fee": "ローン組成手数料",
     "no_collateral_available": "利用可能な担保がありません。まず担保を提供してください",

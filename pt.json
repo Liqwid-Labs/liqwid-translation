@@ -163,7 +163,6 @@
     "modify_collateral_description": "",
     "liquidation": "",
     "asset_supplied": "",
-    "batching_fee": "",
     "eternl_fee": "",
     "loan_origination_fee": "",
     "asset_can_be_used_as_collateral": "",

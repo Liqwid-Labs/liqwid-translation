@@ -298,7 +298,6 @@
     "collateral_distribution": "抵押品分布",
     "liquidation": "在<=1.0时清算",
     "asset_supplied": "已供应{{id}}",
-    "batching_fee": "批处理费用",
     "eternl_fee": "Eternl费用",
     "loan_origination_fee": "贷款发起费",
     "no_collateral_available": "无可用抵押品，请先供应一些资产",

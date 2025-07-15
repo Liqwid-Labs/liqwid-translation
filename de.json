@@ -298,7 +298,6 @@
     "collateral_distribution": "Sicherheitsverteilung",
     "liquidation": "Liquidation bei <= 1.0",
     "asset_supplied": "{{id}} bereitgestellt",
-    "batching_fee": "Batch-Gebühr",
     "eternl_fee": "Eternl-Gebühr",
     "loan_origination_fee": "Kreditbearbeitungsgebühr",
     "no_collateral_available": "Keine verfügbare Sicherheit, bitte zuerst etwas bereitstellen",

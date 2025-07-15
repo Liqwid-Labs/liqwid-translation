@@ -1,3 +1,722 @@
 {
-  
+  "supply": "Προμήθεια",
+  "supplies": "Προμήθειες",
+  "withdraw": "Ανάληψη",
+  "borrow": "Δανεισμός",
+  "borrow_more": "Δανείσου περισσότερα",
+  "repay": "Αποπληρωμή",
+  "modify": "Τροποποίηση",
+  "modify_loan": "Τροποποίηση Δανείου",
+  "close_position": "Κλείσιμο Θέσης",
+  "borrowed": "Δανεισμένο",
+  "repaid": "Αποπληρωμένο",
+  "mint": "Παραγωγή",
+  "available": "Διαθέσιμο",
+  "liquidate": "Εκκαθάριση",
+  "oracle_price": "Τιμή Oracle",
+  "max_borrow": "Μέγιστος Δανεισμός",
+  "max_repay": "Μέγιστη Αποπληρωμή",
+  "max_liquidate": "Μέγιστη Εκκαθάριση",
+  "interest_paid": "Πληρωμένοι Τόκοι",
+  "min_interest": "Ελάχιστος Τόκος",
+  "collateral": "Εγγύηση",
+  "total_collateral": "Συνολική Εγγύηση",
+  "collateral_before": "Εγγύηση Πριν",
+  "collateral_after": "Εγγύηση Μετά",
+  "max_collateral": "Μέγιστη εγγύηση",
+  "your_collateral": "Η Εγγύησή σας",
+  "max": "ΜΕΓΙΣΤΟ",
+  "collateralization": "Εγγυοδοσία",
+  "asset": "Περιουσιακό Στοιχείο",
+  "assets": "Περιουσιακά Στοιχεία",
+  "your_assets": "Τα Περιουσιακά σας Στοιχεία",
+  "search_asset": "Αναζήτηση Περιουσιακού Στοιχείου",
+  "search_asset_collateral": "Αναζήτηση Περιουσιακού Στοιχείου ή Εγγύησης",
+  "search_by_date": "Αναζήτηση ανά Ημερομηνία",
+  "search_proposal": "Αναζήτηση Πρότασης",
+  "balance": "Υπόλοιπο",
+  "wallet_balance": "Υπόλοιπο Πορτοφολιού",
+  "price": "Τιμή",
+  "price_of": "Τιμή του {{asset}}",
+  "apy": "ΕΑΠ",
+  "apr": "ΕΕΑ",
+  "liquidity": "Ρευστότητα",
+  "debt": "Χρέος",
+  "amount": "Ποσό",
+  "locked_collateral": "Κλειδωμένη ως εγγύηση",
+  "health_factor": "Παράγοντας Υγείας",
+  "ltv": "ΔΠΑ",
+  "liquidation": "Εκκαθάριση",
+  "liquidations": "Εκκαθαρίσεις",
+  "loans": "Δάνεια",
+  "error": "Σφάλμα",
+  "hide": "Απόκρυψη",
+  "more": "Περισσότερα",
+  "show": "Εμφάνιση",
+  "view": "Προβολή",
+  "type": "Τύπος",
+  "back": "Πίσω",
+  "submit": "Υποβολή",
+  "actions": "Ενέργειες",
+  "created": "Δημιουργήθηκε",
+  "date": "Ημερομηνία",
+  "details": "Λεπτομέρειες",
+  "more_details": "Περισσότερες Λεπτομέρειες",
+  "vote": "Ψήφος",
+  "voting": "Ψηφοφορία",
+  "cosign": "Συνυπογραφή",
+  "cosigned": "Συνυπογράφηκε",
+  "locked": "Κλειδωμένο",
+  "finished": "Ολοκληρώθηκε",
+  "disconnect": "Αποσύνδεση",
+  "connect_wallet": "Σύνδεση Πορτοφολιού",
+  "review": "Επισκόπηση",
+  "install": "Εγκατάσταση",
+  "learn_more": "Μάθετε Περισσότερα",
+  "your_stakes": "Τα Stakes σας",
+  "unlock_stakes": "Ξεκλείδωμα stakes",
+  "market": "Αγορά",
+  "markets": "Αγορές",
+  "unlock": "Ξεκλείδωμα",
+  "add_lq": "Προσθήκη LQ",
+  "stake": "Stake",
+  "staked": "Σε Stake",
+  "unstake": "Κατάργηση Stake",
+  "forum": "Φόρουμ",
+  "delegate": "Εκπροσώπηση",
+  "delegated": "Εκπροσωπημένο",
+  "delegatee": "Εκπρόσωπος",
+  "undelegate": "Κατάργηση Εκπροσώπησης",
+  "replace_delegate": "Αντικατάσταση με νέο εκπρόσωπο",
+  "notifications": "Ειδοποιήσεις",
+  "notification": "Ειδοποίηση",
+  "accepted_as_collateral": "Γίνεται δεκτό ως εγγύηση",
+  "loading": "Φόρτωση",
+  "loading...": "Φόρτωση...",
+  "next": "Επόμενο",
+  "previous": "Προηγούμενο",
+  "result": "Αποτέλεσμα",
+  "invalid_data": "Μη έγκυρα Δεδομένα",
+  "invalid_market": "Μη έγκυρη Αγορά",
+  "none": "Κανένα",
+  "processing": "Επεξεργασία",
+  "building_transaction": "Δημιουργία Συναλλαγής",
+  "awaiting_confirmation": "Αναμονή Επιβεβαίωσης",
+  "user_cancel_transaction": "Ακυρώσατε τη συναλλαγή.",
+  "exchange_rate": "Συναλλαγματική Ισοτιμία",
+  "utilization": "Χρησιμοποίηση",
+  "current_utilization": "Τρέχουσα Χρησιμοποίηση",
+  "utilization_is": "Η χρησιμοποίηση είναι {{utilization}}%",
+  "supply_apy": "ΕΑΠ Προμήθειας",
+  "borrow_apy": "ΕΑΠ Δανεισμού",
+  "total_supply": "Συνολική Προμήθεια",
+  "total_borrow": "Συνολικός Δανεισμός",
+  "total_liquidity": "Συνολική Ρευστότητα",
+  "current_price": "Τρέχουσα Τιμή",
+  "circulating_supply": "Κυκλοφορούσα Προμήθεια",
+  "supply_cap": "Ανώτατο Όριο Προμήθειας",
+  "borrow_cap": "Ανώτατο Όριο Δανεισμού",
+  "minimum_amount": "Ελάχιστο ποσό",
+  "liquidation_threshold": "Κατώφλι Εκκαθάρισης",
+  "max_ltv": "Μέγιστο ΔΠΑ",
+  "liquidation_penalty": "Ποινή Εκκαθάρισης",
+  "liquidation_profitability": "Κερδοφορία Εκκαθάρισης",
+  "address_copy": "Η διεύθυνση αντιγράφηκε στο πρόχειρο",
+  "public_key_copy": "Το δημόσιο κλειδί αντιγράφηκε στο πρόχειρο",
+  "public_keys_copy": "Τα δημόσια κλειδιά αντιγράφηκαν στο πρόχειρο",
+  "co_signers_copy": "Οι συνυπογράφοντες αντιγράφηκαν στο πρόχειρο",
+  "adamail_copy": "Το ADAmail αντιγράφηκε στο πρόχειρο",
+  "lq_apy_display": "<a target='_blank' href='https://liqwid.notion.site/LQ-rewards-APR-calculations-1093e3db13ca4c81a90eff2d5fe092e2'>Σύνδεσμος για υπολογισμούς ΕΕΑ</a><br />Αυτή η ΕΕΑ δείχνει την εκτιμώμενη απόδοση από τις ανταμοιβές συμμετοχής στην αγορά LQ. Είναι υπολογισμός βασισμένος στους ενημερωμένους τύπους δυναμικών εκπομπών (εποχή 3 ημερών). Οι εμφανιζόμενες ΕΕΑ είναι καθαρά ενημερωτικές και βασίζονται σε εκτιμήσεις που αλλάζουν με τον χρόνο. Οι εμφανιζόμενες ΕΕΑ δεν αποτελούν χρηματοοικονομικές, επενδυτικές, φορολογικές, νομικές ή τεχνικές συμβουλές. Οποιαδήποτε χρήση πρωτοκόλλων αποκεντρωμένων χρηματοπιστωτικών υπηρεσιών ενέχει διάφορους χρηματοοικονομικούς κινδύνους. Τίποτα από όσα εμφανίζονται σε αυτήν την εφαρμογή δεν αποτελεί χρηματοοικονομική συμβουλή και είναι δική σας ευθύνη να ολοκληρώσετε τη δέουσα επιμέλεια (κάνετε τη δική σας έρευνα).",
+  "safe_mode": "Ασφαλής Λειτουργία",
+  "enabled": "Ενεργοποιημένο",
+  "disabled": "Απενεργοποιημένο",
+  "settings": "Ρυθμίσεις",
+  "filled": "Συμπληρωμένο",
+  "supply_filled": "Προμήθεια Συμπληρωμένη",
+  "currently": "Τρέχον",
+  "lending_apy": "ΕΑΠ Δανεισμού",
+  "accepted_as_collateral_on": "Γίνεται δεκτό ως εγγύηση σε",
+  "lq_market_participation_apy": "ΕΑΠ Συμμετοχής Αγοράς LQ",
+  "select_all_stakes": "Επιλογή όλων ή των πρώτων {{count}} stakes",
+  "deselect_all_stakes": "Αποεπιλογή όλων των επιλεγμένων stakes",
+  "the_healthfactor_is": "Ο Παράγοντας Υγείας είναι",
+  "healthfactor_calculation": "ΠΥ = αξία εγγύησης σε $ x κατώφλι εκκαθάρισης / αξία δανείου σε $",
+  "click_here": "Κάντε κλικ εδώ",
+  "error_copied_to_clipboard": "Το σφάλμα αντιγράφηκε στο πρόχειρο",
+  "executed": "Εκτελέστηκε",
+  "pending": "Εκκρεμεί",
+  "active": "Ενεργό",
+  "status": "Κατάσταση",
+  "blocked": "Μπλοκαρισμένο",
+  "seo": {
+    "dashboard": {
+      "title": "Liqwid Finance",
+      "description": "Εξερευνήστε το μέλλον του DeFi στο Cardano με την καινοτόμα πλατφόρμα δανεισμού και δανεισμού της Liqwid Finance."
+    },
+    "market_details": {
+      "title": "Liqwid Finance - Λεπτομέρειες Αγοράς {{id}}",
+      "description": "Liqwid Finance - Λεπτομέρειες Αγοράς"
+    },
+    "loans": {
+      "title": "Liqwid Finance - Δάνεια",
+      "description": "Εξερευνήστε την πλήρη λίστα όλων των διαθέσιμων δανείων στην εφαρμογή Liqwid."
+    },
+    "liquidations": {
+      "title": "Liqwid Finance - Εκκαθαρίσεις",
+      "description": "Δείτε το πλήρες ιστορικό των εκκαθαρισμένων δανείων στην εφαρμογή Liqwid."
+    },
+    "transactions": {
+      "title": "Liqwid Finance - Συναλλαγές",
+      "description": "Επανεξετάστε όλες τις συναλλαγές σας στο Liqwid"
+    },
+    "analytics": {
+      "title": "Liqwid Finance - Αναλυτικά",
+      "description": "Liqwid Finance - Αναλυτικά"
+    },
+    "governance": {
+      "title": "Liqwid Finance - Διακυβέρνηση",
+      "description": "Συμμετέχετε στη διακυβέρνηση του Liqwid Finance ψηφίζοντας σε βασικές προτάσεις."
+    },
+    "proposal": {
+      "title": "Liqwid Finance - Πρόταση",
+      "description": "Liqwid Finance - Πρόταση"
+    },
+    "staking": {
+      "title": "Liqwid Finance - Staking",
+      "description": "Κερδίστε ανταμοιβές και συμμετέχετε στη διακυβέρνηση τοποθετώντας τα περιουσιακά σας στοιχεία σε stake στην εφαρμογή Liqwid."
+    },
+    "maintenance": {
+      "title": "Liqwid Finance - Συντήρηση",
+      "description": "Liqwid Finance - Συντήρηση"
+    },
+    "faucet": {
+      "title": "Liqwid Finance - Βρύση",
+      "description": "Αποκτήστε τεστ τόκενς για χρήση στις εφαρμογές σας και πειραματιστείτε με χαρακτηριστικά DeFi χωρίς κανέναν κίνδυνο."
+    },
+    "notifications": {
+      "title": "Liqwid Finance - Ειδοποιήσεις",
+      "description": "Μη χάσετε ποτέ μια σημαντική ενημέρωση με τις Ειδοποιήσεις της εφαρμογής Liqwid."
+    },
+    "delegate_action": {
+      "title": "Liqwid Finance - Εκπροσώπηση",
+      "description": "Εκπροσωπήστε το LQ σας σε άλλη διεύθυνση."
+    },
+    "unlock_action": {
+      "title": "Liqwid Finance - Ξεκλείδωμα",
+      "description": "Ξεκλειδώστε τα stakes σας."
+    },
+    "modify_stake_action": {
+      "title": "Liqwid Finance - Staking",
+      "description": "Δημιουργήστε ή Τροποποιήστε το stake σας."
+    },
+    "vote_action": {
+      "title": "Liqwid Finance - Ψήφος",
+      "description": "Ψηφίστε σε μια πρόταση."
+    }
+  },
+  "nav": {
+    "dashboard": "Ταμπλό",
+    "liqwid": "Liqwid V2",
+    "governance": "Διακυβέρνηση",
+    "proposals": "Προτάσεις",
+    "staking": "Staking",
+    "liquidations": "Εκκαθαρίσεις",
+    "loans": "Δάνεια",
+    "markets": "Αγορές",
+    "transaction": "Συναλλαγή",
+    "transactions": "Συναλλαγές",
+    "analytics": "Αναλυτικά",
+    "faucet": "Βρύση",
+    "notification": "Παρακαλώ βεβαιωθείτε ότι επισκέπτεστε το <a href='https://v2.liqwid.finance'> v2.liqwid.finance</a> - προσθέστε το στους σελιδοδείκτες για ασφάλεια.",
+    "preview_banner": "Επισκέπτεστε την εφαρμογή Preview testnet V2",
+    "supply": "Προμήθεια",
+    "borrow": "Δανεισμός",
+    "notification_page": "Ειδοποιήσεις",
+    "more": ""
+  },
+  "footer": {
+    "protocol": "Πρωτόκολλο",
+    "community": "Κοινότητα",
+    "docs": "Έγγραφα",
+    "faq": "Συχνές Ερωτήσεις",
+    "user_guide": "Οδηγός Χρήστη",
+    "status": "Κατάσταση",
+    "forum": "Φόρουμ",
+    "lq_rewards": "Ανταμοιβές LQ",
+    "discord": "Discord",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "substack": "Substack"
+  },
+  "graph": {
+    "tvl": "Συνολική Κλειδωμένη Αξία",
+    "total_staked_lq": "Συνολικό LQ σε Stake"
+  },
+  "home_header": {
+    "your_supplies": "Οι Προμήθειές σας",
+    "your_borrows": "Οι Δανεισμοί σας",
+    "total_supplies": "Συνολικές Προμήθειες",
+    "total_borrows": "Συνολικοί Δανεισμοί",
+    "net_apy": "Καθαρή ΕΑΠ",
+    "net_apy_with_lq_rewards": "Καθαρή ΕΑΠ με Ανταμοιβές LQ",
+    "your_position": ""
+  },
+  "supply_list": {
+    "title": "Οι Προμήθειές σας",
+    "connect_wallet": "Συνδέστε το πορτοφόλι σας για να δείτε τις προμήθειές σας",
+    "tooltip": {
+      "balance": "Το υπόλοιπο είναι το συνολικό ποσό των τόκενς που έχετε κατατεθεί στο πρωτόκολλο",
+      "apy": "ΕΑΠ (Ετήσιο Ποσοστιαία Απόδοση) για κάθε περιουσιακό στοιχείο",
+      "locked_collateral": "Κλειδωμένη ως εγγύηση αναφέρεται στο ποσό των περιουσιακών στοιχείων που χρησιμοποιούνται ως ασφάλεια κατά τον δανεισμό"
+    }
+  },
+  "borrow_list": {
+    "title": "Οι Δανεισμοί σας",
+    "connect_wallet": "Συνδέστε το πορτοφόλι σας για να δείτε τους δανεισμούς σας",
+    "loan_debt": "Το χρέος είναι {{amount}} {{id}}",
+    "loan_interest": "Οι τόκοι που έχουν συσσωρευτεί είναι {{interest}} {{id}}",
+    "tooltip": {
+      "debt": "Συνολικό ποσό που δανείστηκε ο χρήστης και το ποσό που απαιτείται για την αποπληρωμή του δανείου.",
+      "apy": "Ετήσιο επιτόκιο που πληρώνει ο δανειολήπτης για το δάνειο",
+      "health_factor": "Όταν ο παράγοντας υγείας φτάσει το 1.00, η θέση σας μπορεί να εκκαθαριστεί",
+      "LTV": "Το ΔΠΑ είναι η αναλογία του ποσού του δανείου προς την αξία της εγγύησης",
+      "health_factor_low": "Ο παράγοντας υγείας σας είναι επί του παρόντος χαμηλός, αν φτάσει το 1.0, θα μπορούσατε να εκκαθαριστείτε"
+    }
+  },
+  "transaction_history": {
+    "title": "Ιστορικό Συναλλαγών",
+    "empty": "Δεν Βρέθηκαν Συναλλαγές"
+  },
+  "modal": {
+    "close_button": "Εντάξει, κλείσιμο",
+    "cancel": "Ακύρωση",
+    "confirm": "Επιβεβαίωση"
+  },
+  "action": {
+    "select_collateral": "Επιλέξτε ή Πληκτρολογήστε Προμηθευμένη Εγγύηση",
+    "transaction_overview": "Επισκόπηση Συναλλαγής",
+    "collateral_distribution": "Κατανομή Εγγύησης",
+    "liquidation": "Εκκαθάριση στο <= 1.0",
+    "asset_supplied": "{{id}} προμηθεύτηκε",
+    "eternl_fee": "Τέλος Eternl",
+    "loan_origination_fee": "Τέλος Έναρξης Δανείου",
+    "no_collateral_available": "Δεν υπάρχει διαθέσιμη εγγύηση, παρακαλώ προμηθεύστε κάποια πρώτα",
+    "success": {
+      "submit_transaction": "Η συναλλαγή υποβλήθηκε επιτυχώς - <0>tx hash</0>"
+    },
+    "info": {
+      "max_borrow_cap_reached": "Το μέγιστο ποσό δανεισμού σας {{maxBorrow}} {{id}} υπερβαίνει το επιτρεπόμενο όριο λόγω της τρέχουσας ρευστότητας. Το μέγιστο ποσό δανεισμού αυτή τη στιγμή είναι {{maxBorrowCap}} {{id}}.",
+      "max_supply_cap_reached": "Το μέγιστο ποσό προμήθειας σας {{maxSupply}} {{id}} υπερβαίνει το επιτρεπόμενο όριο λόγω του τρέχοντος ανώτατου ορίου προμήθειας. Το μέγιστο που μπορείτε να προμηθεύσετε σε μία συναλλαγή είναι {{supplyCap}} {{id}}. Μπορεί να χρειαστούν πολλαπλές συναλλαγές για το πλήρες ποσό.",
+      "max_withdraw_cap_reached": "Το μέγιστο ποσό ανάληψης σας {{maxWithdraw}} {{id}} υπερβαίνει το επιτρεπόμενο όριο λόγω του τρέχοντος ανώτατου ορίου δανεισμού. Το μέγιστο που μπορείτε να αναλάβετε σε μία συναλλαγή είναι {{withdrawCap}} {{id}}. Μπορεί να χρειαστούν πολλαπλές συναλλαγές για το πλήρες ποσό.",
+      "wash_borrow": "Αυτό είναι ένα δάνειο πλύσης, έχετε μόνο την επιλογή είτε να αποπληρώσετε μερικώς είτε πλήρως το δάνειο.",
+      "borrow_cap_reached": "",
+      "utilization_cap_reached": "",
+      "supply_cap_reached": "",
+      "epoch_transition": "",
+      "simulation_mode": ""
+    },
+    "error": {
+      "running_batch": "Η αγορά ομαδοποιεί, παρακαλώ περιμένετε.",
+      "min_ada": "Πρέπει να έχετε τουλάχιστον {{minAda}} ADA για να εκτελέσετε μια ενέργεια στην πλατφόρμα.",
+      "min_health_factor": "Ο ελάχιστος παράγοντας υγείας είναι {{minHealthFactor}}. Αυξήστε την εγγύησή σας ή μειώστε τον δανεισμό σας.",
+      "min_health_factor_safe_mode": "Ο ελάχιστος παράγοντας υγείας είναι {{minHealthFactor}}. Αυξήστε την εγγύησή σας ή μειώστε τον δανεισμό σας ή απενεργοποιήστε την ασφαλή λειτουργία στις ρυθμίσεις. Παρακαλώ σημειώστε ότι απενεργοποιώντας την ασφαλή λειτουργία εκθέτετε τον εαυτό σας σε υψηλότερο κίνδυνο εκκαθάρισης.",
+      "user_cancel_transaction": "Ακυρώσατε τη συναλλαγή.",
+      "max_collaterals_reached": "Η μέγιστη εγγύηση που μπορείτε να προσθέσετε είναι {{maxCollaterals}}.",
+      "batching_expired": "",
+      "min_health_factor_safe_mode_modify": "",
+      "max_collateral": "",
+      "market_frozen": ""
+    },
+    "modify_collateral_description": "",
+    "asset_can_be_used_as_collateral": "",
+    "loan_after": ""
+  },
+  "borrow_action": {
+    "select_asset": "Επιλέξτε ένα περιουσιακό στοιχείο για δανεισμό",
+    "error": {
+      "min_value": "Το ελάχιστο ποσό για δανεισμό είναι {{minValue}} {{id}}",
+      "min_value_non_negative_collateral": "Πρέπει να έχετε μη αρνητική αξία εγγύησης για να δανειστείτε",
+      "max_amount": "Δεν μπορείτε να δανειστείτε περισσότερο από το όριό σας των {{maxAmount}} {{id}}",
+      "min_value_as_collateral": "Το ελάχιστο ποσό ως εγγύηση είναι {{minValue}} {{id}}"
+    },
+    "title": "",
+    "collateral_description": "",
+    "enter_amount_to_borrow": ""
+  },
+  "modify_action": {
+    "title": "Τροποποιήστε το δάνειό σας {{id}}",
+    "please_modify_to_save": ""
+  },
+  "supply_action": {
+    "select_asset": "Επιλέξτε ένα περιουσιακό στοιχείο για προμήθεια",
+    "error": {
+      "min_value": "Το ελάχιστο ποσό για προμήθεια είναι {{minValue}} {{id}}",
+      "max_amount": "Δεν μπορείτε να προμηθεύσετε περισσότερο από το όριό σας των {{maxAmount}} {{id}}"
+    },
+    "title": "",
+    "enter_amount_to_supply": ""
+  },
+  "withdraw_action": {
+    "select_asset": "Επιλέξτε ένα περιουσιακό στοιχείο για ανάληψη",
+    "error": {
+      "min_value": "Το ελάχιστο ποσό για ανάληψη είναι {{minValue}} {{id}}",
+      "max_amount": "Δεν μπορείτε να αναλάβετε περισσότερο από το όριό σας των {{maxAmount}} {{id}}",
+      "bad_rest": "Δεν μπορείτε να μείνετε με προμήθεια κάτω από {{minValue}} {{id}}, παρακαλώ αναλάβετε όλα αντί αυτού ή εισάγετε χαμηλότερο ποσό."
+    },
+    "title": "",
+    "enter_amount_to_withdraw": ""
+  },
+  "liquidate_action": {
+    "title": "Εκκαθάριση Δανείου {{id}}",
+    "select_loan": "Επιλέξτε ένα δάνειο για εκκαθάριση",
+    "liquidate_amount": "Ποσό Εκκαθάρισης",
+    "liquidation_profit": "Κέρδος Εκκαθάρισης",
+    "collateral_seized": "Κατασχεμένη Εγγύηση",
+    "error": {
+      "min_value": "Η ελάχιστη αξία για εκκαθάριση είναι {{minValue}} {{id}}",
+      "max_amount_under_min_value": "Μπορείτε να εκκαθαρίσετε μόνο το πλήρες ποσό του δανείου επειδή το εναπομένον χρέος είναι κάτω από την ελάχιστη αξία των {{minValue}} {{id}}",
+      "liquidation_profit_negative": "Το κέρδος εκκαθάρισής σας είναι αρνητικό, θα εκκαθαρίσετε με ζημία",
+      "max_amount": "",
+      "under_min_value_remaining": "",
+      "max_amount_under_min_value_x2": ""
+    }
+  },
+  "faucet_action": {
+    "mint_info": "Κάντε κλικ στο αριστερό κουμπί για να παράγετε 1.000 από κάθε τόκεν. Κάντε κλικ στο δεξί κουμπί για να παράγετε 10 τόκεν OptimBond1, για δοκιμαστικούς σκοπούς!"
+  },
+  "delegate_page": {
+    "title": "Εκπροσωπήστε τη δύναμη ψήφου σας",
+    "success": "Εκπροσωπήσατε με επιτυχία {{amount}} LQ στο {{currentValue}}!",
+    "enter_address": "Εισάγετε μια διεύθυνση για εκπροσώπηση",
+    "give_voting_power": "Δώστε τη δύναμη ψήφου σας σε άλλη διεύθυνση",
+    "selected_name_suggestion": "Επιλέξατε με επιτυχία το {{name}}",
+    "error": {
+      "delegate_yourself": "Δεν μπορείτε να εκπροσωπήσετε τον εαυτό σας",
+      "wrong_address": "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση"
+    }
+  },
+  "unlock_page": {
+    "title": "Ξεκλείδωμα Stakes - Πρόταση {{proposalId}}",
+    "select_proposal": "Επιλέξτε μια πρόταση",
+    "choose_stakes_to_unlock": "Επιλέξτε τα stakes που θέλετε να ξεκλειδώσετε",
+    "no_stakes_locked": "Δεν έχετε stakes κλειδωμένα αυτή τη στιγμή",
+    "unlock_stakes_fees_info": "Μπορείτε να ξεκλειδώσετε μέχρι 20 stakes, αλλά όσα περισσότερα ξεκλειδώνετε ταυτόχρονα, τόσο υψηλότερα είναι τα τέλη. Συνιστούμε σταδιακό ξεκλείδωμα.",
+    "error": {
+      "need_one_stake": "Πρέπει να επιλέξετε τουλάχιστον ένα stake για ξεκλείδωμα",
+      "max_x_stake": "Μπορείτε να επιλέξετε {{count}} stakes ή λιγότερα σε μία συναλλαγή ξεκλειδώματος",
+      "cant_unlock_draft": "Δεν μπορείτε να ξεκλειδώσετε stakes από πρόταση προσχεδίου"
+    }
+  },
+  "modify_stake_page": {
+    "modify_stake": "Τροποποίηση Stake",
+    "modify_delegate": "Τροποποίηση Εκπροσώπου",
+    "select_stake": "Επιλέξτε ένα stake",
+    "unstake_all": "Κατάργηση Όλων των Stakes",
+    "add_more": "Προσθέστε {{amount}} LQ περισσότερα στο stake σας",
+    "reduce_stake": "Μειώστε το stake σας κατά {{amount}} LQ",
+    "creating_stake": "Δημιουργία νέου stake των {{amount}} LQ",
+    "lq_in_this_stake": "LQ σε αυτό το stake",
+    "your_adding_stake": "Προσθέτετε στο stake σας",
+    "your_reducing_stake": "Μειώνετε το stake σας",
+    "your_creating_stake": "Δημιουργείτε ένα νέο stake",
+    "create_new_stake": "Δημιουργία νέου stake"
+  },
+  "lq_info": {
+    "title": "Πληροφορίες LQ",
+    "market_cap": "Κεφαλαιοποίηση Αγοράς",
+    "fully_diluted_valuation": "Πλήρως Αραιωμένη Αποτίμηση",
+    "circulating_supply": "Κυκλοφορούσα Προμήθεια",
+    "amount_lq_staked": "Ποσό LQ σε Stake"
+  },
+  "vote_page": {
+    "success": "{{cosignOrVoteResult}} για \"{{proposalTitle}}\"",
+    "cosign_vote_for": "{{cosignOrVote}} για \"{{proposalTitle}}\"",
+    "choose_proposal_result": "Επιλέξτε ένα αποτέλεσμα πρότασης",
+    "choose_stakes_to_vote": "Επιλέξτε τα stakes με τα οποία θέλετε να ψηφίσετε",
+    "submit_vote": "Υποβολή Ψήφου",
+    "total_vote": "Συνολική Ψήφος",
+    "most_voted_result": "Περισσότερο ψηφισμένο αποτέλεσμα",
+    "vote_stakes_fees_info": "Μπορείτε να ψηφίσετε με μέχρι 20 stakes, αλλά όσα περισσότερα ψηφίζετε ταυτόχρονα, τόσο υψηλότερα είναι τα τέλη. Συνιστούμε σταδιακή ψηφοφορία.",
+    "error": {
+      "select_atleast_one": "Θα πρέπει να επιλέξετε τουλάχιστον ένα Stake",
+      "max_x_stake": "Μπορείτε να επιλέξετε {{count}} stakes ή λιγότερα σε μία συναλλαγή ψηφοφορίας",
+      "minimum_vote": "Θα πρέπει να επιλέξετε τουλάχιστον 30 LQ συνολικά"
+    }
+  },
+  "wallet_modal": {
+    "automatic_support": "Αυτόματη υποστήριξη",
+    "automatic_support_message": "Αυτόματη υποστήριξη, το πορτοφόλι μπορεί να προκαλέσει προβλήματα",
+    "your_wallet": "Το Πορτοφόλι σας",
+    "partial_compatability": "",
+    "terms": ""
+  },
+  "settings_modal": {
+    "title": "Ρυθμίσεις",
+    "hide_balance": "Απόκρυψη Υπολοίπου",
+    "language": "Γλώσσα",
+    "currency": "Νόμισμα",
+    "currency_format": "Μορφή Νομίσματος",
+    "loan_indicators": "Δείκτες Δανείων",
+    "cardano_explorer_link": "Σύνδεσμος Εξερευνητή Cardano",
+    "warning_safe_mode": "Παρακαλώ σημειώστε ότι απενεργοποιώντας την ασφαλή λειτουργία εκθέτετε τον εαυτό σας σε υψηλότερο κίνδυνο εκκαθάρισης.",
+    "abbreviated_numbers": ""
+  },
+  "error_modal": {
+    "close_button": "Εντάξει, κλείσιμο",
+    "something_wrong": "Κάτι πήγε στραβά!",
+    "close_dialog_try_again": "Παρακαλώ κλείστε αυτό το παράθυρο διαλόγου και δοκιμάστε ξανά.",
+    "problem_persists": "Εάν το πρόβλημα συνεχίζει, παρακαλώ <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">επικοινωνήστε με την υποστήριξη</a>.",
+    "click_copy_debug_info": "κάντε κλικ <span className='active-error' onClick={copyToClipboard}>εδώ</span> για να αντιγράψετε πληροφορίες εντοπισμού σφαλμάτων"
+  },
+  "market_page": {
+    "total_supplies": "Συνολικές Προμήθειες",
+    "total_available": "Συνολικά Διαθέσιμα",
+    "total_borrows": "Συνολικοί Δανεισμοί",
+    "empty": "Προς το παρόν, δεν υπάρχουν διαθέσιμες αγορές που να ταιριάζουν με τα κριτήρια αναζήτησής σας"
+  },
+  "loans_page": {
+    "empty": "Προς το παρόν, δεν υπάρχουν διαθέσιμα δάνεια που να ταιριάζουν με τα κριτήρια αναζήτησής σας",
+    "tooltip": {
+      "liquidate_info": "Όταν ο παράγοντας υγείας είναι 1.00 ή χαμηλότερος, η εκκαθάριση είναι δυνατή"
+    }
+  },
+  "market_details": {
+    "title": "Λεπτομέρειες {{id}}",
+    "select_asset": "Επιλέξτε ένα περιουσιακό στοιχείο για προβολή",
+    "market_info": "Πληροφορίες Αγοράς",
+    "exchange_rate_price": "Τρέχουσα Συναλλαγματική Ισοτιμία {{id}}",
+    "total_asset_supplies": "Συνολικές Προμήθειες {{id}}",
+    "total_asset_borrows": "Συνολικοί Δανεισμοί {{id}}",
+    "total_asset_liquidity": "Συνολική Ρευστότητα {{id}}",
+    "number_market_utxo": "Αριθμός UTXO αγοράς",
+    "bridged_token": "Γεφυρωμένο Τόκεν",
+    "income_split": "Κατανομή Εσόδων",
+    "supplier": "Προμηθευτής",
+    "staker": "Στέικερ",
+    "reserve": "Αποθεματικό",
+    "treasury": "Ταμείο",
+    "collateral_parameters": "Παράμετροι Εγγύησης για δανεισμό {{id}}",
+    "collateralization_against": "Το {{id}} είναι ενεργοποιημένο ως εγγύηση έναντι αυτών των περιουσιακών στοιχείων χρέους",
+    "tooltip": {
+      "market_utxo": "Ο αριθμός μοναδικών λογαριασμών/συνόλων σε μια αγορά με τους οποίους οι χρήστες μπορούν να αλληλεπιδράσουν σε μια δεδομένη στιγμή. Η ρευστότητα σε μια αγορά κατανέμεται σε αυτούς τους λογαριασμούς λίγο πολύ ομοιόμορφα. Εάν όλοι οι λογαριασμοί αλληλεπιδρούν ταυτόχρονα, οι νέοι χρήστες θα πρέπει να περιμένουν μέχρι να ολοκληρωθούν αυτές οι αλληλεπιδράσεις για να μπορέσουν να υποβάλουν ενέργειες",
+      "hardcap_price": ""
+    }
+  },
+  "utilization_graph": {
+    "current_utilization": "Τρέχουσα Χρησιμοποίηση: {{utilization}}%",
+    "utilization_tooltip": "Χρησιμοποίηση: {{utilization}}%",
+    "supply_apy_tooltip": "ΕΑΠ Προμήθειας: {{supply}}%",
+    "borrow_apy_tooltip": "ΕΑΠ Δανεισμού: {{borrow}}%",
+    "include_ada_staking": "Αυτή η ΕΑΠ περιλαμβάνει τις ανταμοιβές staking ADA για ADA που δεν έχουν δανειστεί"
+  },
+  "apy_graph": {
+    "current_apy": "Τρέχουσα ΕΑΠ"
+  },
+  "liquidity_graph": {
+    "current_liquidity": "Τρέχουσα Ρευστότητα σε {{asset}}",
+    "supply": "Προμήθεια: {{supply}}",
+    "borrow": "Δανεισμός: {{borrow}}",
+    "liquidity": "Ρευστότητα: {{liquidity}}"
+  },
+  "governance": {
+    "title": "Διακυβέρνηση",
+    "your_wallet": "Το Πορτοφόλι σας",
+    "recent_proposals": "Πρόσφατες προτάσεις",
+    "participate_in_governance": "Εάν θέλετε να συμμετέχετε στη διακυβέρνηση παρακαλώ τοποθετήστε το LQ σας σε stake.",
+    "staked_lq_locked": "Το LQ σας σε Stake Κλειδωμένο",
+    "staked_lq_balance": "Το Υπόλοιπο LQ σας σε Stake",
+    "lq_balance": "Το Υπόλοιπο LQ σας",
+    "stake_lq": "Stake LQ",
+    "lq_staked": "LQ σε Stake",
+    "voting_power": "Δύναμη Ψήφου",
+    "delegate_vote": "Εκπροσώπηση Ψήφου",
+    "share_delegation_address": "Θέλετε να μοιραστείτε τη διεύθυνση εκπροσώπησής σας;",
+    "here_is_yours": "Εδώ είναι μία από τις δικές σας:",
+    "you_can_vote": "Μπορείτε να ψηφίσετε σε κάθε πρόταση μόνοι σας ή να εκπροσωπήσετε την ψηφοφορία σε τρίτο μέρος.",
+    "want_receive_notification_proposal": "Θέλετε να λαμβάνετε ειδοποιήσεις όταν μια πρόταση τίθεται σε εφαρμογή;",
+    "go_to_notification": "<Link>Μεταβείτε στη σελίδα Ειδοποιήσεων</Link> και ενεργοποιήστε τις ειδοποιήσεις διακυβέρνησης.",
+    "empty": "Δεν βρέθηκαν προτάσεις που να ταιριάζουν με τα κριτήρια αναζήτησής σας",
+    "no_stake_owned": "Δεν κατέχετε κανένα stake",
+    "delegated_voting_power_to": "Έχετε εκπροσωπήσει τη δύναμη ψήφου σας σε"
+  },
+  "proposal": {
+    "title": "Πρόταση",
+    "finished": "Ολοκληρώθηκε",
+    "co_sign": "Συνυπογραφή",
+    "co_signers": "Συνυπογράφοντες",
+    "your_votes": "Οι Ψήφοι σας",
+    "vote_breakdown": "Ανάλυση ψήφων",
+    "proposal_timeline": "Χρονοδιάγραμμα Πρότασης",
+    "draft_created": "Το προσχέδιο δημιουργήθηκε",
+    "proposal_results": "Αποτελέσματα Πρότασης",
+    "vote_available_in_voting_phase": "Η ψηφοφορία είναι διαθέσιμη μόνο στη φάση ψηφοφορίας"
+  },
+  "staking_page": {
+    "stake_date": "Ημερομηνία Stake",
+    "your_sub_stakes": "Τα Υπο-Stakes σας",
+    "your_delegated_power": "Η Εκπροσωπημένη Δύναμή σας",
+    "delegated_by": "Εκπροσωπήθηκε από",
+    "create_stake": "Δημιουργία Stake",
+    "total_staking": "Συνολικό Staking",
+    "total_balance": "Συνολικό Υπόλοιπο",
+    "total_staked": "Συνολικά σε Stake",
+    "total_voting_power": "Συνολική Δύναμη Ψήφου",
+    "staking_rewards": "Ανταμοιβές Staking",
+    "average_apr": "Μέσος ΕΠΑ",
+    "rewards_apr": "ΕΠΑ Ανταμοιβών",
+    "locked_by_proposals": "Κλειδωμένα από Προτάσεις",
+    "stake_lq_receive_rewards": "Παρακαλώ <0>τοποθετήστε σε stake</0> το LQ σας για να ψηφίσετε και να λάβετε ανταμοιβές",
+    "connect_to_stake": "Παρακαλώ συνδεθείτε και τοποθετήστε το LQ σας σε stake για να ψηφίσετε και να λάβετε ανταμοιβές",
+    "max_apr": "Μέγιστος ΕΠΑ",
+    "buy_jpeg_store": "Αγοράστε από το κατάστημα JPG",
+    "rarity": "Σπανιότητα",
+    "apr_boost": "Ενίσχυση ΕΠΑ",
+    "see_aquafarmers": "Εάν θέλετε να δείτε τους aquafarmers σας και να ενισχύσετε τον ΕΠΑ σας στο LQ staking, πρέπει να έχετε τουλάχιστον έναν",
+    "connect_see_aquafarmers": "Παρακαλώ συνδεθείτε για να δείτε τους aquafarmers σας και την ενίσχυση ΕΑΠ στο LQ staking σας",
+    "stake_locked_unlock_before_modify": "Το stake σας είναι κλειδωμένο. Παρακαλώ ξεκλειδώστε το πριν επιχειρήσετε να το τροποποιήσετε",
+    "no_delegation_found": "Εάν θέλετε να λάβετε τη διεύθυνση εκπροσώπησής σας και να τη μοιραστείτε με άλλους"
+  },
+  "liquidation_page": {
+    "liquidated_loans": "Τα εκκαθαρισμένα δάνειά σας",
+    "all_liquidated_loans": "Όλα τα εκκαθαρισμένα δάνεια",
+    "amount": "Ποσό Εκκαθάρισης",
+    "ltv_before": "ΔΠΑ Πριν",
+    "ltv_after": "ΔΠΑ Μετά",
+    "collateral_liquidated": "Εγγύηση που Εκκαθαρίστηκε",
+    "liquidator": "Εκκαθαριστής",
+    "no_liquidation": "Δεν έχετε εκκαθαριστεί"
+  },
+  "maintenance_page": {
+    "coming_back_soon": "Θα επιστρέψουμε σύντομα!",
+    "website_under_maintenance": "Η εφαρμογή Liqwid είναι υπό συντήρηση."
+  },
+  "chart": {
+    "utilization_rate": "Ποσοστό Χρησιμοποίησης",
+    "oracle_price": "Τιμή Oracle",
+    "one_day": "1 ημέρα",
+    "one_week": "1 εβδομάδα",
+    "one_month": "1 μήνας",
+    "utilization": "Χρησιμοποίηση",
+    "oracle": "Oracle",
+    "apy": "ΕΑΠ",
+    "liquidity": "Ρευστότητα",
+    "1d": "1Η",
+    "1w": "1Ε",
+    "1m": "1Μ",
+    "1y": "1Χ",
+    "max": "Μέγιστο"
+  },
+  "settings_page": {
+    "title": "Ρυθμίσεις Ειδοποιήσεων",
+    "clear_signatures": "Εκκαθάριση αποθηκευμένων υπογραφών",
+    "no_adamail_nft": "Δεν βρέθηκε AdaMail NFT στο πορτοφόλι σας",
+    "adamail_link": "Λάβετε το δωρεάν AdaMail σας εδώ",
+    "which_notifications": "Ποιες ειδοποιήσεις θα θέλατε να λαμβάνετε;",
+    "unlock_email_by_signing": "Ξεκλειδώστε τις ειδοποιήσεις email υπογράφοντας ένα μήνυμα με το πορτοφόλι σας",
+    "no_transaction_fee_required": "Δεν απαιτείται τέλος συναλλαγής για αυτή την ενέργεια",
+    "enable_email_notifications": "Ενεργοποίηση Ειδοποιήσεων Email",
+    "enable_adamail_notifications": "Ενεργοποίηση Ειδοποιήσεων ADAmail",
+    "loading": "Φόρτωση...",
+    "email": "Email",
+    "verify_email": "Επαλήθευση Email",
+    "your_adamail": "Το ADAmail σας",
+    "email_verified": "Email Επαληθεύτηκε",
+    "general_communication": "Γενική Επικοινωνία",
+    "loading_settings_data": "Φόρτωση δεδομένων ρυθμίσεων...",
+    "signature_setup": "Η επαλήθευση της υπογραφής σας ολοκληρώθηκε με επιτυχία",
+    "waiting_for_signature": "Αναμονή για υπογραφή...",
+    "settings_updated": "Οι ρυθμίσεις ενημερώθηκαν με επιτυχία",
+    "verification_email_sent": "Το email επαλήθευσης στάλθηκε με επιτυχία",
+    "sign": "Υπογραφή",
+    "save_verify_email": "Αποστολή και Επαλήθευση Email",
+    "save_settings": "Αποθήκευση ρυθμίσεων",
+    "delete_data_message": "<div>Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις ρυθμίσεις ειδοποιήσεών σας;</div><div>Θα διαγράψει όλα τα δεδομένα που σχετίζονται με το email σας.</div>",
+    "delete_data": "Διαγράφηκαν με επιτυχία όλες οι πληροφορίες σας",
+    "loan_alert": "Ειδοποίηση Δανείου",
+    "delete_saved_signatures_message": "<div>Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις αποθηκευμένες υπογραφές;</div><div>Θα χρειαστεί να υπογράψετε ξανά για να έχετε πρόσβαση στις ρυθμίσεις ειδοποιήσεών σας.</div>",
+    "error": {
+      "enable_email_notifications_first": "Παρακαλώ ενεργοποιήστε τις ειδοποιήσεις email πριν επαληθεύσετε το email σας"
+    }
+  },
+  "verify_email_page": {
+    "title": "Επαλήθευση Email",
+    "loading": "Φόρτωση...",
+    "email_verified_success": "Το email επαληθεύτηκε με επιτυχία",
+    "incorrect_code": "Λανθασμένος κωδικός",
+    "error": "Προέκυψε σφάλμα",
+    "redirection_soon": "Θα ανακατευθυνθείτε αυτόματα σε 5 δευτερόλεπτα."
+  },
+  "filters": {
+    "title": "Φίλτρα",
+    "asset_types": "Τύποι Περιουσιακών Στοιχείων",
+    "stablecoin": "Σταθερό Νόμισμα",
+    "cardano_native_token": "Εγγενές Τόκεν Cardano",
+    "bridge_token": "Τόκεν Γέφυρας",
+    "others": "Άλλα",
+    "show_assets_with_no_balance": "Εμφάνιση περιουσιακών στοιχείων χωρίς υπόλοιπο"
+  },
+  "transfer_from_cex_page": {
+    "title": "Μεταφορά από CEX"
+  },
+  "borrows": "",
+  "modify_collateral": "",
+  "close_loan": "",
+  "interest": "",
+  "collaterals": "",
+  "half": "",
+  "search": "",
+  "wallet": "",
+  "loan_health": "",
+  "current_loan_health": "",
+  "view_market": "",
+  "connecting": "",
+  "save": "",
+  "utilization_cap": "",
+  "enter_amount": "",
+  "liq_threeshold": "",
+  "liq_penalty": "",
+  "liq_profitability": "",
+  "high_risk": "",
+  "available_collateral": "",
+  "ada_proof_of_stake_info": "",
+  "light_mode": "",
+  "general_settings": "",
+  "delisted": "",
+  "private": "",
+  "increase_amount": "",
+  "decrease_amount": "",
+  "clear_all": "",
+  "api_new_version": "",
+  "delisted_tag_info": "",
+  "private_tag_info": "",
+  "hardcap_price": "",
+  "borrow_more_action": {
+    "title": "",
+    "enter_amount_to_borrow_more": "",
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "repay_action": {
+    "title": "",
+    "error": {
+      "min_value": "",
+      "min_debt": "",
+      "max_amount": ""
+    }
+  },
+  "stake_action": {
+    "error": {
+      "min_value": "",
+      "max_amount": ""
+    }
+  },
+  "redirect_modal": {
+    "title": "",
+    "message": ""
+  },
+  "notification_message": {
+    "turn_off_safe_mode": ""
+  }
 }
