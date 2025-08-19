@@ -57,7 +57,6 @@
   "type": "Tipo",
   "back": "Volver",
   "submit": "Enviar",
-  "actions": "Acciones",
   "created": "Creado",
   "date": "Fecha",
   "details": "Detalles",
@@ -102,7 +101,6 @@
   "processing": "Procesando",
   "building_transaction": "Construyendo Transacción",
   "awaiting_confirmation": "Esperando Confirmación",
-  "user_cancel_transaction": "Has cancelado la transacción.",
   "exchange_rate": "Tasa de Cambio",
   "utilization": "Utilización",
   "current_utilization": "Utilización Actual",
@@ -231,7 +229,6 @@
     "preview_banner": "Estás visitando la app de testnet V2 Preview",
     "supply": "Suministrar",
     "borrow": "Pedir Prestado",
-    "notification_page": "Notificaciones",
     "more": ""
   },
   "footer": {
@@ -285,12 +282,51 @@
   },
   "transaction_history": {
     "title": "Historial de Transacciones",
-    "empty": "No se encontraron transacciones"
+    "empty": "No se encontraron transacciones",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "OK, cerrar",
     "cancel": "Cancelar",
-    "confirm": "Confirmar"
+    "confirm": "Confirmar",
+    "apply": ""
   },
   "action": {
     "select_collateral": "Selecciona o escribe el colateral suministrado",
@@ -313,7 +349,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "El mercado está procesando un lote, espera por favor.",
@@ -336,8 +373,7 @@
     "error": {
       "min_value": "La cantidad mínima para pedir prestado es {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "Necesitas un valor colateral no negativo para pedir prestado",
-      "max_amount": "No puedes pedir prestado más de {{maxAmount}} {{id}}",
-      "min_value_as_collateral": "La cantidad mínima como colateral es {{minValue}} {{id}}"
+      "max_amount": "No puedes pedir prestado más de {{maxAmount}} {{id}}"
     },
     "title": "",
     "collateral_description": "",
@@ -463,7 +499,8 @@
     "something_wrong": "¡Algo salió mal!",
     "close_dialog_try_again": "Cierra este diálogo e inténtalo de nuevo.",
     "problem_persists": "Si el problema persiste, por favor <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contacta soporte</a>.",
-    "click_copy_debug_info": "haz clic <span className='active-error' onClick={copyToClipboard}>aquí</span> para copiar la información de depuración"
+    "click_copy_debug_info": "haz clic <span className='active-error' onClick={copyToClipboard}>aquí</span> para copiar la información de depuración",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ Redirigido desde v1.liqwid.finance",
@@ -500,8 +537,12 @@
     "collateralization_against": "{{id}} está habilitado como colateral contra estos activos de deuda",
     "tooltip": {
       "market_utxo": "El número de UTXO de mercado representa la cantidad de cuentas/pools únicas con las que los usuarios pueden interactuar en un momento dado. La liquidez del mercado se distribuye entre estas cuentas. Si todas las cuentas se están usando simultáneamente, los nuevos usuarios deben esperar a que finalicen estas interacciones antes de poder enviar acciones.",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "Utilización Actual: {{utilization}}%",
@@ -522,10 +563,6 @@
   "governance": {
     "title": "Gobernanza",
     "your_wallet": "Tu Billetera",
-    "recent_proposals": "Propuestas Recientes",
-    "participate_in_governance": "Si quieres participar en la gobernanza, haz stake de tu LQ.",
-    "staked_lq_locked": "Tu LQ en Stake Bloqueado",
-    "staked_lq_balance": "Tu Balance de LQ Stakeado",
     "lq_balance": "Tu Balance LQ",
     "stake_lq": "Hacer Stake de LQ",
     "lq_staked": "LQ Stakeado",
@@ -534,8 +571,6 @@
     "share_delegation_address": "¿Quieres compartir tu dirección de delegación?",
     "here_is_yours": "Aquí tienes una tuya:",
     "you_can_vote": "Puedes votar en cada propuesta tú mismo o delegar el voto a un tercero.",
-    "want_receive_notification_proposal": "¿Quieres recibir notificaciones cuando haya una nueva propuesta?",
-    "go_to_notification": "<Link>Ve a la página de Notificaciones</Link> y habilita notificaciones de gobernanza.",
     "empty": "No se encontraron propuestas que coincidan con tu búsqueda",
     "no_stake_owned": "No posees ningún stake",
     "delegated_voting_power_to": "Has delegado tu poder de voto a"
@@ -577,16 +612,6 @@
     "stake_locked_unlock_before_modify": "Tu stake está bloqueado. Desbloquéalo antes de intentar modificarlo",
     "no_delegation_found": "Si quieres obtener tu dirección de delegación y compartirla con otros"
   },
-  "liquidation_page": {
-    "liquidated_loans": "Tus Préstamos Liquidados",
-    "all_liquidated_loans": "Todos los Préstamos Liquidados",
-    "amount": "Cantidad de Liquidación",
-    "ltv_before": "LTV Antes",
-    "ltv_after": "LTV Después",
-    "collateral_liquidated": "Colateral Liquidado",
-    "liquidator": "Liquidador",
-    "no_liquidation": "No has sido liquidado"
-  },
   "maintenance_page": {
     "coming_back_soon": "¡Volveremos pronto!",
     "website_under_maintenance": "La App de Liqwid está en mantenimiento."
@@ -607,46 +632,6 @@
     "1y": "1A",
     "max": "Máx"
   },
-  "settings_page": {
-    "title": "Configuración de Notificaciones",
-    "clear_signatures": "Borrar firmas guardadas",
-    "no_adamail_nft": "No se encontró ningún NFT de AdaMail en tu billetera",
-    "adamail_link": "Obtén tu AdaMail gratis aquí",
-    "which_notifications": "¿Qué notificaciones deseas recibir?",
-    "unlock_email_by_signing": "Desbloquea las notificaciones por email firmando un mensaje con tu billetera",
-    "no_transaction_fee_required": "No se requiere tarifa de transacción para esta acción",
-    "enable_email_notifications": "Habilitar Notificaciones por Email",
-    "enable_adamail_notifications": "Habilitar Notificaciones ADAmail",
-    "loading": "Cargando...",
-    "email": "Email",
-    "verify_email": "Verificar Email",
-    "your_adamail": "Tu ADAmail",
-    "email_verified": "Email Verificado",
-    "general_communication": "Comunicación General",
-    "loading_settings_data": "Cargando datos de configuración...",
-    "signature_setup": "Tu verificación de firma se ha completado con éxito",
-    "waiting_for_signature": "Esperando firma...",
-    "settings_updated": "Configuraciones actualizadas con éxito",
-    "verification_email_sent": "Email de verificación enviado con éxito",
-    "sign": "Firmar",
-    "save_verify_email": "Enviar y Verificar Email",
-    "save_settings": "Guardar Configuración",
-    "delete_data_message": "<div>¿Estás seguro de que quieres eliminar toda tu configuración de notificaciones?</div><div>Esto eliminará todos los datos relacionados con tu email.</div>",
-    "delete_data": "Datos eliminados con éxito",
-    "loan_alert": "Alerta de Préstamo",
-    "delete_saved_signatures_message": "<div>¿Estás seguro de que quieres eliminar todas las firmas guardadas?</div><div>Necesitarás firmar de nuevo para acceder a tus configuraciones de notificaciones.</div>",
-    "error": {
-      "enable_email_notifications_first": "Habilita las notificaciones por email antes de verificar tu email"
-    }
-  },
-  "verify_email_page": {
-    "title": "Verificar Email",
-    "loading": "Cargando...",
-    "email_verified_success": "Email verificado con éxito",
-    "incorrect_code": "Código incorrecto",
-    "error": "Ha ocurrido un error",
-    "redirection_soon": "Serás redirigido automáticamente en 5 segundos."
-  },
   "filters": {
     "title": "Filtros",
     "asset_types": "Tipos de Activo",
@@ -655,9 +640,6 @@
     "bridge_token": "Token Puenteado",
     "others": "Otros",
     "show_assets_with_no_balance": "Mostrar activos sin balance"
-  },
-  "transfer_from_cex_page": {
-    "title": "Transferir desde CEX"
   },
   "borrows": "",
   "modify_collateral": "",
@@ -703,7 +685,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "faucet_action": {
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }

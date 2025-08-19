@@ -68,7 +68,6 @@
   "type": "Type",
   "back": "Back",
   "submit": "Submit",
-  "actions": "Actions",
   "created": "Created",
   "date": "Date",
   "details": "Details",
@@ -115,7 +114,6 @@
   "processing": "Processing",
   "building_transaction": "Building Transaction",
   "awaiting_confirmation": "Awaiting Confirmation",
-  "user_cancel_transaction": "You cancelled the transaction.",
   "exchange_rate": "Exchange Rate",
   "utilization": "Utilization",
   "current_utilization": "Current Utilization",
@@ -176,6 +174,7 @@
   "increase_amount": "Increase Amount",
   "decrease_amount": "Decrease Amount",
   "clear_all": "Clear All",
+  "clear_filters": "Clear Filters",
   "api_new_version": "A new API version is available.<br />Refresh the page to update and ensure proper functionality.",
   "delisted_tag_info": "The {{id}} market has been disabled. The price is no longer being updated since {{id}} is no longer a collateral or debt asset, but users can freely withdraw {{id}} from the protocol.",
   "private_tag_info": "Access to the {{id}} market is restricted, supplying or borrowing {{id}} is not allowed.",
@@ -263,7 +262,6 @@
     "preview_banner": "You're visiting the Preview testnet V2 app",
     "supply": "Supply",
     "borrow": "Borrow",
-    "notification_page": "Notifications",
     "more": "More"
   },
   "footer": {
@@ -317,12 +315,51 @@
   },
   "transaction_history": {
     "title": "Transaction History",
-    "empty": "No transactions Found"
+    "empty": "No transactions Found",
+    "connect_wallet": "Connect your wallet to access your transaction history and start using Liqwid.",
+    "empty_history": "No transactions yet.<br />Once activity begins, it will appear here.",
+    "empty_filtered": "No transactions found for the selected filters.<br />Try adjusting your filters or date range.",
+    "before": "Before",
+    "after": "After",
+    "liquidated": "Liquidated",
+    "debt_repaid": "Debt Repaid",
+    "health_factor_variation": "Health Factor Variation",
+    "loan_origination_fee": "Loan Origination Fee: {{amount}} {{displayName}}",
+    "fee_charged_by": "Fee charged by {{wallet}}: {{amount}} {{displayName}}",
+    "type": {
+      "SUPPLY": "Supply",
+      "WITHDRAW": "Withdraw",
+      "BORROW": "Borrow",
+      "BORROW_MORE": "Borrow More",
+      "REPAY": "Repay",
+      "LOAN_MODIFICATION": "Loan Modification",
+      "FULL_REPAY": "Full Repay",
+      "LIQUIDATE": "Liquidate",
+      "LIQUIDATOR": "Liquidator"
+    },
+    "filters_by_type": "Filters by type",
+    "date_range": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "this_week": "This Week",
+      "last_week": "Last Week",
+      "last_30_days": "Last 30 Days",
+      "all_dates": "All Dates"
+    },
+    "export": {
+      "error": "Failed to export transactions",
+      "success": {
+        "csv": "CSV export completed successfully",
+        "excel": "Excel export completed successfully",
+        "json": "JSON export completed successfully"
+      }
+    }
   },
   "modal": {
     "close_button": "OK, close",
     "cancel": "Cancel",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "apply": "Apply"
   },
   "action": {
     "select_collateral": "Select or Type Supplied Collateral",
@@ -337,7 +374,7 @@
     "no_collateral_available": "No collateral available, please supply some first",
     "loan_after": "Loan Health After {{label}}",
     "success": {
-      "submit_transaction": "Your transaction was successfully supplied. <0>View Status</0>"
+      "submit_transaction": "Your transaction was successfully submitted. It will reflect on the app shortly. <0>View Status</0>"
     },
     "info": {
       "max_borrow_cap_reached": "Your max borrow has reached the borrow cap.",
@@ -348,7 +385,8 @@
       "max_withdraw_cap_reached": "Your max withdraw amount of {{maxWithdraw}} {{id}} exceeds the limit allowed due to the current utilization cap. The maximum you can withdraw in a single transaction is {{withdrawCap}} {{id}}. Multiple transactions may be required for the full amount.",
       "wash_borrow": "This is a wash borrow loan, you only have the option to either partially or fully repay the loan.",
       "epoch_transition": "The epoch transition is in progress. Please wait or come back later.",
-      "simulation_mode": "You are currently in simulation mode. No actual transactions are being made. You are either not connected or don't have any available collateral."
+      "simulation_mode": "You are currently in simulation mode. No actual transactions are being made. You are either not connected or don't have any available collateral.",
+      "wallet_not_connected": "You're currently not connected. No actual transactions can be made."
     },
     "error": {
       "running_batch": "Market is batching, please wait.",
@@ -371,8 +409,7 @@
     "error": {
       "min_value": "Minimum amount to borrow is {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "You need to have a non-negative collateral value to borrow",
-      "max_amount": "You cannot borrow more than {{maxAmount}} {{id}}",
-      "min_value_as_collateral": "Minimum amount as collateral is {{minValue}} {{id}}"
+      "max_amount": "You cannot borrow more than {{maxAmount}} {{id}}"
     }
   },
   "borrow_more_action": {
@@ -388,6 +425,7 @@
     "error": {
       "min_value": "Minimum amount to repay is {{minValue}} {{id}}",
       "min_debt": "You cannot repay an amount that would leave your loan below {{minValue}} {{id}}. Please either repay the loan fully or reduce your repayment amount.",
+      "insufficient_for_full_repay": "You cannot repay an amount that would leave your loan below {{minValue}} {{id}}. Please add {{remainingDebt}} {{id}} to your wallet to repay the loan fully.",
       "max_amount": "You cannot repay more than {{maxRepay}} {{id}}"
     }
   },
@@ -518,8 +556,9 @@
   "error_modal": {
     "close_button": "OK, close",
     "something_wrong": "Something went wrong!",
+    "generic_error_message": "An error occurred",
     "close_dialog_try_again": "Please close this dialog and try again.",
-    "problem_persists": "If the problem persists, please <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contact support</a>.",
+    "problem_persists": "If the issue persists, please <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">contact support</a> and include details below.",
     "click_copy_debug_info": "click <span className='active-error' onClick={copyToClipboard}>here</span> to copy debug information"
   },
   "redirect_modal": {
@@ -555,9 +594,13 @@
     "treasury": "Treasury",
     "collateral_parameters": "Collateral Parameters to borrow {{id}}",
     "collateralization_against": "{{id}} is enabled as collateral against these debt assets",
+    "batching_info": "Batching Info",
+    "batching_interval": "Every {{interval}}",
+    "last_batch": "Last: {{lastBatch}}",
     "tooltip": {
-      "market_utxo": "The number of unique accounts/pools in a market that users can interact with at a given moment in time. Liquidity in a market is spread across these accounts more or less evenly. If all the accounts are being interacted with simultaneously, new users will need to wait until these interactions complete until they can submit actions",
-      "hardcap_price": "The hard cap is a safety mechanism designed to prevent a market's price from exceeding a certain threshold. It is updated frequently to reflect market conditions."
+      "market_utxo": "The number of unique accounts/pools in a market that users can interact with at a given moment in time. Liquidity in a market is spread across these accounts more or less evenly. If all the accounts are being interacted with simultaneously, new users will need to wait until these interactions complete until they can submit actions.",
+      "hardcap_price": "The hard cap is a safety mechanism designed to prevent a market's price from exceeding a certain threshold. It is updated frequently to reflect market conditions.",
+      "batching_explanation": "Batching redistributes liquidity across all UTXOs in the market at regular intervals. The interval shows how often this occurs, while the last batch shows when liquidity was last redistributed."
     }
   },
   "utilization_graph": {
@@ -579,10 +622,6 @@
   "governance": {
     "title": "Governance",
     "your_wallet": "Your Wallet",
-    "recent_proposals": "Recent proposals",
-    "participate_in_governance": "If you want to participate in governance please stake your LQ.",
-    "staked_lq_locked": "Your staked LQ Locked",
-    "staked_lq_balance": "Your staked LQ Balance",
     "lq_balance": "Your LQ Balance",
     "stake_lq": "Stake LQ",
     "lq_staked": "LQ Staked",
@@ -591,11 +630,9 @@
     "share_delegation_address": "Want to share your delegation address?",
     "here_is_yours": "Here's one of yours:",
     "you_can_vote": "You can vote on each proposal yourself or delegate voting to a third party.",
-    "want_receive_notification_proposal": "Want to receive notifications when a proposal goes data?",
-    "go_to_notification": "<Link>Go to the Notifications page</Link> and enable governance notifications.",
     "empty": "No proposals found that match your search criteria",
     "no_stake_owned": "You don't own any stake",
-    "delegated_voting_power_to": "You have delegated your voting power to"
+    "delegated_voting_power_to": "You have delegated your voting power for this stake to"
   },
   "proposal": {
     "title": "Proposal",
@@ -634,16 +671,6 @@
     "stake_locked_unlock_before_modify": "Your stake is locked. Please unlock it before attempting to modify it",
     "no_delegation_found": "If you want to get your delegation address and share it with others"
   },
-  "liquidation_page": {
-    "liquidated_loans": "Your liquidated loans",
-    "all_liquidated_loans": "All liquidated loans",
-    "amount": "Liquidation Amount",
-    "ltv_before": "LTV Before",
-    "ltv_after": "LTV After",
-    "collateral_liquidated": "Collateral Liquidated",
-    "liquidator": "Liquidator",
-    "no_liquidation": "You have not been liquidated"
-  },
   "maintenance_page": {
     "coming_back_soon": "We will be back soon!",
     "website_under_maintenance": "Liqwid App is under maintenance."
@@ -664,46 +691,6 @@
     "1y": "1Y",
     "max": "Max"
   },
-  "settings_page": {
-    "title": "Notifications Settings",
-    "clear_signatures": "Clear saved signatures",
-    "no_adamail_nft": "No AdaMail NFT found in your wallet",
-    "adamail_link": "Get your free AdaMail here",
-    "which_notifications": "Which notifications would you like to receive?",
-    "unlock_email_by_signing": "Unlock email notifications by signing a message with your wallet",
-    "no_transaction_fee_required": "No transaction fee is required for this action",
-    "enable_email_notifications": "Enable Email Notifications",
-    "enable_adamail_notifications": "Enable ADAmail Notifications",
-    "loading": "Loading...",
-    "email": "Email",
-    "verify_email": "Verify Email",
-    "your_adamail": "Your ADAmail",
-    "email_verified": "Email Verified",
-    "general_communication": "General Communication",
-    "loading_settings_data": "Loading settings data...",
-    "signature_setup": "Your signature verification has been completed successfully",
-    "waiting_for_signature": "Waiting for signature...",
-    "settings_updated": "Settings updated successfully",
-    "verification_email_sent": "Verification email sent successfully",
-    "sign": "Sign",
-    "save_verify_email": "Send and Verify Email",
-    "save_settings": "Save settings",
-    "delete_data_message": "<div>Are you sure you want to delete all your notifications settings?</div><div>It will delete all data related to your email.</div>",
-    "delete_data": "Successfully deleted all your informations",
-    "loan_alert": "Loan Alert",
-    "delete_saved_signatures_message": "<div>Are you sure you want to delete all saved signatures?</div><div>You will need to sign again to have access to your notifications settings.</div>",
-    "error": {
-      "enable_email_notifications_first": "Please enable email notifications before verifying your email"
-    }
-  },
-  "verify_email_page": {
-    "title": "Verify Email",
-    "loading": "Loading...",
-    "email_verified_success": "Email verified successfully",
-    "incorrect_code": "Incorrect code",
-    "error": "An error occurred",
-    "redirection_soon": "You will be redirected automatically in 5 seconds."
-  },
   "filters": {
     "title": "Filters",
     "asset_types": "Asset Types",
@@ -712,9 +699,6 @@
     "bridge_token": "Bridge Token",
     "others": "Others",
     "show_assets_with_no_balance": "Show assets with no balance"
-  },
-  "transfer_from_cex_page": {
-    "title": "Transfer from CEX"
   },
   "notification_message": {
     "turn_off_safe_mode": "Safe mode has been turned off. Proceed with caution"

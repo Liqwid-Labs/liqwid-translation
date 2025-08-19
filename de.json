@@ -57,7 +57,6 @@
   "type": "Typ",
   "back": "Zurück",
   "submit": "Absenden",
-  "actions": "Aktionen",
   "created": "Erstellt",
   "date": "Datum",
   "details": "Details",
@@ -102,7 +101,6 @@
   "processing": "Wird verarbeitet",
   "building_transaction": "Transaktion wird erstellt",
   "awaiting_confirmation": "Warten auf Bestätigung",
-  "user_cancel_transaction": "Sie haben die Transaktion abgebrochen.",
   "exchange_rate": "Wechselkurs",
   "utilization": "Auslastung",
   "current_utilization": "Aktuelle Auslastung",
@@ -231,7 +229,6 @@
     "preview_banner": "Sie besuchen die Preview Testnet V2 App",
     "supply": "Bereitstellen",
     "borrow": "Leihen",
-    "notification_page": "Benachrichtigungen",
     "more": ""
   },
   "footer": {
@@ -285,12 +282,51 @@
   },
   "transaction_history": {
     "title": "Transaktionsverlauf",
-    "empty": "Keine Transaktionen gefunden"
+    "empty": "Keine Transaktionen gefunden",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "OK, schließen",
     "cancel": "Abbrechen",
-    "confirm": "Bestätigen"
+    "confirm": "Bestätigen",
+    "apply": ""
   },
   "action": {
     "select_collateral": "Gewährte Sicherheit auswählen oder eingeben",
@@ -313,7 +349,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "Der Markt verarbeitet gerade einen Batch, bitte warten.",
@@ -336,8 +373,7 @@
     "error": {
       "min_value": "Der Mindestbetrag zum Leihen ist {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "Sie benötigen einen nichtnegativen Sicherheitenwert, um zu leihen",
-      "max_amount": "Sie können nicht mehr als {{maxAmount}} {{id}} leihen",
-      "min_value_as_collateral": "Der Mindestbetrag als Sicherheit ist {{minValue}} {{id}}"
+      "max_amount": "Sie können nicht mehr als {{maxAmount}} {{id}} leihen"
     },
     "title": "",
     "collateral_description": "",
@@ -463,7 +499,8 @@
     "something_wrong": "Es ist ein Fehler aufgetreten!",
     "close_dialog_try_again": "Schließen Sie dieses Dialogfeld und versuchen Sie es erneut.",
     "problem_persists": "Wenn das Problem weiterhin besteht, <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">kontaktieren Sie den Support</a>.",
-    "click_copy_debug_info": "Klicken Sie <span className='active-error' onClick={copyToClipboard}>hier</span>, um Debug-Informationen zu kopieren"
+    "click_copy_debug_info": "Klicken Sie <span className='active-error' onClick={copyToClipboard}>hier</span>, um Debug-Informationen zu kopieren",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ Weiterleitung von v1.liqwid.finance",
@@ -500,8 +537,12 @@
     "collateralization_against": "{{id}} ist als Sicherheit für diese Schulden-Assets aktiviert",
     "tooltip": {
       "market_utxo": "Die Anzahl der Market-UTXO repräsentiert die Anzahl eindeutiger Konten/Pools, mit denen Nutzer zu einem bestimmten Zeitpunkt interagieren können. Die Liquidität ist über diese Konten verteilt. Wenn alle Konten gleichzeitig genutzt werden, müssen neue Nutzer warten, bis diese Interaktionen abgeschlossen sind.",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "Aktuelle Auslastung: {{utilization}}%",
@@ -522,10 +563,6 @@
   "governance": {
     "title": "Governance",
     "your_wallet": "Ihre Wallet",
-    "recent_proposals": "Kürzliche Vorschläge",
-    "participate_in_governance": "Um an der Governance teilzunehmen, staken Sie bitte Ihr LQ.",
-    "staked_lq_locked": "Ihr gestaktes LQ ist gesperrt",
-    "staked_lq_balance": "Ihr gestaktes LQ-Guthaben",
     "lq_balance": "Ihr LQ-Guthaben",
     "stake_lq": "LQ staken",
     "lq_staked": "LQ gestaked",
@@ -534,8 +571,6 @@
     "share_delegation_address": "Möchten Sie Ihre Delegationsadresse teilen?",
     "here_is_yours": "Hier ist eine Ihrer Adressen:",
     "you_can_vote": "Sie können bei jedem Vorschlag selbst abstimmen oder Ihr Stimmrecht an Dritte delegieren.",
-    "want_receive_notification_proposal": "Möchten Sie Benachrichtigungen erhalten, wenn ein Vorschlag live geht?",
-    "go_to_notification": "<Link>Gehen Sie zur Benachrichtigungsseite</Link> und aktivieren Sie Governance-Benachrichtigungen.",
     "empty": "Keine Vorschläge entsprechen den Suchkriterien",
     "no_stake_owned": "Sie besitzen keinen Stake",
     "delegated_voting_power_to": "Sie haben Ihre Stimmkraft delegiert an"
@@ -577,16 +612,6 @@
     "stake_locked_unlock_before_modify": "Ihr Stake ist gesperrt. Bitte entsperren, bevor Sie ändern.",
     "no_delegation_found": "Wenn Sie Ihre Delegationsadresse erhalten und teilen möchten"
   },
-  "liquidation_page": {
-    "liquidated_loans": "Ihre liquidierten Darlehen",
-    "all_liquidated_loans": "Alle liquidierten Darlehen",
-    "amount": "Liquidationsbetrag",
-    "ltv_before": "LTV davor",
-    "ltv_after": "LTV danach",
-    "collateral_liquidated": "Liquidierte Sicherheit",
-    "liquidator": "Liquidator",
-    "no_liquidation": "Sie wurden nicht liquidiert"
-  },
   "maintenance_page": {
     "coming_back_soon": "Wir sind bald zurück!",
     "website_under_maintenance": "Die Liqwid App befindet sich in Wartung."
@@ -607,46 +632,6 @@
     "1y": "1J",
     "max": "Max"
   },
-  "settings_page": {
-    "title": "Benachrichtigungseinstellungen",
-    "clear_signatures": "Gespeicherte Signaturen löschen",
-    "no_adamail_nft": "Kein AdaMail NFT in Ihrer Wallet gefunden",
-    "adamail_link": "Holen Sie sich hier Ihr kostenloses AdaMail",
-    "which_notifications": "Welche Benachrichtigungen möchten Sie erhalten?",
-    "unlock_email_by_signing": "Entsperren Sie E-Mail-Benachrichtigungen, indem Sie eine Nachricht mit Ihrer Wallet signieren",
-    "no_transaction_fee_required": "Für diese Aktion ist keine Transaktionsgebühr erforderlich",
-    "enable_email_notifications": "E-Mail-Benachrichtigungen aktivieren",
-    "enable_adamail_notifications": "ADAmail-Benachrichtigungen aktivieren",
-    "loading": "Wird geladen...",
-    "email": "E-Mail",
-    "verify_email": "E-Mail verifizieren",
-    "your_adamail": "Ihr ADAmail",
-    "email_verified": "E-Mail verifiziert",
-    "general_communication": "Allgemeine Kommunikation",
-    "loading_settings_data": "Einstellungsdaten werden geladen...",
-    "signature_setup": "Ihre Signaturverifizierung wurde erfolgreich abgeschlossen",
-    "waiting_for_signature": "Warten auf Signatur...",
-    "settings_updated": "Einstellungen erfolgreich aktualisiert",
-    "verification_email_sent": "Bestätigungs-E-Mail erfolgreich gesendet",
-    "sign": "Signieren",
-    "save_verify_email": "E-Mail senden und verifizieren",
-    "save_settings": "Einstellungen speichern",
-    "delete_data_message": "<div>Sind Sie sicher, dass Sie alle Ihre Benachrichtigungseinstellungen löschen möchten?</div><div>Dies löscht alle mit Ihrer E-Mail verbundenen Daten.</div>",
-    "delete_data": "Alle Ihre Informationen wurden erfolgreich gelöscht",
-    "loan_alert": "Darlehenswarnung",
-    "delete_saved_signatures_message": "<div>Sind Sie sicher, dass Sie alle gespeicherten Signaturen löschen möchten?</div><div>Sie müssen erneut signieren, um Zugriff auf Ihre Benachrichtigungseinstellungen zu erhalten.</div>",
-    "error": {
-      "enable_email_notifications_first": "Bitte aktivieren Sie zuerst E-Mail-Benachrichtigungen, bevor Sie Ihre E-Mail verifizieren"
-    }
-  },
-  "verify_email_page": {
-    "title": "E-Mail verifizieren",
-    "loading": "Wird geladen...",
-    "email_verified_success": "E-Mail erfolgreich verifiziert",
-    "incorrect_code": "Falscher Code",
-    "error": "Ein Fehler ist aufgetreten",
-    "redirection_soon": "Sie werden in 5 Sekunden automatisch weitergeleitet."
-  },
   "filters": {
     "title": "Filter",
     "asset_types": "Asset-Typen",
@@ -655,9 +640,6 @@
     "bridge_token": "Bridged Token",
     "others": "Andere",
     "show_assets_with_no_balance": "Assets ohne Kontostand anzeigen"
-  },
-  "transfer_from_cex_page": {
-    "title": "Von CEX übertragen"
   },
   "borrows": "",
   "modify_collateral": "",
@@ -703,7 +685,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "faucet_action": {
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }

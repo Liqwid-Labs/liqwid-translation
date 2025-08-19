@@ -57,7 +57,6 @@
   "type": "类型",
   "back": "返回",
   "submit": "提交",
-  "actions": "操作",
   "created": "已创建",
   "date": "日期",
   "details": "详情",
@@ -102,7 +101,6 @@
   "processing": "处理中",
   "building_transaction": "构建交易中",
   "awaiting_confirmation": "等待确认中",
-  "user_cancel_transaction": "你已取消交易。",
   "exchange_rate": "汇率",
   "utilization": "利用率",
   "current_utilization": "当前利用率",
@@ -231,7 +229,6 @@
     "preview_banner": "你正在访问Preview测试网的V2应用",
     "supply": "供应",
     "borrow": "借款",
-    "notification_page": "通知",
     "more": ""
   },
   "footer": {
@@ -285,12 +282,51 @@
   },
   "transaction_history": {
     "title": "交易历史",
-    "empty": "未找到交易记录"
+    "empty": "未找到交易记录",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "好的，关闭",
     "cancel": "取消",
-    "confirm": "确认"
+    "confirm": "确认",
+    "apply": ""
   },
   "action": {
     "select_collateral": "选择或输入已供应的抵押品",
@@ -313,7 +349,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "市场正在批处理，请稍等。",
@@ -336,8 +373,7 @@
     "error": {
       "min_value": "最小借款量为 {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "你需要有非负的抵押品价值才能借款",
-      "max_amount": "你无法借出超过 {{maxAmount}} {{id}} 的数额",
-      "min_value_as_collateral": "最小抵押数额为 {{minValue}} {{id}}"
+      "max_amount": "你无法借出超过 {{maxAmount}} {{id}} 的数额"
     },
     "title": "",
     "collateral_description": "",
@@ -463,7 +499,8 @@
     "something_wrong": "出现问题！",
     "close_dialog_try_again": "请关闭此对话框并重试。",
     "problem_persists": "若问题仍存在，请<a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">联系支持</a>。",
-    "click_copy_debug_info": "点击 <span className='active-error' onClick={copyToClipboard}>这里</span> 复制调试信息"
+    "click_copy_debug_info": "点击 <span className='active-error' onClick={copyToClipboard}>这里</span> 复制调试信息",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ 已从 v1.liqwid.finance 重定向",
@@ -500,8 +537,12 @@
     "collateralization_against": "{{id}} 可作为对以下债务资产的抵押",
     "tooltip": {
       "market_utxo": "市场UTXO数量表示在任一时刻可供用户交互的唯一账户/池数量。市场流动性在这些账户间平均分布。如果所有账户正被同时交互，新用户需要等待这些交互完成后才能提交操作。",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "当前利用率：{{utilization}}%",
@@ -522,10 +563,6 @@
   "governance": {
     "title": "治理",
     "your_wallet": "你的钱包",
-    "recent_proposals": "近期提案",
-    "participate_in_governance": "若想参与治理，请质押你的LQ。",
-    "staked_lq_locked": "你已锁定的LQ质押",
-    "staked_lq_balance": "你的LQ质押余额",
     "lq_balance": "你的LQ余额",
     "stake_lq": "质押LQ",
     "lq_staked": "LQ已质押",
@@ -534,8 +571,6 @@
     "share_delegation_address": "想分享你的委托地址吗？",
     "here_is_yours": "这是你的其中一个地址：",
     "you_can_vote": "你可自行对每个提案投票，或将投票权委托给第三方。",
-    "want_receive_notification_proposal": "想在有新提案时收到通知吗？",
-    "go_to_notification": "<Link>前往通知页面</Link>并启用治理通知。",
     "empty": "无匹配搜索条件的提案",
     "no_stake_owned": "你没有任何质押",
     "delegated_voting_power_to": "你已将投票权委托给"
@@ -577,16 +612,6 @@
     "stake_locked_unlock_before_modify": "你的质押已锁定。请先解锁后再尝试修改。",
     "no_delegation_found": "若你想获取你的委托地址并与他人分享"
   },
-  "liquidation_page": {
-    "liquidated_loans": "你的已清算贷款",
-    "all_liquidated_loans": "所有已清算贷款",
-    "amount": "清算金额",
-    "ltv_before": "清算前LTV",
-    "ltv_after": "清算后LTV",
-    "collateral_liquidated": "被清算的抵押品",
-    "liquidator": "清算人",
-    "no_liquidation": "你尚未被清算过"
-  },
   "maintenance_page": {
     "coming_back_soon": "即将回归！",
     "website_under_maintenance": "Liqwid应用正在维护中。"
@@ -607,46 +632,6 @@
     "1y": "1年",
     "max": "最大"
   },
-  "settings_page": {
-    "title": "通知设置",
-    "clear_signatures": "清除已保存签名",
-    "no_adamail_nft": "你的钱包中未找到AdaMail NFT",
-    "adamail_link": "在此处获取你的免费AdaMail",
-    "which_notifications": "你希望接收哪些通知？",
-    "unlock_email_by_signing": "通过用你的钱包签名来解锁邮件通知",
-    "no_transaction_fee_required": "此操作无需交易费用",
-    "enable_email_notifications": "启用邮件通知",
-    "enable_adamail_notifications": "启用ADAmail通知",
-    "loading": "加载中...",
-    "email": "邮箱",
-    "verify_email": "验证邮箱",
-    "your_adamail": "你的ADAmail",
-    "email_verified": "邮箱已验证",
-    "general_communication": "常规交流",
-    "loading_settings_data": "正在加载设置数据...",
-    "signature_setup": "你的签名验证已成功完成",
-    "waiting_for_signature": "等待签名...",
-    "settings_updated": "设置已成功更新",
-    "verification_email_sent": "验证邮件已发送",
-    "sign": "签名",
-    "save_verify_email": "发送并验证邮箱",
-    "save_settings": "保存设置",
-    "delete_data_message": "<div>你确定要删除所有通知设置吗？</div><div>这将删除与你的邮箱相关的所有数据。</div>",
-    "delete_data": "已成功删除你的所有信息",
-    "loan_alert": "贷款警报",
-    "delete_saved_signatures_message": "<div>你确定要删除所有已保存的签名吗？</div><div>你将需要重新签名才能访问你的通知设置。</div>",
-    "error": {
-      "enable_email_notifications_first": "请先启用邮件通知再验证邮箱"
-    }
-  },
-  "verify_email_page": {
-    "title": "验证邮箱",
-    "loading": "加载中...",
-    "email_verified_success": "邮箱验证成功",
-    "incorrect_code": "验证码错误",
-    "error": "发生错误",
-    "redirection_soon": "5秒后将自动重定向。"
-  },
   "filters": {
     "title": "过滤器",
     "asset_types": "资产类型",
@@ -655,9 +640,6 @@
     "bridge_token": "跨链代币",
     "others": "其他",
     "show_assets_with_no_balance": "显示无余额资产"
-  },
-  "transfer_from_cex_page": {
-    "title": "从中心化交易所转移"
   },
   "borrows": "",
   "modify_collateral": "",
@@ -703,7 +685,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "faucet_action": {
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }

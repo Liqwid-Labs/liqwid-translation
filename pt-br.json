@@ -39,7 +39,6 @@
   "type": "Tipo",
   "back": "Voltar",
   "submit": "Submeter",
-  "actions": "Ações",
   "created": "Criado",
   "date": "Data",
   "details": "Detalhes",
@@ -74,7 +73,6 @@
   "processing": "Processando",
   "building_transaction": "Construindo transação",
   "awaiting_confirmation": "Aguardando confirmação",
-  "user_cancel_transaction": "Transação cancelada.",
   "exchange_rate": "Taxa de Câmbio",
   "utilization": "Utilização",
   "current_utilization": "Utilização Atual",
@@ -109,7 +107,6 @@
     "preview_banner": "",
     "supply": "",
     "borrow": "",
-    "notification_page": "",
     "more": ""
   },
   "graph": {
@@ -149,12 +146,51 @@
   },
   "transaction_history": {
     "title": "Histórico de Transações",
-    "empty": "Nenhuma transação encontrada"
+    "empty": "Nenhuma transação encontrada",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "OK, fechar",
     "cancel": "",
-    "confirm": ""
+    "confirm": "",
+    "apply": ""
   },
   "action": {
     "collateral_distribution": "Distribuição de Colateral",
@@ -180,7 +216,8 @@
       "max_withdraw_cap_reached": "",
       "wash_borrow": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "",
@@ -199,8 +236,7 @@
     "error": {
       "min_value": "O valor mínimo para pedir emprestado é {{minValue}}",
       "min_value_non_negative_collateral": "",
-      "max_amount": "",
-      "min_value_as_collateral": ""
+      "max_amount": ""
     },
     "title": "",
     "select_asset": "",
@@ -286,7 +322,8 @@
     "something_wrong": "Ocorreu um erro!",
     "close_dialog_try_again": "Por favor feche este diálogo e tente novamente.",
     "problem_persists": "Caso o problema persista, por favor <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">entre em contato</a>.",
-    "click_copy_debug_info": "clique <span className='active-error' onClick={copyToClipboard}>aqui</span> para copiar a informação de debugging"
+    "click_copy_debug_info": "clique <span className='active-error' onClick={copyToClipboard}>aqui</span> para copiar a informação de debugging",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ Redirecionado de v1.liqwid.finance",
@@ -317,15 +354,15 @@
     "collateralization_against": "",
     "tooltip": {
       "market_utxo": "",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "governance": {
     "title": "Governança",
-    "recent_proposals": "Propostas recentes",
-    "participate_in_governance": "Caso queira participar da governança, por favor faça stake do seu LQ.",
-    "staked_lq_locked": "Seu LQ staked bloqueado",
-    "staked_lq_balance": "Seu LQ staked",
     "lq_balance": "Seu saldo de LQ",
     "stake_lq": "Fazer stake de LQ",
     "delegate_vote": "Delegar poder de voto",
@@ -335,8 +372,6 @@
     "your_wallet": "",
     "lq_staked": "",
     "voting_power": "",
-    "want_receive_notification_proposal": "",
-    "go_to_notification": "",
     "empty": "",
     "no_stake_owned": "",
     "delegated_voting_power_to": ""
@@ -377,16 +412,6 @@
     "total_voting_power": "",
     "stake_locked_unlock_before_modify": "",
     "no_delegation_found": ""
-  },
-  "liquidation_page": {
-    "liquidated_loans": "Suas liquidações",
-    "all_liquidated_loans": "Todas as liquidações",
-    "amount": "Valor liquidado",
-    "ltv_before": "LTV antes",
-    "ltv_after": "LTV após",
-    "collateral_liquidated": "Colateral Liquidado",
-    "liquidator": "Liquidador",
-    "no_liquidation": "Não foi liquidado"
   },
   "maintenance_page": {
     "coming_back_soon": "Voltaremos em breve!",
@@ -587,7 +612,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "liquidate_action": {
@@ -656,46 +682,6 @@
     "borrow": "",
     "liquidity": ""
   },
-  "settings_page": {
-    "title": "",
-    "clear_signatures": "",
-    "no_adamail_nft": "",
-    "adamail_link": "",
-    "which_notifications": "",
-    "unlock_email_by_signing": "",
-    "no_transaction_fee_required": "",
-    "enable_email_notifications": "",
-    "enable_adamail_notifications": "",
-    "loading": "",
-    "email": "",
-    "verify_email": "",
-    "your_adamail": "",
-    "email_verified": "",
-    "general_communication": "",
-    "loading_settings_data": "",
-    "signature_setup": "",
-    "waiting_for_signature": "",
-    "settings_updated": "",
-    "verification_email_sent": "",
-    "sign": "",
-    "save_verify_email": "",
-    "save_settings": "",
-    "delete_data_message": "",
-    "delete_data": "",
-    "loan_alert": "",
-    "delete_saved_signatures_message": "",
-    "error": {
-      "enable_email_notifications_first": ""
-    }
-  },
-  "verify_email_page": {
-    "title": "",
-    "loading": "",
-    "email_verified_success": "",
-    "incorrect_code": "",
-    "error": "",
-    "redirection_soon": ""
-  },
   "filters": {
     "title": "",
     "asset_types": "",
@@ -704,9 +690,6 @@
     "bridge_token": "",
     "others": "",
     "show_assets_with_no_balance": ""
-  },
-  "transfer_from_cex_page": {
-    "title": ""
   },
   "notification_message": {
     "turn_off_safe_mode": ""
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }

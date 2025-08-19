@@ -57,7 +57,6 @@
   "type": "Тип",
   "back": "Назад",
   "submit": "Отправить",
-  "actions": "Действия",
   "created": "Создано",
   "date": "Дата",
   "details": "Детали",
@@ -102,7 +101,6 @@
   "processing": "Обработка",
   "building_transaction": "Формирование транзакции",
   "awaiting_confirmation": "Ожидание подтверждения",
-  "user_cancel_transaction": "Вы отменили транзакцию.",
   "exchange_rate": "Обменный курс",
   "utilization": "Использование",
   "current_utilization": "Текущее использование",
@@ -231,7 +229,6 @@
     "preview_banner": "Вы посещаете тестовую версию приложения V2 Preview",
     "supply": "Предоставить",
     "borrow": "Взять в долг",
-    "notification_page": "Уведомления",
     "more": ""
   },
   "footer": {
@@ -285,12 +282,51 @@
   },
   "transaction_history": {
     "title": "История транзакций",
-    "empty": "Транзакции не найдены"
+    "empty": "Транзакции не найдены",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "Хорошо, закрыть",
     "cancel": "Отмена",
-    "confirm": "Подтвердить"
+    "confirm": "Подтвердить",
+    "apply": ""
   },
   "action": {
     "select_collateral": "Выберите или введите предоставленный залог",
@@ -313,7 +349,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "Рынок обрабатывает пакет, подождите.",
@@ -336,8 +373,7 @@
     "error": {
       "min_value": "Минимальная сумма заема {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "Вам нужен неотрицательный залог для заимствования",
-      "max_amount": "Нельзя взять в долг больше, чем {{maxAmount}} {{id}}",
-      "min_value_as_collateral": "Минимальный залог {{minValue}} {{id}}"
+      "max_amount": "Нельзя взять в долг больше, чем {{maxAmount}} {{id}}"
     },
     "title": "",
     "collateral_description": "",
@@ -463,7 +499,8 @@
     "something_wrong": "Что-то пошло не так!",
     "close_dialog_try_again": "Закройте это окно и попробуйте снова.",
     "problem_persists": "Если проблема не исчезнет, <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">обратитесь в поддержку</a>.",
-    "click_copy_debug_info": "Нажмите <span className='active-error' onClick={copyToClipboard}>здесь</span>, чтобы скопировать отладочную информацию"
+    "click_copy_debug_info": "Нажмите <span className='active-error' onClick={copyToClipboard}>здесь</span>, чтобы скопировать отладочную информацию",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ Перенаправлено с v1.liqwid.finance",
@@ -500,8 +537,12 @@
     "collateralization_against": "{{id}} активирован как залог против этих долговых активов",
     "tooltip": {
       "market_utxo": "Количество UTXO рынка - это число уникальных счетов/пулов, с которыми пользователи могут взаимодействовать в данный момент. Ликвидность распределена между этими счетами. Если все счета заняты, новые пользователи должны дождаться завершения операций прежде, чем отправлять свои.",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "Текущее использование: {{utilization}}%",
@@ -522,10 +563,6 @@
   "governance": {
     "title": "Управление",
     "your_wallet": "Ваш кошелек",
-    "recent_proposals": "Недавние предложения",
-    "participate_in_governance": "Чтобы участвовать в управлении, застейкайте LQ.",
-    "staked_lq_locked": "Ваш застейканный LQ заблокирован",
-    "staked_lq_balance": "Ваш баланс застейканного LQ",
     "lq_balance": "Ваш баланс LQ",
     "stake_lq": "Застейкать LQ",
     "lq_staked": "LQ застейкано",
@@ -534,8 +571,6 @@
     "share_delegation_address": "Хотите поделиться адресом для делегирования?",
     "here_is_yours": "Вот один из ваших:",
     "you_can_vote": "Вы можете голосовать по каждому предложению сами или делегировать право голоса третьей стороне.",
-    "want_receive_notification_proposal": "Хотите получать уведомления, когда появляется новое предложение?",
-    "go_to_notification": "<Link>Перейдите на страницу уведомлений</Link> и включите уведомления о предложениях.",
     "empty": "Нет предложений, соответствующих критериям поиска",
     "no_stake_owned": "У вас нет стейка",
     "delegated_voting_power_to": "Вы делегировали свою голосующую силу"
@@ -577,16 +612,6 @@
     "stake_locked_unlock_before_modify": "Ваш стейк заблокирован. Разблокируйте его, прежде чем изменять.",
     "no_delegation_found": "Если хотите получить адрес делегирования и поделиться им"
   },
-  "liquidation_page": {
-    "liquidated_loans": "Ваши ликвидированные займы",
-    "all_liquidated_loans": "Все ликвидированные займы",
-    "amount": "Сумма ликвидации",
-    "ltv_before": "LTV до",
-    "ltv_after": "LTV после",
-    "collateral_liquidated": "Залог ликвидирован",
-    "liquidator": "Ликвидатор",
-    "no_liquidation": "У вас не было ликвидаций"
-  },
   "maintenance_page": {
     "coming_back_soon": "Скоро вернемся!",
     "website_under_maintenance": "Приложение Liqwid находится на обслуживании."
@@ -607,46 +632,6 @@
     "1y": "1Г",
     "max": "Макс"
   },
-  "settings_page": {
-    "title": "Настройки уведомлений",
-    "clear_signatures": "Очистить сохраненные подписи",
-    "no_adamail_nft": "NFT AdaMail не найден в вашем кошельке",
-    "adamail_link": "Получить бесплатный AdaMail здесь",
-    "which_notifications": "Какие уведомления вы хотите получать?",
-    "unlock_email_by_signing": "Разблокируйте email-уведомления, подписав сообщение кошельком",
-    "no_transaction_fee_required": "Комиссия за транзакцию не требуется",
-    "enable_email_notifications": "Включить email-уведомления",
-    "enable_adamail_notifications": "Включить уведомления ADAmail",
-    "loading": "Загрузка...",
-    "email": "Email",
-    "verify_email": "Подтвердить Email",
-    "your_adamail": "Ваш ADAmail",
-    "email_verified": "Email подтвержден",
-    "general_communication": "Общение в целом",
-    "loading_settings_data": "Загрузка данных настроек...",
-    "signature_setup": "Проверка подписи успешно завершена",
-    "waiting_for_signature": "Ожидание подписи...",
-    "settings_updated": "Настройки успешно обновлены",
-    "verification_email_sent": "Письмо для подтверждения отправлено",
-    "sign": "Подписать",
-    "save_verify_email": "Отправить и подтвердить Email",
-    "save_settings": "Сохранить настройки",
-    "delete_data_message": "<div>Вы уверены, что хотите удалить все настройки уведомлений?</div><div>Это удалит все данные, связанные с вашим email.</div>",
-    "delete_data": "Все данные успешно удалены",
-    "loan_alert": "Оповещение о займе",
-    "delete_saved_signatures_message": "<div>Вы уверены, что хотите удалить все сохраненные подписи?</div><div>Вам нужно будет подписать снова для доступа к настройкам уведомлений.</div>",
-    "error": {
-      "enable_email_notifications_first": "Сначала включите email-уведомления, затем подтвердите email"
-    }
-  },
-  "verify_email_page": {
-    "title": "Подтвердить Email",
-    "loading": "Загрузка...",
-    "email_verified_success": "Email успешно подтвержден",
-    "incorrect_code": "Неверный код",
-    "error": "Произошла ошибка",
-    "redirection_soon": "Вы будете перенаправлены автоматически через 5 секунд."
-  },
   "filters": {
     "title": "Фильтры",
     "asset_types": "Типы активов",
@@ -655,9 +640,6 @@
     "bridge_token": "Мостовой токен",
     "others": "Другие",
     "show_assets_with_no_balance": "Показать активы без баланса"
-  },
-  "transfer_from_cex_page": {
-    "title": "Перевод с CEX"
   },
   "borrows": "",
   "modify_collateral": "",
@@ -703,7 +685,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "faucet_action": {
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }

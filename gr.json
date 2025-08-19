@@ -57,7 +57,6 @@
   "type": "Τύπος",
   "back": "Πίσω",
   "submit": "Υποβολή",
-  "actions": "Ενέργειες",
   "created": "Δημιουργήθηκε",
   "date": "Ημερομηνία",
   "details": "Λεπτομέρειες",
@@ -102,7 +101,6 @@
   "processing": "Επεξεργασία",
   "building_transaction": "Δημιουργία Συναλλαγής",
   "awaiting_confirmation": "Αναμονή Επιβεβαίωσης",
-  "user_cancel_transaction": "Ακυρώσατε τη συναλλαγή.",
   "exchange_rate": "Συναλλαγματική Ισοτιμία",
   "utilization": "Χρησιμοποίηση",
   "current_utilization": "Τρέχουσα Χρησιμοποίηση",
@@ -231,7 +229,6 @@
     "preview_banner": "Επισκέπτεστε την εφαρμογή Preview testnet V2",
     "supply": "Προμήθεια",
     "borrow": "Δανεισμός",
-    "notification_page": "Ειδοποιήσεις",
     "more": ""
   },
   "footer": {
@@ -285,12 +282,51 @@
   },
   "transaction_history": {
     "title": "Ιστορικό Συναλλαγών",
-    "empty": "Δεν Βρέθηκαν Συναλλαγές"
+    "empty": "Δεν Βρέθηκαν Συναλλαγές",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "Εντάξει, κλείσιμο",
     "cancel": "Ακύρωση",
-    "confirm": "Επιβεβαίωση"
+    "confirm": "Επιβεβαίωση",
+    "apply": ""
   },
   "action": {
     "select_collateral": "Επιλέξτε ή Πληκτρολογήστε Προμηθευμένη Εγγύηση",
@@ -313,7 +349,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "Η αγορά ομαδοποιεί, παρακαλώ περιμένετε.",
@@ -336,8 +373,7 @@
     "error": {
       "min_value": "Το ελάχιστο ποσό για δανεισμό είναι {{minValue}} {{id}}",
       "min_value_non_negative_collateral": "Πρέπει να έχετε μη αρνητική αξία εγγύησης για να δανειστείτε",
-      "max_amount": "Δεν μπορείτε να δανειστείτε περισσότερο από το όριό σας των {{maxAmount}} {{id}}",
-      "min_value_as_collateral": "Το ελάχιστο ποσό ως εγγύηση είναι {{minValue}} {{id}}"
+      "max_amount": "Δεν μπορείτε να δανειστείτε περισσότερο από το όριό σας των {{maxAmount}} {{id}}"
     },
     "title": "",
     "collateral_description": "",
@@ -466,7 +502,8 @@
     "something_wrong": "Κάτι πήγε στραβά!",
     "close_dialog_try_again": "Παρακαλώ κλείστε αυτό το παράθυρο διαλόγου και δοκιμάστε ξανά.",
     "problem_persists": "Εάν το πρόβλημα συνεχίζει, παρακαλώ <a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">επικοινωνήστε με την υποστήριξη</a>.",
-    "click_copy_debug_info": "κάντε κλικ <span className='active-error' onClick={copyToClipboard}>εδώ</span> για να αντιγράψετε πληροφορίες εντοπισμού σφαλμάτων"
+    "click_copy_debug_info": "κάντε κλικ <span className='active-error' onClick={copyToClipboard}>εδώ</span> για να αντιγράψετε πληροφορίες εντοπισμού σφαλμάτων",
+    "generic_error_message": ""
   },
   "market_page": {
     "total_supplies": "Συνολικές Προμήθειες",
@@ -499,8 +536,12 @@
     "collateralization_against": "Το {{id}} είναι ενεργοποιημένο ως εγγύηση έναντι αυτών των περιουσιακών στοιχείων χρέους",
     "tooltip": {
       "market_utxo": "Ο αριθμός μοναδικών λογαριασμών/συνόλων σε μια αγορά με τους οποίους οι χρήστες μπορούν να αλληλεπιδράσουν σε μια δεδομένη στιγμή. Η ρευστότητα σε μια αγορά κατανέμεται σε αυτούς τους λογαριασμούς λίγο πολύ ομοιόμορφα. Εάν όλοι οι λογαριασμοί αλληλεπιδρούν ταυτόχρονα, οι νέοι χρήστες θα πρέπει να περιμένουν μέχρι να ολοκληρωθούν αυτές οι αλληλεπιδράσεις για να μπορέσουν να υποβάλουν ενέργειες",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "Τρέχουσα Χρησιμοποίηση: {{utilization}}%",
@@ -521,10 +562,6 @@
   "governance": {
     "title": "Διακυβέρνηση",
     "your_wallet": "Το Πορτοφόλι σας",
-    "recent_proposals": "Πρόσφατες προτάσεις",
-    "participate_in_governance": "Εάν θέλετε να συμμετέχετε στη διακυβέρνηση παρακαλώ τοποθετήστε το LQ σας σε stake.",
-    "staked_lq_locked": "Το LQ σας σε Stake Κλειδωμένο",
-    "staked_lq_balance": "Το Υπόλοιπο LQ σας σε Stake",
     "lq_balance": "Το Υπόλοιπο LQ σας",
     "stake_lq": "Stake LQ",
     "lq_staked": "LQ σε Stake",
@@ -533,8 +570,6 @@
     "share_delegation_address": "Θέλετε να μοιραστείτε τη διεύθυνση εκπροσώπησής σας;",
     "here_is_yours": "Εδώ είναι μία από τις δικές σας:",
     "you_can_vote": "Μπορείτε να ψηφίσετε σε κάθε πρόταση μόνοι σας ή να εκπροσωπήσετε την ψηφοφορία σε τρίτο μέρος.",
-    "want_receive_notification_proposal": "Θέλετε να λαμβάνετε ειδοποιήσεις όταν μια πρόταση τίθεται σε εφαρμογή;",
-    "go_to_notification": "<Link>Μεταβείτε στη σελίδα Ειδοποιήσεων</Link> και ενεργοποιήστε τις ειδοποιήσεις διακυβέρνησης.",
     "empty": "Δεν βρέθηκαν προτάσεις που να ταιριάζουν με τα κριτήρια αναζήτησής σας",
     "no_stake_owned": "Δεν κατέχετε κανένα stake",
     "delegated_voting_power_to": "Έχετε εκπροσωπήσει τη δύναμη ψήφου σας σε"
@@ -576,16 +611,6 @@
     "stake_locked_unlock_before_modify": "Το stake σας είναι κλειδωμένο. Παρακαλώ ξεκλειδώστε το πριν επιχειρήσετε να το τροποποιήσετε",
     "no_delegation_found": "Εάν θέλετε να λάβετε τη διεύθυνση εκπροσώπησής σας και να τη μοιραστείτε με άλλους"
   },
-  "liquidation_page": {
-    "liquidated_loans": "Τα εκκαθαρισμένα δάνειά σας",
-    "all_liquidated_loans": "Όλα τα εκκαθαρισμένα δάνεια",
-    "amount": "Ποσό Εκκαθάρισης",
-    "ltv_before": "ΔΠΑ Πριν",
-    "ltv_after": "ΔΠΑ Μετά",
-    "collateral_liquidated": "Εγγύηση που Εκκαθαρίστηκε",
-    "liquidator": "Εκκαθαριστής",
-    "no_liquidation": "Δεν έχετε εκκαθαριστεί"
-  },
   "maintenance_page": {
     "coming_back_soon": "Θα επιστρέψουμε σύντομα!",
     "website_under_maintenance": "Η εφαρμογή Liqwid είναι υπό συντήρηση."
@@ -606,46 +631,6 @@
     "1y": "1Χ",
     "max": "Μέγιστο"
   },
-  "settings_page": {
-    "title": "Ρυθμίσεις Ειδοποιήσεων",
-    "clear_signatures": "Εκκαθάριση αποθηκευμένων υπογραφών",
-    "no_adamail_nft": "Δεν βρέθηκε AdaMail NFT στο πορτοφόλι σας",
-    "adamail_link": "Λάβετε το δωρεάν AdaMail σας εδώ",
-    "which_notifications": "Ποιες ειδοποιήσεις θα θέλατε να λαμβάνετε;",
-    "unlock_email_by_signing": "Ξεκλειδώστε τις ειδοποιήσεις email υπογράφοντας ένα μήνυμα με το πορτοφόλι σας",
-    "no_transaction_fee_required": "Δεν απαιτείται τέλος συναλλαγής για αυτή την ενέργεια",
-    "enable_email_notifications": "Ενεργοποίηση Ειδοποιήσεων Email",
-    "enable_adamail_notifications": "Ενεργοποίηση Ειδοποιήσεων ADAmail",
-    "loading": "Φόρτωση...",
-    "email": "Email",
-    "verify_email": "Επαλήθευση Email",
-    "your_adamail": "Το ADAmail σας",
-    "email_verified": "Email Επαληθεύτηκε",
-    "general_communication": "Γενική Επικοινωνία",
-    "loading_settings_data": "Φόρτωση δεδομένων ρυθμίσεων...",
-    "signature_setup": "Η επαλήθευση της υπογραφής σας ολοκληρώθηκε με επιτυχία",
-    "waiting_for_signature": "Αναμονή για υπογραφή...",
-    "settings_updated": "Οι ρυθμίσεις ενημερώθηκαν με επιτυχία",
-    "verification_email_sent": "Το email επαλήθευσης στάλθηκε με επιτυχία",
-    "sign": "Υπογραφή",
-    "save_verify_email": "Αποστολή και Επαλήθευση Email",
-    "save_settings": "Αποθήκευση ρυθμίσεων",
-    "delete_data_message": "<div>Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις ρυθμίσεις ειδοποιήσεών σας;</div><div>Θα διαγράψει όλα τα δεδομένα που σχετίζονται με το email σας.</div>",
-    "delete_data": "Διαγράφηκαν με επιτυχία όλες οι πληροφορίες σας",
-    "loan_alert": "Ειδοποίηση Δανείου",
-    "delete_saved_signatures_message": "<div>Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις αποθηκευμένες υπογραφές;</div><div>Θα χρειαστεί να υπογράψετε ξανά για να έχετε πρόσβαση στις ρυθμίσεις ειδοποιήσεών σας.</div>",
-    "error": {
-      "enable_email_notifications_first": "Παρακαλώ ενεργοποιήστε τις ειδοποιήσεις email πριν επαληθεύσετε το email σας"
-    }
-  },
-  "verify_email_page": {
-    "title": "Επαλήθευση Email",
-    "loading": "Φόρτωση...",
-    "email_verified_success": "Το email επαληθεύτηκε με επιτυχία",
-    "incorrect_code": "Λανθασμένος κωδικός",
-    "error": "Προέκυψε σφάλμα",
-    "redirection_soon": "Θα ανακατευθυνθείτε αυτόματα σε 5 δευτερόλεπτα."
-  },
   "filters": {
     "title": "Φίλτρα",
     "asset_types": "Τύποι Περιουσιακών Στοιχείων",
@@ -654,9 +639,6 @@
     "bridge_token": "Τόκεν Γέφυρας",
     "others": "Άλλα",
     "show_assets_with_no_balance": "Εμφάνιση περιουσιακών στοιχείων χωρίς υπόλοιπο"
-  },
-  "transfer_from_cex_page": {
-    "title": "Μεταφορά από CEX"
   },
   "borrows": "",
   "modify_collateral": "",
@@ -703,7 +685,8 @@
     "error": {
       "min_value": "",
       "min_debt": "",
-      "max_amount": ""
+      "max_amount": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "stake_action": {
@@ -718,5 +701,6 @@
   },
   "notification_message": {
     "turn_off_safe_mode": ""
-  }
+  },
+  "clear_filters": ""
 }

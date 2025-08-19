@@ -57,7 +57,6 @@
   "type": "タイプ",
   "back": "戻る",
   "submit": "送信",
-  "actions": "アクション",
   "created": "作成済",
   "date": "日付",
   "details": "詳細",
@@ -100,7 +99,6 @@
   "processing": "処理中",
   "building_transaction": "トランザクションを構築中",
   "awaiting_confirmation": "確認待ち",
-  "user_cancel_transaction": "トランザクションをキャンセルしました。",
   "exchange_rate": "交換レート",
   "utilization": "利用率",
   "current_utilization": "現在の利用率",
@@ -217,7 +215,6 @@
     "preview_banner": "現在、プレビューテストネットV2アプリを利用しています",
     "supply": "供給",
     "borrow": "借入",
-    "notification_page": "通知",
     "more": ""
   },
   "footer": {
@@ -271,12 +268,51 @@
   },
   "transaction_history": {
     "title": "トランザクション履歴",
-    "empty": "トランザクションが見つかりません"
+    "empty": "トランザクションが見つかりません",
+    "connect_wallet": "",
+    "empty_history": "",
+    "empty_filtered": "",
+    "before": "",
+    "after": "",
+    "liquidated": "",
+    "debt_repaid": "",
+    "health_factor_variation": "",
+    "loan_origination_fee": "",
+    "fee_charged_by": "",
+    "type": {
+      "SUPPLY": "",
+      "WITHDRAW": "",
+      "BORROW": "",
+      "BORROW_MORE": "",
+      "REPAY": "",
+      "LOAN_MODIFICATION": "",
+      "FULL_REPAY": "",
+      "LIQUIDATE": "",
+      "LIQUIDATOR": ""
+    },
+    "filters_by_type": "",
+    "date_range": {
+      "today": "",
+      "yesterday": "",
+      "this_week": "",
+      "last_week": "",
+      "last_30_days": "",
+      "all_dates": ""
+    },
+    "export": {
+      "error": "",
+      "success": {
+        "csv": "",
+        "excel": "",
+        "json": ""
+      }
+    }
   },
   "modal": {
     "close_button": "OK、閉じる",
     "cancel": "キャンセル",
-    "confirm": "確認"
+    "confirm": "確認",
+    "apply": ""
   },
   "action": {
     "select_collateral": "提供された担保を選択または入力",
@@ -299,7 +335,8 @@
       "utilization_cap_reached": "",
       "supply_cap_reached": "",
       "epoch_transition": "",
-      "simulation_mode": ""
+      "simulation_mode": "",
+      "wallet_not_connected": ""
     },
     "error": {
       "running_batch": "市場はバッチング中です、お待ちください。",
@@ -322,7 +359,6 @@
     "error": {
       "min_value": "借り入れるための最小金額は {{minValue}} {{id}} です",
       "max_amount": "あなたの限度額 {{maxAmount}} {{id}} を超えて借り入れることはできません",
-      "min_value_as_collateral": "担保としての最小金額は {{minValue}} {{id}} です",
       "min_value_non_negative_collateral": ""
     },
     "title": "",
@@ -397,7 +433,8 @@
     "something_wrong": "問題が発生しました!",
     "close_dialog_try_again": "このダイアログを閉じて、再試行してください。",
     "problem_persists": "問題が解決しない場合は、<a target=\"_blank\" href=\"https://discord.gg/PZ3GUWamY8\" rel=\"noreferrer\">サポートに連絡してください</a>。",
-    "click_copy_debug_info": "デバッグ情報をコピーするには、<span className='active-error' onClick={copyToClipboard}>ここをクリック</span>してください"
+    "click_copy_debug_info": "デバッグ情報をコピーするには、<span className='active-error' onClick={copyToClipboard}>ここをクリック</span>してください",
+    "generic_error_message": ""
   },
   "redirect_modal": {
     "title": "⚠️ v1.liqwid.finance からリダイレクトされました",
@@ -434,8 +471,12 @@
     "collateralization_against": "これらの借入に対して{{id}}が担保されています",
     "tooltip": {
       "market_utxo": "マーケット内でユーザーが特定の瞬間に相互作用できるユニークなアカウント/プールの数。市場の流動性は、これらのアカウントにほぼ均等に分散されています。すべてのアカウントが同時に相互作用している場合、新しいユーザーはこれらの相互作用が完了するまで待つ必要があります。",
-      "hardcap_price": ""
-    }
+      "hardcap_price": "",
+      "batching_explanation": ""
+    },
+    "batching_info": "",
+    "batching_interval": "",
+    "last_batch": ""
   },
   "utilization_graph": {
     "current_utilization": "現在の利用率：{{utilization}}%",
@@ -447,10 +488,6 @@
   "governance": {
     "title": "ガバナンス",
     "your_wallet": "あなたのウォレット",
-    "recent_proposals": "最近の提案",
-    "participate_in_governance": "ガバナンスに参加したい場合は、LQをステークしてください。",
-    "staked_lq_locked": "あなたのステークされた LQ ロック",
-    "staked_lq_balance": "あなたのステークされた LQ 残高",
     "lq_balance": "あなたの LQ 残高",
     "stake_lq": "LQ をステーク",
     "lq_staked": "ステークされた LQ",
@@ -459,8 +496,6 @@
     "share_delegation_address": "あなたの委任公開鍵を共有したいですか？",
     "here_is_yours": "こちらはあなたのものの一つです：",
     "you_can_vote": "各提案に自分で投票するか、第三者に投票を委任することができます。",
-    "want_receive_notification_proposal": "提案がライブになったときに通知を受け取りたいですか？",
-    "go_to_notification": "<Link>通知ページに移動</Link>して、ガバナンス通知を有効にしてください。",
     "empty": "",
     "no_stake_owned": "",
     "delegated_voting_power_to": ""
@@ -502,16 +537,6 @@
     "stake_locked_unlock_before_modify": "",
     "no_delegation_found": ""
   },
-  "liquidation_page": {
-    "liquidated_loans": "あなたの清算されたローン",
-    "all_liquidated_loans": "すべての清算されたローン",
-    "amount": "清算金額",
-    "ltv_before": "前のLTV",
-    "ltv_after": "後のLTV",
-    "collateral_liquidated": "清算された担保",
-    "liquidator": "清算者",
-    "no_liquidation": "あなたは清算されていません"
-  },
   "maintenance_page": {
     "coming_back_soon": "すぐに戻ります！",
     "website_under_maintenance": "Liqwid Appはメンテナンス中です。"
@@ -531,46 +556,6 @@
     "max": "最大",
     "apy": "",
     "liquidity": ""
-  },
-  "settings_page": {
-    "title": "通知設定",
-    "clear_signatures": "保存された署名をクリア",
-    "no_adamail_nft": "あなたのウォレットにAdaMail NFTが見つかりません",
-    "adamail_link": "ここで無料のAdaMailを入手",
-    "which_notifications": "どの通知を受信しますか？",
-    "unlock_email_by_signing": "ウォレットでメッセージを署名して電子メール通知を有効にします",
-    "no_transaction_fee_required": "この操作にはトランザクション料金は必要ありません",
-    "enable_email_notifications": "メール通知を有効にする",
-    "enable_adamail_notifications": "ADAメール通知を有効にする",
-    "loading": "読み込み中...",
-    "email": "メール",
-    "verify_email": "メールを確認",
-    "your_adamail": "あなたのADメール",
-    "email_verified": "メール確認済み",
-    "general_communication": "一般連絡",
-    "loading_settings_data": "設定データを読み込み中...",
-    "signature_setup": "署名の確認が正常に完了しました",
-    "waiting_for_signature": "署名を待っています...",
-    "settings_updated": "設定が正常に更新されました",
-    "verification_email_sent": "確認メールが正常に送信されました",
-    "sign": "署名",
-    "delete_data_message": "すべての通知設定を削除してもよろしいですか？ これにより、メールに関連するすべてのデータが削除されます。",
-    "delete_data": "すべての情報を正常に削除しました",
-    "loan_alert": "融資のアラート",
-    "delete_saved_signatures_message": "保存された署名をすべて削除してもよろしいですか？ これにより、通知設定にアクセスするために再度署名が必要になります。",
-    "error": {
-      "enable_email_notifications_first": "メールを確認する前に、メール通知を有効にしてください"
-    },
-    "save_verify_email": "",
-    "save_settings": ""
-  },
-  "verify_email_page": {
-    "title": "メールを確認",
-    "loading": "読み込み中...",
-    "email_verified_success": "メールが正常に確認されました",
-    "incorrect_code": "コードが間違っています",
-    "error": "エラーが発生しました",
-    "redirection_soon": "5秒後に自動的にリダイレクトされます。"
   },
   "filters": {
     "title": "フィルター",
@@ -639,7 +624,8 @@
     "error": {
       "min_value": "",
       "max_amount": "",
-      "min_debt": ""
+      "min_debt": "",
+      "insufficient_for_full_repay": ""
     }
   },
   "faucet_action": {
@@ -706,9 +692,6 @@
     "borrow": "",
     "liquidity": ""
   },
-  "transfer_from_cex_page": {
-    "title": ""
-  },
   "notification_message": {
     "turn_off_safe_mode": ""
   },
@@ -718,5 +701,6 @@
       "min_value": "",
       "max_amount": ""
     }
-  }
+  },
+  "clear_filters": ""
 }
